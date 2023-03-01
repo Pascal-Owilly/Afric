@@ -37,6 +37,17 @@
   }
 
 
+  nav ul >li:hover{
+    color: greenyellow;
+    text-decoration: underline;
+    transition: 0.2s ease-in;
+    transform-origin:2cm;
+    font-size: 40px;
+    font-weight:normal;
+
+  }
+
+
 
   .navbar-menu {
     display: flex;
@@ -69,8 +80,16 @@
   } 
   
   .navbar-item:hover {
-    color: green;
+    color: #186218;
   } 
+
+  .nav-links {
+    color: #fff;
+  }
+
+  .nav-links:hover{
+    color: greenyellow ;
+  }
 
 
   
@@ -93,3 +112,8 @@
     border-radius: 2px;
     transition: all 0.2s ease-in
   }  
+
+  .hr-nav{
+    margin-top: -1rem;
+    background-color: greenyellow;
+  }

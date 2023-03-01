@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from "react-bootstrap";
+import './Hero.css'
 
-import img1 from '../images/img-2.jpg';
-import img2 from '../images/school3.jpg';
-import img3 from '../images/img-8.jpg';
-import img5 from '../images/school2.jpg';
+import img1 from '../img/img1.jpg';
+import img2 from '../img/img2.jpg';
+import img3 from '../img/img3.jpg';
+import img4 from '../img/img4.jpg';
 
 function HeroSection() {
-  const [backgroundImages, setBackgroundImages] = useState([img1, img2, img3, img5]);
+  const [backgroundImages, setBackgroundImages] = useState([img1, img2, img3, img4]);
 
 
   const [currentBackgroundImageIndex, setCurrentBackgroundImageIndex] = useState(0);
@@ -57,36 +60,92 @@ function HeroSection() {
     animation: 'bounce 2s infinite',
   };
 
-  const imageTexts = [
-    'Get the wamth of nature',
-    'Buy your plants',
-    'Make it count',
+  // Set slides on hero section
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const images = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img2,
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((currentSlide) => (currentSlide + 1) % images.length);
+    }, 5000); // change slide every 5 seconds
+    return () => clearInterval(interval);
+  }, [currentSlide, images.length]);
+
+  const [text, setText] = useState('Option 1');
+  const texts = ['The love of gardening ', 'Plants are nature\'s healers', 'The earth laughs in flowers', 'Plants are the lungs of the earth'];
+  const [textIndex, setTextIndex] = useState(0);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setTextIndex((textIndex + 1) % texts.length);
+    }, 5000);
+
+    return () => clearTimeout(timeoutId);
+  }, [textIndex, texts.length]);
+
+  useEffect(() => {
+    setText(texts[textIndex]);
+  }, [textIndex, texts]); 
   
 
   const [currentImageTextIndex, setCurrentImageTextIndex] = useState(0);
-
-  const handleMouseEnter = () => {
-    const nextIndex = (currentImageTextIndex + 1) % imageTexts.length;
-    setCurrentImageTextIndex(nextIndex);
+// Arrow style
+  const [arrowClicked, setArrowClicked] = useState(false);
+  const handleArrowClick = () => {
+    setArrowClicked(true);
+    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
   };
 
   return (
     <section style={backgroundImageStyle}>
       <div
         style={overlayStyle}
-        onMouseEnter={handleMouseEnter}
-        onTouchStart={handleMouseEnter}
-      >
-        <h1 style={{ fontSize: '64px', fontWeight: 'bold', marginBottom: '20px' }}>
-          Mwani Africa
-        </h1>
-        <p style={{ fontSize: '24px', fontWeight: 'bold' }}>
-          {imageTexts[currentImageTextIndex]}
-        </p>
-        <div style={arrowStyle}></div>
+      > 
+    <Container>
+      <Row>
+      <Col md={5} className="my-col">
+      <div className="slideshow">
+      {/* <button className="slideshow-button" onClick={() => setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1)}>  </button> */}
+      <div className="slideshow-image-container">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Slide ${index + 1}`}
+            className={`slideshow-image${index === currentSlide ? ' active' : ''}`}
+          />
+        ))}
       </div>
+      {/* <button className="slideshow-button" onClick={() => setCurrentSlide((currentSlide + 1) % images.length)}> </button>*/}
+    </div> 
+    </Col>
+         <Col md={7} className="my-col">
+          <div>              
+              <p style={{color: 'greenyellow', fontSize:'50px', marginTop:'12vh', marginLeft:'20vh', marginTop:'22vh'}}>Experience Nature the modern way </p>
+              <hr className='hr-hero' /> 
+              <p className='p-change'>{text}</p>                           
+          </div>          
+        </Col>
+      </Row>
+    </Container>
+{/* arrow */}
+    <div className={arrowClicked ? 'scroll-effect' : ''}>
+      <div onClick={handleArrowClick} style={arrowStyle}></div>
+
+
+
+
+    </div>
+
+     
+  </div>
     </section>
   );
 }
