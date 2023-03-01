@@ -16,6 +16,7 @@ function Card() {
               <h1 className="animate slide-left pop delay-4">Trees</h1>
               <p className="animate slide-left pop delay-5" style={{color: 'white', marginBottom: '2.5rem'}}>Kingdom: <em>Plantae</em></p>
           </div>
+          
           <div className="image-content1 animate slide delay-5"></div>
               <div className="dots animate">
                 <div className="dot animate slide-up delay-6"></div>
