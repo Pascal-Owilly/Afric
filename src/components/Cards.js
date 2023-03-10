@@ -1,65 +1,107 @@
-import React, { useState } from 'react';
-import './Cards.css';
+import React from 'react';
+import bground1 from '../img/bground1.webp';
+import person1 from '../img/person1.jpeg';
+import person2 from '../img/person2.jpeg';
+import person3 from '../img/person3.jpeg';
+import img7 from '../img/img7.jpeg'
+import img8 from '../img/img8.jpeg';
+import img9 from '../img/img9.jpeg';
+import img10 from '../img/img10.jpeg';
+import img11 from '../img/img11.jpeg';
+import img12 from '../img/img12.jpeg';
+import img14 from '../img/img14.jpeg';
+import img15 from '../img/img15.jpeg';
 import { Container, Row, Col } from 'react-bootstrap';
 
-function Card() {
-  console.log('Card component rendered');
-
+const Section = () => {
   return (
-    <>
-  <Container>
-    <Row>
-      <Col md={6}>
-        <div className="wrap animate pop">
-          <div className="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-              <h1 className="animate slide-left pop delay-4">Trees</h1>
-              <p className="animate slide-left pop delay-5" style={{color: 'white', marginBottom: '2.5rem'}}>Kingdom: <em>Plantae</em></p>
-          </div>
-          
-          <div className="image-content1 animate slide delay-5"></div>
-              <div className="dots animate">
-                <div className="dot animate slide-up delay-6"></div>
-                <div className="dot animate slide-up delay-7"></div>
-                <div className="dot animate slide-up delay-8"></div>
-          </div>
-          </div>
-            <div className="text">
-              <p>Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
-              <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
-              <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
-          </div>
+    <section
+      style={{
+        backgroundImage: `url(${img7})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+        position: 'relative',
+      }}
+    >
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 1,
+        }}
+      >
+        <Container fluid>
+          <Row>
+            <Col md={4}  className=''>
+            <h1 className='mb-5 ' style={{ color: '#fff', fontSize: '2rem', marginLeft:'2rem' }}>Who are we?</h1>     
+              <img src={person1} alt="Mwani Africa" style={{ maxWidth: '100%' }} />
+       
+            </Col>
+            <Col md={2} style={{marginTop:'25vh'}}>
+            <p className='mt-4' style={{ color: '#fff', fontSize: '18px' }}>
+            We are Mwani Africa. We provide circular zero-waste solution of Ocean co-products </p>
+          </Col>
+          <Col md={4}  className=''>
+                 <img src={person2} alt="Mwani Africa" style={{ width: '100%', marginTop:'12rem'}} />       
+            </Col>
+            <Col md={2} style={{marginTop:'5vh'}}>
+               <p style={{ color: '#fff', fontSize: '18px', marginTop:'26vh'  }}>
+           We up-cycle to produce bio-stimulants and soil conditioner </p>
+          </Col>
+          <Col md={4}  className='mt-4'>    
+              <img src={img9} alt="Mwani Africa" style={{ width: '100%' ,height:'70%' }} />
+       
+            </Col>
+            <Col md={2} style={{marginTop:'11vh'}}>
+            <p style={{ color: '#fff',fontSize: '18px'}}>
+               We leverage the Seaweed value-addition to facilitate local small holder communities cultivate Seaweed </p>
+
+          </Col>
+          <Col md={6}  className='ml-5'>
+          <p style={{ color: '#fff', fontSize: '18px', marginTop:'2vh', marginLeft:'0'  }}>
+                 We empower women and youth. 
+               </p>
+               <img src={img14} alt="Mwani Africa" style={{ width: '100%', marginTop:'1rem' }} />
+                       
+            </Col>
+            
+          </Row>
+          <p style={{ color: '#fff', fontSize: '18px', width:'100%', textAlign:'center'}}>We bring together stakeholders, Government, Academia and private sector and resolved to form a Seaweed association. We formulate the constitution and framework.</p>
+        </Container>  
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            minHeight: '100vh',
+            padding: '2rem',
+            boxSizing: 'border-box',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: 2,
+          }}
+        >
+
+        </div>
       </div>
-      </Col>
-      <Col md={6}>
-        <div className="wrap animate pop">
-          <div className="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-              <h1 className="animate slide-left pop delay-4">Trees</h1>
-              <p className="animate slide-left pop delay-5" style={{color: 'white', marginBottom: '2.5rem'}}>Kingdom: <em>Plantae</em></p>
-          </div>
-          <div className="image-content2 animate slide delay-5"></div>
-              <div className="dots animate">
-                <div className="dot animate slide-up delay-6"></div>
-                <div className="dot animate slide-up delay-7"></div>
-                <div className="dot animate slide-up delay-8"></div>
-          </div>
-          </div>
-            <div className="text">
-              <p>Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
-              <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
-              <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
-          </div>
-      </div>
-      </Col>
-
-
-
-      
-    </Row>
-  </Container>
-    </>
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: '#111',
+          opacity: 0.9,
+          zIndex: 0,
+        }}
+      ></div>
+    </section>
   );
 };
 
-export default Card;
+export default Section;
