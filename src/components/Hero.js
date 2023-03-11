@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Carousel} from 'react-bootstrap';
+import React from 'react';
+import { Carousel, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Hero.css';
+import './CardHero.css';
 
 import img5 from '../img/img5.jpeg';
 import img1 from '../img/img1.jpeg';
@@ -21,114 +21,34 @@ import cimg5 from '../img/cimg5.jpeg';
 import cimg6 from '../img/cimg6.jpeg';
 import './CardHero.css';
 
-
 function CardHero() {
+  const images = [    img5,    img4,    img1,    person1,    person2,    plant2,    plant3,    plant4,    plant5,    cimg1,    cimg2,    cimg3,    cimg4,    cimg5,    cimg6,  ];
 
-  const images = [img5, img4, img1, person1, person2, plant2, plant3, plant4, plant5, cimg1,
-    cimg2,,
-    cimg3,
-    cimg4,
-    cimg5,
-    cimg6];
-  
   return (
-      <Carousel className='hero-card' >
-        <Carousel.Item >
-          <div className="card-container" style={{height:'', position: 'relative'}}>
-            <Card className='bg-dark'>
-              <Card.Img variant="top" />
-              <img src={img1} style={{maxHeight:'100vh'}} />
-              <Card.Body>
-  
-              </Card.Body>
-            </Card>
-            <div className="card-overlay"></div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="card-container" style={{maxHeight:'', position: 'relative'}}>
+    <Carousel className="hero-card">
+      {images.map((image, index) => (
+        <Carousel.Item key={index}>
+          <div
+            className="card-container"
+            style={{ position: 'relative' }}
+          >
             <Card>
-              <Card.Img variant="top" />
-              <img src={person1} style={{maxHeight:'100vh'}} />
-
+              <Card.Img
+                variant="top"
+                src={image}
+                className="img-fluid"
+                style={{
+                  
+                }}
+              />
+              <Card.Body></Card.Body>
             </Card>
             <div className="card-overlay"></div>
           </div>
         </Carousel.Item>
-        <Carousel.Item>
-          <div className="card-container" style={{maxHeight:'', position: 'relative'}}>
-            <Card>
-              <Card.Img variant="top" />
-              <img src={cimg1} style={{maxHeight:'100vh'}}/>
-              <Card.Body>
-                
-              </Card.Body>
-            </Card>
-            <div className="card-overlay"></div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="card-container" style={{maxHeight:'', position: 'relative'}}>
-            <Card>
-              <Card.Img variant="top" />
-              <img src={cimg2} style={{maxHeight:'100vh'}}/>
-              <Card.Body>
-                
-              </Card.Body>
-            </Card>
-            <div className="card-overlay"></div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="card-container" style={{maxHeight:'', position: 'relative'}}>
-            <Card>
-              <Card.Img variant="top" style={{maxHeight:'100vh'}}/>
-              <img src={img4} />
-              <Card.Body>
-                
-              </Card.Body>
-            </Card>
-            <div className="card-overlay"></div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="card-container" style={{maxHeight:'', position: 'relative'}}>
-            <Card>
-              <Card.Img variant="top" />
-              <img src={cimg4} style={{maxHeight:'100vh'}} />
-              <Card.Body>
-                
-              </Card.Body>
-            </Card>
-            <div className="card-overlay"></div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="card-container" style={{maxHeight:'', position: 'relative'}}>
-            <Card>
-              <Card.Img variant="top" />
-              <img src={cimg5} />
-              <Card.Body>
-                
-              </Card.Body>
-            </Card>
-            <div className="card-overlay"></div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="card-container" style={{maxHeight:'', position: 'relative'}}>
-            <Card>
-              <Card.Img variant="top" />
-              <img src={cimg6} />
-              <Card.Body>
-                
-              </Card.Body>
-            </Card>
-            <div className="card-overlay"></div>
-          </div>
-        </Carousel.Item>
-      </Carousel>
+      ))}
+    </Carousel>
   );
-};
+}
 
 export default CardHero;

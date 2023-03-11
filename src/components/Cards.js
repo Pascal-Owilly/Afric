@@ -13,7 +13,7 @@ import img14 from '../img/img14.jpeg';
 import img15 from '../img/img15.jpeg';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const Section = () => {
+const CardSection = () => {
   return (
     <section
       style={{
@@ -104,4 +104,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default CardSection;

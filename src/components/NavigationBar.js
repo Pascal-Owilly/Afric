@@ -1,71 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container,Col } from 'react-bootstrap';
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-import logo from '../img/logo.png';
-import './NavigationBar.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import logo from '../img/logo.jpg';
 
 function NavigationBar() {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.pageYOffset);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
 
   return (
-    <Navbar className={`bg-light text-dark ${scrollPosition > 50 ? 'navbar-green' : ''}`} expand='lg' fixed='top'>
-
-      <Container fluid>
-        <Navbar.Brand href='/'>
-          <img
-            src={logo}
-            alt='Logo'
-            style={{ height: '42px' }}
-          />
-          <span style={{ fontSize: '20px', fontWeight: 'bold', position: 'relative', textDecoration: 'none' }}>
-            <span style={{ fontFamily: 'verdana', color: scrollPosition > 50 ? '#2f2f2f' : '#000092', marginLeft: '0.5rem' }}>Mwani Africa</span>
-          </span>
-        </Navbar.Brand>
-<Col></Col>
-        <div className='icons text-dark d-flex align-items-center justify-content-center'>
-        <div className="d-inline-block mx-2 icon" style={{ cursor: 'pointer' }}>
-            <FaFacebook />
-        </div>
-          <div className="d-inline-block mx-2 icon" style={{ cursor: 'pointer' }}>
-            <FaInstagram />
-          </div>
-          <div className="d-inline-block mx-2 icon" style={{ cursor: 'pointer' }}>
-            <FaLinkedin />
-          </div>
-          <div className="d-inline-block mx-2 icon" style={{ cursor: 'pointer' }}>
-            <FaWhatsapp />
-          </div>
-          <div className="d-inline-block mx-2 icon" style={{ cursor: 'pointer' }}>
-            <FaEnvelope />
-          </div>
-        </div>
-
-        <Navbar.Toggle aria-controls='navbar-nav' />
-        <Navbar.Collapse id='navbar-nav'>
-          <Nav className='ms-auto'>
-          <Nav.Link href='/' className="nav-link" style={{ fontWeight: 'bold', color: scrollPosition > 50 ? '#2f2f2f' : '#111', textDecoration: 'none' }}>Home</Nav.Link>
-
-
-            <Nav.Link  Link to='/About' style={{ fontWeight: 'bold', color: scrollPosition > 50 ? '#2f2f2f' : '#111', textDecoration: 'none' }}>About</Nav.Link>
-            <Nav.Link href='/' style={{ fontWeight: 'bold', color: scrollPosition > 50 ? '#2f2f2f' : '#111', textDecoration: 'none' }}>Contact</Nav.Link>
-            <Nav.Link href='/' style={{ fontWeight: 'bold', color: scrollPosition > 50 ? '#2f2f2f' : '#111', textDecoration: 'none' }}>Explore</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <style>
+        {`.navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }`}
+      </style>
+      <Navbar style={{backgroundColor:'purple'}} expand="lg" expanded={expanded}>
+        <Container fluid>
+          <Navbar.Brand href="/">
+            <img
+              src={logo}
+              width="50"
+              height="50"
+              className="d-inline-block align-top rounded-circle"
+              alt="Mwani Africa Logo"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}   />
+          <Navbar.Collapse id="basic-navbar-nav" className='text-center' style={{border:'none', backgroundColor:'gold', height:'8vh', width:'90%', color:'white'}}>
+            <Nav className="justify-content-end" style={{ width: "100%" }}>
+              <Nav.Link href="/" style={{color:'#fff', fontWeight:'bold'}}>Home</Nav.Link>
+              <Nav.Link href="/about" style={{color:'#fff', fontWeight:'bold'}}>About</Nav.Link>
+              <Nav.Link href="/team" style={{color:'#fff', fontWeight:'bold'}}>The Team</Nav.Link>
+              <Nav.Link href="/contact" style={{color:'#fff', fontWeight:'bold'}}>Contact</Nav.Link>            
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 

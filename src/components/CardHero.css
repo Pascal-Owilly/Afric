@@ -1,23 +1,49 @@
+/* Default styles for all devices */
+
 .hero-card {
+  height: 60vh;
+}
+
+.card-container {
   position: relative;
-  /* z-index: 9999; */
 }
 
 .card-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px;
-} 
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 
+/* Media queries for different device sizes */
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 575px) {
+  .hero-card {
+    height: 40vh;
+  }
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .hero-card {
+    height: 50vh;
+  }
+}
+
+/* Medium devices (desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-card {
+    height: 60vh;
+  }
+}
+
+/* Large devices (large desktops) */
+@media only screen and (min-width: 992px) {
+  .hero-card {
+    height: 100vh;
+  }
+}

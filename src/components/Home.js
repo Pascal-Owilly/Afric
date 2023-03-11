@@ -8,7 +8,6 @@ import Team from './Team';
 import Why from './Why';
 import How from './How';
 
-// import CardAnimate from './CardAnimate';
 
 function Home() {
   return (
@@ -18,11 +17,9 @@ function Home() {
       <Card />
       <Why />
       <How />
-      {/* <Slides /> */}
       <Team />
       <Footer />
-    
-      {/* <CardAnimate /> */}
+  
     </>
   );
 }
