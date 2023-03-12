@@ -43,7 +43,7 @@ function CardHero() {
               />
               <Card.Body></Card.Body>
             </Card>
-            <div className="card-overlay"></div>
+            <div className="card-overlay">Lorem ipsum dolor sit amet</div>
           </div>
         </Carousel.Item>
       ))}

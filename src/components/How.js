@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import bground1 from '../img/bground1.webp';
 import person1 from '../img/person1.jpeg';
 import person2 from '../img/person2.jpeg';
@@ -19,8 +19,23 @@ import how1 from '../img/how1.jpeg';
 import vid from '../vid/vid.mp4';
 import { Container, Row, Col } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Section = () => {
+
+  const [showMore, setShowMore] = useState(false);
+
+  const handleShowMore = () => {
+    console.log('Show More clicked');
+    setShowMore(true);
+  }
+
+  const handleShowLess = () => {
+    console.log('Show Less clicked');
+    setShowMore(false);
+  }
+
+  
   return (
     <section
       style={{
@@ -37,35 +52,46 @@ const Section = () => {
           zIndex: 1,
         }}
       >
-        <Container fluid>
-          <Row>
-            <Col md={3}  className='mt-5'>
-            <h1 className='mb-5 ' style={{ color: '#fff', fontSize: '2rem', marginLeft:'2rem' }}>Why We Do It</h1>     
-              <img className='rounded-circle' src={how7} alt="Mwani Africa" style={{ width: '100%', height: '300px' }} />
-            <p style={{ color: 'green', fontSize: '1rem', marginLeft:'2rem' }}><span style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'0' }}><u>To save the planet</u></span> &nbsp; It is natural and organic: Seaweed fertilizer is a natural and organic alternative to synthetic fertilizers, which can be harmful to the environment and can cause soil degradation.</p>
-       
-            </Col>
-            
-          <Col md={3}  className='mt-4'>  
-          <p style={{ color: 'green', fontSize: '1rem', marginLeft:'2rem' }}><span style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'0' }}><u>To improve soil health</u></span> &nbsp; Seaweed fertilizer helps improve soil health by increasing soil organic matter, improving soil structure, and increasing soil moisture retention.</p>  
-              <img className='rounded' src={how2} alt="Mwani Africa" style={{ width: '350px' ,height:'300px' }} />
-       
-            </Col>
-            <Col md={3}  className='mt-5'>     
-              <img className='rounded-circle' src={how1} alt="Mwani Africa" style={{ width: '100%', height: '300px' }} />
-              <p style={{ color: 'green', fontSize: '1rem', marginLeft:'2rem' }}><span style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'0' }}><u>To enhance crop quality</u></span> &nbsp; Seaweed fertilizer is known to enhance the quality of crops by increasing the sugar content, improving the taste and flavor, and enhancing the color and appearance of fruits and vegetables.</p>
-       
-            </Col>
-            
-          <Col md={3}  className='mt-4'>    
-          <p style={{ color: 'green', fontSize: '1rem', marginLeft:'2rem' }}><span style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'0' }}><u>To boost plant growth and productivity</u></span> &nbsp;  Seaweed fertilizer is known to stimulate plant growth and productivity by providing essential nutrients and trace elements that are necessary for healthy plant growth. </p>
-              <img className='rounded' src={plant2} alt="Mwani Africa" style={{ width: '100%' ,height:'50%' }} />
-       
-            </Col>
-            
-            
-          </Row>
-        </Container>  
+         <Container fluid>
+        <Row>
+          <Col md={7} className='mt-5'>
+            <h1 className='mb-1' style={{ color: '#fff', fontSize: '2rem', marginLeft: '2rem' }}>
+              Why We Do It
+            </h1>
+            <img className='rounded' src={img12} alt='Mwani Africa' style={{ width: '100%', height: '100%' }} />
+          </Col>
+          <Col md={5} className='mt-1'>
+            <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
+              <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To boost plant growth and productivity</span>&nbsp;
+              Seaweed fertilizer is known to stimulate plant growth and productivity by providing essential nutrients and trace elements that are necessary for healthy plant growth.
+            </p>
+            <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
+              <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To save the planet</span>&nbsp;
+              It is natural and organic: Seaweed fertilizer is a natural and organic alternative to synthetic fertilizers, which can be harmful to the environment and can cause soil degradation.
+            </p>
+            {showMore ? (
+                <>
+                  <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
+                    <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To improve soil health</span>&nbsp;
+                    Seaweed fertilizer helps improve soil health by increasing soil organic matter, improving soil structure, and increasing soil moisture retention.
+                  </p>
+                  <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
+                    <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To enhance crop quality</span>&nbsp;
+                    Seaweed fertilizer is known to enhance the quality of crops by increasing the sugar content, improving the taste and flavor, and enhancing the color and appearance of fruits and vegetables.
+                  </p>
+                  <img src={plant2} alt="Plants" style={{ width: '100%', height: 'auto' }} />
+                  <video controls style={{ width: '100%', height: 'auto' }}>
+                    <source src={vid} type="video/mp4" />
+                  </video>
+                  <button onClick={() => setShowMore(false)}>Read Less</button>
+                </>
+              ) : (
+                <button onClick={() => setShowMore(true)}>Read More</button>
+              )}
+
+          </Col>
+        </Row>
+      </Container>
         <div
           style={{
             display: 'flex',

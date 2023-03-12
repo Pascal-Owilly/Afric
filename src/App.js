@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css'
 import Home from './components/Home';
+import AboutUs from './components/AboutUs';
 
 
 
@@ -14,6 +15,7 @@ class App extends Component {
         <Home />
         <Routes>
           <Route path='/' element={Home} />
+          <Route path='/about' component={AboutUs} />
           
         </Routes>
       </Router>
