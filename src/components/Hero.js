@@ -25,7 +25,7 @@ function CardHero() {
   const images = [    img5,    img4,    img1,    person1,    person2,    plant2,    plant3,    plant4,    plant5,    cimg1,    cimg2,    cimg3,    cimg4,    cimg5,    cimg6,  ];
 
   return (
-    <Carousel className="hero-card">
+    <Carousel className="hero-card" indicators={false}>
       {images.map((image, index) => (
         <Carousel.Item key={index}>
           <div

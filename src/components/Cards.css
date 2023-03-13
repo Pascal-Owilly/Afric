@@ -1,8 +1,14 @@
-section-style {
-    margin-top: 0;
-  }
 
-.section-style{
-    background-color: purple;
+/* Large devices (large desktops) */
+@media only screen and (min-width: 992px) {
+  .section-style{
+    height: 65vh;
+    margin-top: 20vh;
+  }
+  p {
+    margin-top: 1rem;
+  }
 }
+
+    
   

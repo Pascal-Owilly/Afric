@@ -35,16 +35,19 @@ const CardSection = () => {
         }}
       >
         <Container fluid className='section-style'>
+      
           <Row>
+              <hr style={{color:'#fff'}}/>  <hr style={{color:'#fff'}}/>
             <Col md={4}  className=''>
-            <h1 className='mb-2 mt-2' style={{ color: '#fff', fontSize: '1.7rem', marginLeft:'2rem', overflow:'hidden', fontFamily:'sans' }}>Who we Are</h1>     
+            
+            <h1 className='mb-2 mt-0' style={{ color: '#fff', fontSize: '1.7rem', marginLeft:'2rem', overflow:'hidden', fontFamily:'sans' }}>Who we Are</h1>     
               <img src={person1} alt="Mwani Africa" style={{ width: '100%' }} />
-              <hr style={{color:'#fff'}}/>
+              
                             </Col>
     
           <Col md={8}  className=''>
-          <hr style={{color:'#fff'}}/>
-          <p className='' style={{ color: '#fff', fontSize: '18px' }}>
+          
+          <p className='pt-4' style={{ color: '#fff', fontSize: '18px' }}>
                We are Mwani Africa, a Kenyan (East Africa) start-up providing a circular zero-waste solution of Ocean co-products, up-cycling to produce bio-stimulants and soil conditioner.
                 Mwani Africa's social enterprise leverages the Seaweed 
                 value-addition, to facilitate local small holder communities cultivate Seaweed. 
@@ -59,12 +62,12 @@ const CardSection = () => {
                         <Card
                           className="text-center"
                           style={{
-                            backgroundColor: '#5a015a',
-                            width: '40%',
-                            height: '100%',
+                            backgroundColor: 'rgb(90, 1, 90, 0.6)',
+                            width: 'auto',
+                            height: 'auto',
                             alignItems: 'center',
-                            color: 'white',
-                            marginLeft: '25%',
+                            color: 'gold',
+    
                             fontFamily:'verdana',
                             marginBottom:'1.5rem',
                             fontSize:'24px',
@@ -72,7 +75,7 @@ const CardSection = () => {
                           }}
                         >
                           <Card variant="bottom" src={texts[0]} className="img-fluid" />
-                          <p style={{marginTop:'0', marginBottom:'0', height:'4vh'}}>{texts[1]}</p>
+                          <p style={{marginTop:'0', marginBottom:'0', height:'1.5rem'}}>{texts[1]}</p>
                           <p>{texts[2]}</p>
                         </Card>
                       </div>

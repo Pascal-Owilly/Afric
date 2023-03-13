@@ -42,7 +42,7 @@ const Section = () => {
         backgroundImage: `url(${img7})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '100vh',
+        minHeight: 'auto',
         position: 'relative',
       }}
     >
@@ -53,12 +53,12 @@ const Section = () => {
         }}
       >
          <Container fluid>
-        <Row>
-          <Col md={7} className='mt-5'>
+        <Row >
+          <Col md={7} className='mb-3'>
             <h1 className='mb-1' style={{ color: '#fff', fontSize: '2rem', marginLeft: '2rem' }}>
               Why We Do It
             </h1>
-            <img className='rounded' src={img12} alt='Mwani Africa' style={{ width: '100%', height: '100%' }} />
+            <img className='rounded' src={img12} alt='Mwani Africa' style={{ width: '100%', height: 'auto' }} />
           </Col>
           <Col md={5} className='mt-1'>
             <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
@@ -69,7 +69,7 @@ const Section = () => {
               <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To save the planet</span>&nbsp;
               It is natural and organic: Seaweed fertilizer is a natural and organic alternative to synthetic fertilizers, which can be harmful to the environment and can cause soil degradation.
             </p>
-            {showMore ? (
+         
                 <>
                   <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
                     <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To improve soil health</span>&nbsp;
@@ -79,15 +79,9 @@ const Section = () => {
                     <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To enhance crop quality</span>&nbsp;
                     Seaweed fertilizer is known to enhance the quality of crops by increasing the sugar content, improving the taste and flavor, and enhancing the color and appearance of fruits and vegetables.
                   </p>
-                  <img src={plant2} alt="Plants" style={{ width: '100%', height: 'auto' }} />
-                  <video controls style={{ width: '100%', height: 'auto' }}>
-                    <source src={vid} type="video/mp4" />
-                  </video>
-                  <button onClick={() => setShowMore(false)}>Read Less</button>
+              
                 </>
-              ) : (
-                <button onClick={() => setShowMore(true)}>Read More</button>
-              )}
+
 
           </Col>
         </Row>
