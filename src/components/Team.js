@@ -8,6 +8,7 @@ import team4 from '../img/team4.png';
 import team5 from '../img/team5.png';
 import team6 from '../img/team6.png';
 
+
 const team = [team1,
   team2,
   team3,
@@ -83,7 +84,7 @@ function App() {
 
   return (
     <>
-    <Container fluid style={{maxHeight:'100vh'}} className="slideshow-container">
+    <Container fluid style={{maxHeight:'100vh', width:'100%', overflow:'hidden'}} className="slideshow-container">
       <h3 style={{textAlign:'center', marginRight:'4rem',marginTop:'11rem', backgroundColor:'rgba(14, 10, 10, 0.7)',opacity:'0.8', color:'#ffffff', width:'40%',borderRadius:'30px', fontFamily:'serif'}}>The Team</h3>
     <div style={{textAlign:'center', marginTop:'4rem'}} >
        <div className="slideshow">
