@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import cimg2 from '../img/cimg2.jpeg';
-import vid from '../vid/vid.mp4';
+
 
 function Footer() {
   return (
     <footer>
 
-      <div className="footer-section-2" style={{ backgroundColor: 'purple', opacity: 1}}>
+      <div className="footer-section-2" style={{ backgroundColor: 'purple', opacity: 1, marginBottom:'0'}}>
         <Container fluid> 
           <Row >
             <Col md={4} className='mt-3'>
@@ -19,10 +18,10 @@ function Footer() {
          allowFullScreen="" loading="lazy"></iframe>
         
             </Col>
-            <Col md={8} className='mt-3'>  
+            <Col md={8} className='mt-3'>   
             
            
-              <p style={{ color: 'white' }}> <span style={{ color: '#ffffff', fontWeight:'bold', fontSize:'1.2rem', textAlign:'center' }}>Disclaimer: </span>The information on this website is for general informational purposes only and should not be considered as professional advice.
+              <p className="text-white"  style={{ color: 'text-center' }}> <span style={{ color: '#ffffff', fontWeight:'bold', fontSize:'1.2rem', textAlign:'center', fontFamily:'verdana' }}>Disclaimer: </span>The information on this website is for general informational purposes only and should not be considered as professional advice.
                We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, 
                or availability with respect to the website. 
                In no event will we be liable for any loss or damage including without limitation,

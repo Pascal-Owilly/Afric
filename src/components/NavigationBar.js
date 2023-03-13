@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo from '../img/logo.jpg';
+import { Link } from 'react-router-dom';
 
 function NavigationBar() {
   const [expanded, setExpanded] = useState(false);
@@ -29,12 +30,12 @@ function NavigationBar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}   />
           <Navbar.Collapse id="basic-navbar-nav" className='text-center' style={{border:'none', backgroundColor:'gold', height:'8vh', width:'90%', color:'white'}}>
-            <Nav className="justify-content-end" style={{ width: "100%" }}>
-              <Nav.Link href="/" style={{color:'#fff', fontWeight:'bold'}}>Home</Nav.Link>
-              <Nav.Link href="/about" style={{color:'#fff', fontWeight:'bold'}}>About</Nav.Link>
-              <Nav.Link href="/team" style={{color:'#fff', fontWeight:'bold'}}>The Team</Nav.Link>
-              <Nav.Link href="/contact" style={{color:'#fff', fontWeight:'bold'}}>Contact</Nav.Link>            
-            </Nav>
+          <Nav className="justify-content-end" style={{ width: "100%" }}>
+            <Nav.Link as={Link} to="/" style={{color:'#fff', fontWeight:'bold'}}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/about" style={{color:'#fff', fontWeight:'bold'}}>About</Nav.Link>
+            <Nav.Link as={Link} to="/team" style={{color:'#fff', fontWeight:'bold'}}>The Team</Nav.Link>
+            <Nav.Link as={Link} to="/contact" style={{color:'#fff', fontWeight:'bold'}}>Contact</Nav.Link>            
+         </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
