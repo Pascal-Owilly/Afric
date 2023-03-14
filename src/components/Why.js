@@ -6,6 +6,7 @@ import plant2 from '../img/plant2.jpeg';
 import plant3 from '../img/plant3.jpeg';
 import './Why.css';
 
+
 const images = [img6, plant4, plant2, plant3];
 
 const MySection = () => {
