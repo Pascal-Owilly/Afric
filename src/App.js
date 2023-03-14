@@ -9,7 +9,7 @@ import SocialEnterprise from './components/SocialEnterprise';
 import './App.css';
 
 function App() {
-  return (
+  return (  
     <Router>
       <NavigationBar />
       <Routes>

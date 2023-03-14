@@ -30,7 +30,7 @@ const MySection = () => {
      
         </Col>
         <Col md={4}>
-          <h4 className="mt-0">Why We Need Seaweed Fertilizers</h4>
+          <h5 className="mt-4">Why We Need Seaweed Fertilizers</h5>
            <Card className="what-card mt-2">  <p>Rich in essential minerals and plant growth hormones that promote plant growth, enhance the plant's ability to withstand environmental stresses and boost crop yields.</p></Card>
         <Card className="what-card mt-2">     <p>Easy to apply, can be used on various crops and plants, and are safe for the environment and human health.</p></Card>
         {images.slice(0, cardsToShow).map((img, index) => (

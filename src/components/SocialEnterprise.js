@@ -21,7 +21,7 @@ const MySection = () => {
      <hr />
      <Card className="enterprise-card">  <Image className="rounded-circle" src={img14} style={{height:'100%'}} fluid /> </Card>
      <p>Mwani Africa's social enterprise model leverages innovation to assist local coastal community smallholder farmers, mostly women and youth, in climate resilient Seaweed farming.</p>
-     <Card className="enterprise-card" style={{width:'100%', height:'60vh'}}>  <Image className="rounded" src={person1} style={{height:'100%'}} fluid /> </Card>
+     <Card className="enterprise-card" style={{width:'100%', height:'50vh'}}>  <Image className="rounded" src={person1} style={{height:'100%'}} fluid /> </Card>
         </Col>
         <Col md={3}>
           <h5 className="mt-0">Fertilizers</h5>
