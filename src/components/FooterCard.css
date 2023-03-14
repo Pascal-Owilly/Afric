@@ -1,0 +1,12 @@
+.footer-card {
+    transform: translateX(100%);
+  }
+  
+  .footer-card.show {
+    transform: translateX(0%);
+  }
+  
+  .footer-card.hide {
+    transform: translateX(-100%);
+  }
+  

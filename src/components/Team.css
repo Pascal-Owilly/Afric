@@ -1,3 +1,5 @@
+
+
 .slideshow__slide {
     display: flex;
     align-items: center;
@@ -91,7 +93,6 @@
   /* Set max width for the container */
 .slideshow-container {
   background-color: #111;
-   background-image: url('../img/img11.jpeg');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;

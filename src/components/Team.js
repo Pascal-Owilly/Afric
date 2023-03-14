@@ -84,9 +84,9 @@ function App() {
 
   return (
     <>
-    <Container fluid style={{maxHeight:'100vh', width:'100%', overflow:'hidden'}} className="slideshow-container">
-      <h3 style={{textAlign:'center', marginRight:'4rem',marginTop:'11rem', backgroundColor:'rgba(14, 10, 10, 0.7)',opacity:'0.8', color:'#ffffff', width:'40%',borderRadius:'30px', fontFamily:'serif'}}>The Team</h3>
-    <div style={{textAlign:'center', marginTop:'4rem'}} >
+    <Container fluid style={{maxHeight:'90vh', width:'100%', overflow:'hidden'}} className="slideshow-container">
+      <h3 style={{textAlign:'center', marginRight:'0',marginTop:'11rem', backgroundColor:'rgba(14, 10, 10, 0.7)',opacity:'0.8', color:'#ffffff', width:'40%',borderRadius:'30px', fontFamily:'serif'}}>The Team</h3>
+    <div style={{textAlign:'center', marginTop:'1rem'}} >
        <div className="slideshow">
         <div ref={slideshowContainerRef} className="slideshow__wrapper">
           {teamMembers.map((member, index) => (

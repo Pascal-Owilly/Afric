@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-
 function Footer() {
   return (
     <>
@@ -19,7 +18,7 @@ function Footer() {
          allowFullScreen="" loading="lazy"></iframe> 
         
             </Col>
-            <Col md={8} className='mt-0'>   
+            <Col md={6} className='mt-0'>   
             
            
               <p className="text-white"  style={{ color: 'text-center' }}> <span style={{ color: '#ffffff', fontWeight:'bold', fontSize:'1.2rem', textAlign:'center', fontFamily:'verdana' }}>Disclaimer: </span>The information on this website is for general informational purposes only and should not be considered as professional advice.
@@ -28,14 +27,18 @@ function Footer() {
                In no event will we be liable for any loss or damage including without limitation,
                 indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
             </Col>
+            <Col md={2}>
+
+            </Col>
             </Row>
-          <Row style={{backgroundColor:'gold'}}>
+          <Row style={{backgroundColor:'goldenrod'}}>
             <Col md={12} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
             <p style={{ color: 'black', fontWeight:'bold', textAlign:'center' }}>Mwani Africa &copy; 2023</p> 
             </Col>           
           </Row>
         </Container>
-      </div>
+      </div>    
+     
     </footer>
     </>
   );

@@ -30,7 +30,7 @@ function NavigationBar() {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}   />
-          <Navbar.Collapse id="basic-navbar-nav" className='text-center' style={{border:'none', backgroundColor:'gold', height:'8vh', width:'90%', color:'white'}}>
+          <Navbar.Collapse id="basic-navbar-nav" className='text-center' style={{border:'none', backgroundColor:'goldenrod', height:'8vh', width:'90%', color:'white'}}>
           <Nav className="justify-content-end" style={{ width: "100%" }}>
             <Nav.Link as={Link} to="/" className="nav-links" style={{fontWeight:'bold'}}>Home</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-links" style={{fontWeight:'bold'}}>About</Nav.Link>

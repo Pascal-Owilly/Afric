@@ -1,5 +1,5 @@
 .nav-links{
-    font-size: 18px;
+    font-size: 16px;
     color: purple;
 }
 
@@ -7,7 +7,7 @@
     text-decoration: none;
     background-color: purple;
     color: white;
-    font-size: 21px;
+    font-size: 18px;
     transition: all 0.4s ease-in-out;
    
 }

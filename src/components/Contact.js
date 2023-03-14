@@ -26,6 +26,8 @@ function ContactForm() {
   };
 
   return (
+    <>
+    <div style={{height:'100vh'}}>
     <form onSubmit={handleSubmit}>
       <label>
         Name:
@@ -39,6 +41,8 @@ function ContactForm() {
       <br />
       <button type="submit">Submit</button>
     </form>
+    </div>
+    </>
   );
 }
 
