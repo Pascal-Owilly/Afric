@@ -104,7 +104,7 @@ function App() {
                 src={member.image}
                 alt={member.name}       
               />
-              <div className="slideshow__info" style={{color:'greenyellow', maxWidth:'30%'}}>
+              <div className="slideshow__info" style={{color:'goldenrod', maxWidth:'30%'}}>
                 <h2 className="slideshow__name">{member.name}</h2>
                 <p style={{color:'#fff'}} className="slideshow__position">{member.position}</p>
                 <p style={{color:'#efefef'}} className="slideshow__contribution">{member.contribution}</p>
