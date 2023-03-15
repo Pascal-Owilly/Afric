@@ -1,57 +1,91 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './Contact.css';
+import './Why.css';
 
-function ContactForm() {
+const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    fetch('https://example.com/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ name, email, message })
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        // Reset form fields
-        setName('');
-        setEmail('');
-        setMessage('');
-      })
-      .catch(error => {
-        console.error(error);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:8000/contact/', {
+        name,
+        email,
+        message,
       });
+      setStatus('success');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    }
   };
 
   return (
-    <Card className='mt-5 mb-5 contact-card' style={{backgroundColor:'goldenrod', margin:'auto'}}>
+    <>
+
+    <h5 className='text-center' style={{margin:'auto'}}>Send us a message we'll get right back to you</h5>
+
+    <Card className='contact-card'>
       <Card.Body>
         <Form onSubmit={handleSubmit}>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter your email address" value={email} onChange={(event) => setEmail(event.target.value)} />
+          <Form.Group controlId="formName">
+            <Form.Label>Name:</Form.Label>
+            <Form.Control
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
           </Form.Group>
 
-          <Form.Group controlId="formBasicMessage">
-            <Form.Label>Message</Form.Label>
-            <Form.Control placeholder='Enter message here' as="textarea" rows={3} value={message} onChange={(event) => setMessage(event.target.value)} />
+          <Form.Group controlId="formEmail">
+            <Form.Label>Email:</Form.Label>
+            <Form.Control
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </Form.Group>
 
-          <Button className='mt-3' style={{width:'100%'}} variant="success" type="submit">
-            Submit
+          <Form.Group controlId="formMessage">
+            <Form.Label>Message:</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows={3}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+          </Form.Group>
+
+          <Button className='mt-3 text-white' variant="transparent" type="submit" style={{width:'100%', backgroundColor:'purple'}}>
+            Send Message
           </Button>
+
+          {status === 'success' && (
+            <p className="mt-3 text-white">Thank you for contacting us. We will get back to you as soon a possible!</p>
+          )}
+          {status === 'error' && (
+            <p className="mt-3 text-danger">
+              There was an error sending your message.
+            </p>
+          )}
         </Form>
       </Card.Body>
     </Card>
+    </>
   );
-}
+};
 
 export default ContactForm;

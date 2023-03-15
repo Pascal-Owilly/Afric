@@ -9,6 +9,7 @@ import How from './How';
 function Home() {
   return (
     <>
+    
       <Hero />
       <Card />
       <Why />

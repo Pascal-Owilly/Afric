@@ -6,17 +6,20 @@ import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import Team from './components/Team';
 import SocialEnterprise from './components/SocialEnterprise';
-import './App.css';
+import './App.css'; 
 
 function App() {
+
+  
   return (  
     <Router>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/socialent" element={<SocialEnterprise />} />
+        <Route path="/socialent" element={<SocialEnterprise />}  />
         <Route path="/team" element={<Team />} />
       </Routes>
       <Footer />
