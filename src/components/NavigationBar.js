@@ -20,7 +20,7 @@ function NavigationBar() {
       </style>
       <Navbar style={{backgroundColor:'purple'}} expand="lg" expanded={expanded}>
         <Container fluid>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/home">
             <img
               src={logo}
               width="75"

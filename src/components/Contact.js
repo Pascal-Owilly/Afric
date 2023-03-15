@@ -35,9 +35,9 @@ const ContactForm = () => {
 <div className='contact-section'>
 <div className='contact-section-content'>
 
-    <h5 className='text-center' style={{margin:'auto'}}>Send us a message we'll get right back to you</h5>
+    <h5 className='text-center text-white' style={{margin:'auto'}}>Send us a message we'll get right back to you</h5>
 
-    <Card className='contact-card mt-4'>
+    <Card className='contact-card text-white mt-4'>
       <Card.Body>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
@@ -47,16 +47,19 @@ const ContactForm = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
+              style={{backgroundColor: 'rgb(255, 255, 255, 0.7)', border:'none'}}
             />
           </Form.Group>
 
           <Form.Group controlId="formEmail">
             <Form.Label>Email:</Form.Label>
             <Form.Control
+            className='input'
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              style={{backgroundColor: 'rgb(255, 255, 255, 0.7)', border:'none'}}
             />
           </Form.Group>
 
@@ -68,10 +71,11 @@ const ContactForm = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
+              style={{backgroundColor: 'rgb(255, 255, 255, 0.7)', border:'none'}}
             />
           </Form.Group>
 
-          <Button className='mt-3 text-white' variant="transparent" type="submit" style={{width:'100%', backgroundColor:'purple'}}>
+          <Button className='mt-3 text-white' variant="transparent" type="submit" style={{width:'100%', backgroundColor:'rgb(128, 0, 128, 0.5)'}}>
             Send Message
           </Button>
 

@@ -16,14 +16,13 @@ margin: auto;
 .contact-card:hover{
   transform: scale(1.05);
 box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-background-color: rgba(0,0,0,.8);
+background-color: rgba(0,0,0,.5);
 border-radius: none;
 }
 
 .contact-section{
   background-image: url('../img/img15.jpeg');
-  height: 90vh;
-  color: white;
+
   
 }
 
@@ -31,6 +30,12 @@ border-radius: none;
     background-color: rgba(0, 0, 0, 0.8);
     height: 90vh;
    
+}
+
+input::placeholder {
+  font-weight: bold;
+  
+  color: white;
 }
 
 
