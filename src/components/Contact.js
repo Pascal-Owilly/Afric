@@ -32,10 +32,12 @@ const ContactForm = () => {
 
   return (
     <>
+<div className='contact-section'>
+<div className='contact-section-content'>
 
     <h5 className='text-center' style={{margin:'auto'}}>Send us a message we'll get right back to you</h5>
 
-    <Card className='contact-card'>
+    <Card className='contact-card mt-4'>
       <Card.Body>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
@@ -84,6 +86,8 @@ const ContactForm = () => {
         </Form>
       </Card.Body>
     </Card>
+    </div>
+    </div>
     </>
   );
 };

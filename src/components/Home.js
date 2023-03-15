@@ -5,11 +5,9 @@ import Team from './Team';
 import Why from './Why';
 import How from './How';
 
-
 function Home() {
   return (
-    <>
-    
+    <>   
       <Hero />
       <Card />
       <Why />
