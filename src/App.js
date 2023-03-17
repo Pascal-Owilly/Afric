@@ -20,6 +20,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/socialent" element={<SocialEnterprise />}  />
         <Route path="/team" element={<Team />} />
+        <Route path="*" element={<Navigate to="/" />} />
+
       </Routes>
       <Footer />
     </Router>
