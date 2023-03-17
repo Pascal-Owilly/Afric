@@ -20,7 +20,7 @@ function NavigationBar() {
       </style>
       <Navbar style={{backgroundColor:'purple'}} expand="lg" expanded={expanded}>
         <Container fluid>
-          <Navbar.Brand.Link as={Link} to="/">
+          <Navbar.Brand>
             <img
               src={logo}
               width="75"
@@ -28,7 +28,7 @@ function NavigationBar() {
               className="d-inline-block align-top rounded"
               alt="Mwani Africa Logo"
             />
-          </Navbar.Brand.Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}   />
           <Navbar.Collapse id="basic-navbar-nav" className='text-center' style={{border:'none', backgroundColor:'goldenrod', height:'8vh', width:'90%', color:'white'}}>
           <Nav className="justify-content-end" style={{ width: "100%" }}>

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
@@ -15,12 +15,12 @@ function App() {
     <Router>
       <NavigationBar />
       <Routes>
-      <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/socialent" element={<SocialEnterprise />}  />
         <Route path="/team" element={<Team />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
 
       </Routes>
       <Footer />
