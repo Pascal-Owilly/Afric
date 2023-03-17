@@ -4,6 +4,7 @@
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  display: none;
 }
 
 .slide-cards {

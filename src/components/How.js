@@ -23,17 +23,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Section = () => {
 
-  const [showMore, setShowMore] = useState(false);
 
-  const handleShowMore = () => {
-    console.log('Show More clicked');
-    setShowMore(true);
-  }
-
-  const handleShowLess = () => {
-    console.log('Show Less clicked');
-    setShowMore(false);
-  }
 
   
   return (
@@ -52,15 +42,15 @@ const Section = () => {
           zIndex: 1,
         }}
       >
-         <Container fluid>
+         <Container fluid style={{height:'100vh'}}> 
         <Row >
-          <Col md={7} className='mb-3'>
+          <Col md={7} className='mb-3' >
             <h1 className='mb-1' style={{ color: '#fff', fontSize: '2rem', marginLeft: '2rem' }}>
               Why We Do It
             </h1>
-            <img className='rounded' src={img12} alt='Mwani Africa' style={{ width: '100%', height: 'auto' }} />
+            <img className='rounded' src={img12} alt='Mwani Africa' style={{ width: '100%' }} />
           </Col>
-          <Col md={5} className='mt-1'>
+          <Col md={5} className='' style={{margin:'auto'}}>
             <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
               <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To boost plant growth and productivity</span>&nbsp;
               Seaweed fertilizer is known to stimulate plant growth and productivity by providing essential nutrients and trace elements that are necessary for healthy plant growth.
@@ -70,17 +60,13 @@ const Section = () => {
               It is natural and organic: Seaweed fertilizer is a natural and organic alternative to synthetic fertilizers, which can be harmful to the environment and can cause soil degradation.
             </p>
          
-                <>
+             
                   <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
                     <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To improve soil health</span>&nbsp;
                     Seaweed fertilizer helps improve soil health by increasing soil organic matter, improving soil structure, and increasing soil moisture retention.
                   </p>
-                  <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
-                    <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To enhance crop quality</span>&nbsp;
-                    Seaweed fertilizer is known to enhance the quality of crops by increasing the sugar content, improving the taste and flavor, and enhancing the color and appearance of fruits and vegetables.
-                  </p>
               
-                </>
+             
 
 
           </Col>
@@ -92,14 +78,7 @@ const Section = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            minHeight: '100vh',
-            padding: '2rem',
-            boxSizing: 'border-box',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
+
             zIndex: 2,
           }}
         >
