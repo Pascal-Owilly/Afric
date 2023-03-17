@@ -38,13 +38,13 @@ const Slides = () => {
 
   return (
     <>
-    <Container fluid className='bg-dark text-white text-center' style={{height:'80vh'}}>
+    <Container fluid >
       <h2 style={{fontFamily:'verdana'}}>The Team</h2>
       <hr />
         <Row>
-        <Col className='team-card' md={{ span: 5, offset: 5 }}>
+        <Col>
         
-    <div className="slides" style={{ borderRadius:'50%',height:'35vh', width:'35vh'}}>
+    <div className="slides" style={{ borderRadius:'50%',height:'100vh', width:'35vh'}}>
       <div className="slider-round-card">
         <div
           className="slider-wrapper-round-card"

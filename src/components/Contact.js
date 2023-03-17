@@ -37,19 +37,26 @@ const ContactForm = () => {
 
     <h5 className='text-center text-white' style={{margin:'auto'}}>Send us a message we'll get right back to you</h5>
 
-    <Card className='contact-card text-white mt-4'>
+    <Card className='contact-card text-white mt-5'>
+    {status === 'success' && (
+            <p className="mt-3 text-white">Thank you for contacting us. We will get back to you as soon a possible!</p>
+          )}
+          {status === 'error' && (
+            <p className="mt-3 text-danger">
+              There was an error sending your message.
+            </p>
+          )}
       <Card.Body>
         <Form onSubmit={handleSubmit}>
-          <Form.Group controlId="formName">
+          {/* <Form.Group controlId="formName">
             <Form.Label>Name:</Form.Label>
             <Form.Control
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              style={{backgroundColor: 'rgb(255, 255, 255, 0.7)', border:'none'}}
             />
-          </Form.Group>
+          </Form.Group> */}
 
           <Form.Group controlId="formEmail">
             <Form.Label>Email:</Form.Label>
@@ -78,15 +85,6 @@ const ContactForm = () => {
           <Button className='mt-3 text-white' variant="transparent" type="submit" style={{width:'100%', backgroundColor:'rgb(128, 0, 128, 0.5)'}}>
             Send Message
           </Button>
-
-          {status === 'success' && (
-            <p className="mt-3 text-white">Thank you for contacting us. We will get back to you as soon a possible!</p>
-          )}
-          {status === 'error' && (
-            <p className="mt-3 text-danger">
-              There was an error sending your message.
-            </p>
-          )}
         </Form>
       </Card.Body>
     </Card>

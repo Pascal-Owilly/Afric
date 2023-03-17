@@ -66,6 +66,21 @@ transition: 0.5s ease-in-out;
   color: #ac8d8d;
 }
 
+.linkedin:hover {
+  color: #ddd2d2;
+  font-size: 24px;
+  background-color: purple;
+  transition: 0.5s ease-in-out;
+}
+
+.github:hover {
+  color: #ddcbcb;
+  font-size: 24px;
+  background-color: purple;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
 .card-details {
   display: flex;
   flex-direction: column;
