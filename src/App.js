@@ -8,20 +8,17 @@ import Team from './components/Team';
 import SocialEnterprise from './components/SocialEnterprise';
 import './App.css'; 
 
-function App() {
-
-  
+function App() {  
   return (  
     <Router>
       <NavigationBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} exact />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/socialent" element={<SocialEnterprise />}  />
         <Route path="/team" element={<Team />} />
-        {/* <Route path="*" element={<Navigate to="/" />} /> */}
-
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </Router>
