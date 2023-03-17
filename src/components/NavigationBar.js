@@ -21,22 +21,24 @@ function NavigationBar() {
       <Navbar style={{backgroundColor:'purple'}} expand="lg" expanded={expanded}>
         <Container fluid>
           <Navbar.Brand>
-            <img
-              src={logo}
-              width="75"
-              height="70"
-              className="d-inline-block align-top rounded"
-              alt="Mwani Africa Logo"
-            />
-          </Navbar.Brand>
+          <Link to="/">
+              <img
+                src={logo}
+                width="75"
+                height="70"
+                className="d-inline-block align-top rounded"
+                alt="Mwani Africa Logo"
+              />
+            </Link>
+            </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}   />
           <Navbar.Collapse id="basic-navbar-nav" className='text-center' style={{border:'none', backgroundColor:'goldenrod', height:'8vh', width:'90%', color:'white'}}>
           <Nav className="justify-content-end" style={{ width: "100%" }}>
-            <Nav.Link as={Link} to="/" className="nav-links" style={{fontWeight:'bold'}}>Home</Nav.Link>
-            <Nav.Link as={Link} to="/about" className="nav-links" style={{fontWeight:'bold'}}>About</Nav.Link>
-            <Nav.Link as={Link} to="/team" className="nav-links" style={{fontWeight:'bold'}}>The Team</Nav.Link>
-            <Nav.Link as={Link} to="/socialent" className="nav-links" style={{fontWeight:"bold"}}>Social Enterprise</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-links" style={{fontWeight:'bold'}}>Contact</Nav.Link>            
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/" className="nav-links" style={{fontWeight:'bold'}}>Home</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/about" className="nav-links" style={{fontWeight:'bold'}}>About</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/team" className="nav-links" style={{fontWeight:'bold'}}>The Team</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/socialent" className="nav-links" style={{fontWeight:"bold"}}>Social Enterprise</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/contact" className="nav-links" style={{fontWeight:'bold'}}>Contact</Nav.Link>            
          </Nav>
           </Navbar.Collapse>
         </Container>
