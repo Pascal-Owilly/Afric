@@ -4,22 +4,22 @@ import FooterCard from './FooterCard';
 
 function Footer() {
   return (
-    <footer className="" style={{backgroundColor:'purple', color:'white'}}>
+    <footer className="" style={{backgroundColor:'rgb(86, 51, 211)', color:'white'}}>
       <Container fluid>
         <Row>
           <Col md={4}>
             <h5 style={{color:'#ddd2d2'}}>Site Links</h5>
-            <ul className="list-unstyled text-white text-muted">
-              <li><Link className="list-unstyled text-white text-muted" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/home">Home</Link></li>
-              <li><Link className="list-unstyled text-white text-muted" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/about">About Us</Link></li>
-              <li><Link className="list-unstyled text-white text-muted" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/contact">Contact</Link></li>
-              <li><Link className="list-unstyled text-white text-muted" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/team">Team</Link></li>
-              <li><Link className="list-unstyled text-white text-muted" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/socialent">Social Enterprise</Link></li>
+            <ul className="list-unstyled text-white ">
+              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/home">Home</Link></li>
+              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/about">About Us</Link></li>
+              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/contact">Contact</Link></li>
+              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/team">Team</Link></li>
+              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/socialent">Social Enterprise</Link></li>
             </ul>
           </Col>
           <Col md={4}>
             <h5  style={{color:'#ddd2d2'}}>Disclaimer</h5>
-            <p className="list-unstyled text-white text-muted">Welcome to our site! Our seaweed fertilizers are perfect for your agricultural needs, but we do recommend testing on a small scale before widespread use, as each plant species is unique. Please follow all instructions and safety precautions when using our products.</p>
+            <p className="list-unstyled text-white">Welcome to our site! Our seaweed fertilizers are perfect for your agricultural needs, but we do recommend testing on a small scale before widespread use, as each plant species is unique. Please follow all instructions and safety precautions when using our products.</p>
           </Col>
           <Col md={4}>
             <h5 style={{color:'#ddd2d2'}}>Location</h5>
@@ -32,9 +32,9 @@ function Footer() {
             ></iframe>
           </Col>
         </Row>
-        <Row  style={{backgroundColor:'goldenrod'}}>
+        <Row  style={{backgroundColor:'rgb(226, 182, 70)'}}>
           <Col md={2} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
-            <p style={{ color: 'black', fontWeight:'bold', textAlign:'center' }}>Mwani Africa &copy; 2023</p> 
+            <p style={{ color: '#fff', fontWeight:'bold', textAlign:'center' }}>Mwani Africa &copy; 2023</p> 
           </Col> 
           <Col className='text-center' md={8} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
           </Col> 

@@ -17,7 +17,7 @@ const MySection = () => {
       <Row className="enterprise">
         <Col md={6} style={{height:'100%'}}>
 
-        <h1 className=' ' style={{ color: '#111', fontSize: '1.5rem', marginLeft:'2rem' }}>Social Enterprise</h1>     
+        <h1 className=' ' style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'2rem' }}>Social Enterprise</h1>     
      <hr />
      <Card className="enterprise-card">  <Image className="rounded-circle" src={img14} style={{height:'100%'}} fluid /> </Card>
      <p>Mwani Africa's social enterprise model leverages innovation to assist local coastal community smallholder farmers, mostly women and youth, in climate resilient Seaweed farming.</p>

@@ -29,9 +29,8 @@ const Section = () => {
   return (
     <section
       style={{
-        backgroundImage: `url(${img7})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+       
+        
         minHeight: 'auto',
         position: 'relative',
       }}
@@ -42,26 +41,26 @@ const Section = () => {
           zIndex: 1,
         }}
       >
-         <Container fluid style={{height:'100vh'}}> 
+         <Container style={{height:'100vh'}}> 
         <Row >
           <Col md={7} className='mb-3' >
-            <h1 className='mb-1' style={{ color: '#fff', fontSize: '2rem', marginLeft: '2rem' }}>
+            <h1 className='mb-1' style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'2rem' }}>
               Why We Do It
             </h1>
             <img className='rounded' src={img12} alt='Mwani Africa' style={{ width: '100%' }} />
           </Col>
           <Col md={5} className='' style={{margin:'auto'}}>
-            <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
+            <p style={{ color: 'white', fontSize: '1rem', marginLeft: '2rem' }}>
               <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To boost plant growth and productivity</span>&nbsp;
               Seaweed fertilizer is known to stimulate plant growth and productivity by providing essential nutrients and trace elements that are necessary for healthy plant growth.
             </p>
-            <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
+            <p style={{ color: 'white', fontSize: '1rem', marginLeft: '2rem' }}>
               <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To save the planet</span>&nbsp;
               It is natural and organic: Seaweed fertilizer is a natural and organic alternative to synthetic fertilizers, which can be harmful to the environment and can cause soil degradation.
             </p>
          
              
-                  <p style={{ color: 'green', fontSize: '1rem', marginLeft: '2rem' }}>
+                  <p style={{ color: 'white', fontSize: '1rem', marginLeft: '2rem' }}>
                     <span style={{ color: '#fff', fontSize: '1rem', marginLeft: '0' }}>To improve soil health</span>&nbsp;
                     Seaweed fertilizer helps improve soil health by increasing soil organic matter, improving soil structure, and increasing soil moisture retention.
                   </p>
@@ -92,8 +91,6 @@ const Section = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: '#111',
-          opacity: 0.9,
           zIndex: 0,
         }}
       ></div>

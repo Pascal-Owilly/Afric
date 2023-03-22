@@ -6,7 +6,7 @@ import './AboutUs.css';
 const AboutUs = () => {
   return (
     <div>
-      <Row style={{backgroundColor:'goldenrod'}}>
+      <Row style={{backgroundColor:'rgb(226, 182, 70)'}}>
         <Col md={9}>
           <Card
              style={{

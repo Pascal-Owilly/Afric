@@ -15,27 +15,34 @@ import cimg6 from '../img/cimg6.jpeg';
 import './CardHero.css';
 
 function CardHero() {
-  const images = [    person2,   img5,    img4,    img1,    person1,   cimg5 ];
+  const images = [person2, img5, img4, img1, person1, cimg5];
+  const texts = [
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.t",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.t",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita."
+  ];
 
   return (
-    <Carousel className="hero-card" indicators={false}>
+    <Carousel className="hero-card" indicators={false} style={{backgroundColor:'rgb(86, 51, 211)', alignItems:'center', justifyContent:'center', color:'white', fontSize:'18px'}}>
       {images.map((image, index) => (
         <Carousel.Item key={index}>
-          <div
-            className="card-container"
-            style={{ position: 'relative' }}
-          >
-            <Card>
-              <Card.Img
-                variant="top"
-                src={image}
-                className="img-fluid"
-                style={{
-                  
-                }}
-              />
-              <Card.Body></Card.Body>
-            </Card>
+          <div className="card-container" style={{ position: "relative" }}>
+            {index % 2 === 0 ? (
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src={image}
+                  className="img-fluid"
+                />
+              </Card>
+            ) : (
+              <p className='hero-card-text m-5' style={{display:'flex', alignItems:'center', justifyContent:'center', height:'23vh'}} >
+                {texts[index]}
+              </p>
+            )}
             <div className="card-overlay"></div>
           </div>
         </Carousel.Item>
