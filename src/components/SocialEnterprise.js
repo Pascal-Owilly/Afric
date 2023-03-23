@@ -4,6 +4,7 @@ import how7 from '../img/how7.jpeg';
 import img14 from '../img/img14.jpeg';
 import person1 from '../img/person1.jpeg';
 import './SocialEnterprise.css';
+import 'animate.css';
 
 const images = [ img14, how7, person1];
 

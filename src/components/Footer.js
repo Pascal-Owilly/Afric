@@ -4,8 +4,11 @@ import FooterCard from './FooterCard';
 
 function Footer() {
   return (
+    <>
+   
     <footer className="" style={{backgroundColor:'rgb(86, 51, 211)', color:'white'}}>
-      <Container fluid>
+    
+      <Container>
         <Row>
           <Col md={4}>
             <h5 style={{color:'#ddd2d2'}}>Site Links</h5>
@@ -32,7 +35,9 @@ function Footer() {
             ></iframe>
           </Col>
         </Row>
-        <Row  style={{backgroundColor:'rgb(226, 182, 70)'}}>
+        <hr />
+        <Row  style={{backgroundColor:'rgb(87, 51, 211)'}}>
+        
           <Col md={2} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
             <p style={{ color: '#fff', fontWeight:'bold', textAlign:'center' }}>Mwani Africa &copy; 2023</p> 
           </Col> 
@@ -51,6 +56,7 @@ function Footer() {
           </Row>
       </Container>
     </footer>
+    </>
   );
 }
 

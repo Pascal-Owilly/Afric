@@ -12,6 +12,7 @@ import img14 from '../img/img14.jpeg';
 import img15 from '../img/img15.jpeg';
 import { Container, Row, Col, Carousel, Card } from 'react-bootstrap';
 import './Cards.css';
+import 'animate.css';
 
 const text = [
   ['', 'SUSTAIN'],
@@ -39,8 +40,8 @@ const CardSection = () => {
           <Row>
              
            
-          <Col md={8}  className='mt-5'>
-          <h1 className='mt-2' style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'2rem' }}>Who We Are</h1>           
+          <Col md={8}  className='mt-5 fade-in'>
+          <h1 className='mt-2 animate__animated animate__bounce' style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'2rem' }}>Who We Are</h1>           
           <p className='pt-0' style={{ color: '#fff', fontSize: '18px', fontFamily:'sanSerif' }}>
                We are Mwani Africa, a Kenyan (East Africa) start-up providing a circular zero-waste solution of Ocean co-products, up-cycling to produce bio-stimulants and soil conditioner.
                 Mwani Africa's social enterprise leverages the Seaweed 
@@ -116,7 +117,7 @@ const CardSection = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgb(226, 182, 70)',
+          backgroundColor: 'rgb(86, 51, 211)',
           zIndex: 0,
         }}
       ></div>

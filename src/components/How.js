@@ -70,6 +70,7 @@ const Section = () => {
 
           </Col>
         </Row>
+        
       </Container>
         <div
           style={{
@@ -94,6 +95,7 @@ const Section = () => {
           zIndex: 0,
         }}
       ></div>
+      <hr />
     </section>
   );
 };

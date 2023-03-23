@@ -12,17 +12,17 @@ import img4 from '../img/img4.jpeg';
 import cimg1 from '../img/cimg1.jpeg';
 import cimg5 from '../img/cimg5.jpeg';
 import cimg6 from '../img/cimg6.jpeg';
+import heroimg from '../img/heroimg.jpeg';
 import './CardHero.css';
 
 function CardHero() {
-  const images = [person2, img5, img4, img1, person1, cimg5];
+  const images = [person1, cimg1, heroimg, cimg6];
   const texts = [
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.t",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.t",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita.",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur exercitationem, dolorem commodi. Et, expedita."
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
+      
   ];
 
   return (
@@ -39,7 +39,7 @@ function CardHero() {
                 />
               </Card>
             ) : (
-              <p className='hero-card-text m-5' style={{display:'flex', alignItems:'center', justifyContent:'center', height:'23vh'}} >
+              <p className='hero-card-text text-center   m-5' style={{display:'flex', alignItems:'center', justifyContent:'center', height:'23vh'}} >
                 {texts[index]}
               </p>
             )}
