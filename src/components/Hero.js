@@ -26,7 +26,7 @@ function CardHero() {
   ];
 
   return (
-    <Carousel className="hero-card" indicators={false} style={{backgroundColor:'rgb(86, 51, 211)', alignItems:'center', justifyContent:'center', color:'white', fontSize:'18px'}}>
+    <Carousel className="hero-card mt-5" indicators={true} style={{backgroundColor:'rgb(86, 51, 211)', alignItems:'center', justifyContent:'center', color:'white', fontSize:'18px'}}>
       {images.map((image, index) => (
         <Carousel.Item key={index}>
           <div className="card-container" style={{ position: "relative" }}>
