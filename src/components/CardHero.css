@@ -1,9 +1,5 @@
 /* Default styles for all devices */
 
-.hero-card {
-  height: 40vh;
-}
-
 .card-container {
   position: relative;
 }

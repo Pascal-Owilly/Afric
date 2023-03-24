@@ -23,8 +23,8 @@ const FooterCard = ({ name, position, image, linkedin, github }) => {
     >
 
 <div className="card-details">
-        <span  className='text-muted'>Developed by:</span>
-         <a target='_blank' style={{color:'purple', textDecoration:'none'}} href={linkedin} className="name">{name} </a>
+        <span  className='text-white'>Developed by:</span>
+         <a target='_blank' style={{color:'#000092', textDecoration:'none'}} href={linkedin} className="name">{name} </a>
         
         {/* <span className="position">{position}</span> */}
       </div>
