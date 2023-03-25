@@ -6,6 +6,13 @@ import {Navbar,Nav} from 'react-bootstrap';
 
 function NavigationBar() {
 
+  const [expanded, setExpanded] = useState(true);
+
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
+
+
 
   // logo
   const [logoImg, setLogoImg] = useState([logo]);
