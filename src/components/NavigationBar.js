@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './NavigationBar.css';
-import logo from '../img/logo.jpg'
+import logo from '../img/logo.jpg';
+import {Link} from 'react-router-dom';
+import {Navbar,Nav} from 'react-bootstrap';
 
 function NavigationBar() {
 
@@ -52,77 +54,24 @@ function NavigationBar() {
         height: '100%',
         }}
         >
-        <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration:'none' }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration:'none' }}>
         <img
         src={logo}
         alt="Logo"
         style={{ height: '45px', marginLeft: '-4.8rem' }}
         />
               
-        </a>
-        <ul
-        style={{
-        display: 'flex',
-        alignItems: 'center',
-        listStyle: 'none',
-        margin: '0',
-        padding: '0',
-        }}
-        >
-        <li>
-        <a
-        href="/"
-        style={{
-        fontWeight: 'bold',
-        color: 'inherit',
-        textDecoration: 'none',
-        padding: '20px',
-        
-        }}
-        >
-        Home
-        </a>
-        </li>
-        <li>
-        <a
-        href="/"
-        style={{
-        fontWeight: 'bold',
-        color: 'inherit',
-        textDecoration: 'none',
-        padding: '20px',
-        }}
-        >
-        About
-        </a>
-        </li>
-        <li>
-        <a
-        href="/about"
-        style={{
-        fontWeight: 'bold',
-        color: 'inherit',
-        textDecoration: 'none',
-        padding: '20px',
-        }}
-        >
-        Contact
-        </a>
-        </li>
-        <li>
-        <a
-        href="/"
-        style={{
-        fontWeight: 'bold',
-        color: 'inherit',
-        textDecoration: 'none',
-        padding: '20px',
-        }}
-        >
-        Explore
-        </a>
-        </li>
-        </ul>
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}   />
+          <Navbar.Collapse id="basic-navbar-nav" className='text-center' style={{border:'none', backgroundColor:'goldenrod', height:'8vh', width:'90%', color:'white'}}>
+          <Nav className="justify-content-end" style={{ width: "100%" }}>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/" className="nav-links" style={{fontWeight:'bold'}}>Home</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/about" className="nav-links" style={{fontWeight:'bold'}}>About</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/team" className="nav-links" style={{fontWeight:'bold'}}>The Team</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/socialent" className="nav-links" style={{fontWeight:"bold"}}>Social Enterprise</Nav.Link>
+            <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }}  to="/contact" className="nav-links" style={{fontWeight:'bold'}}>Contact</Nav.Link>            
+         </Nav>
+          </Navbar.Collapse>
         </div>
         {/* <hr className='hr-nav' /> */}
         </nav>
