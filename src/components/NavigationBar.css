@@ -1,17 +1,17 @@
 .nav-links{
-    font-size: 16px;
-    color: #fff;
-    color: rgb(243, 201, 93);
+  color: #ffffff;
+  text-align: left;
     
 }
 
+.mobile-hr{
+  display: none;
+}
+
+
+
 .nav-links:hover{
     text-decoration: underline;
-    background-color: rgb(86, 51, 211);
-    color: rgb(243, 201, 93);
-    font-size: 18px;
-    transition: all 0.4s ease-in-out;
-    
    
 }   
 
@@ -23,7 +23,7 @@
 
 
 .navbar {
-    background-color: rgb(86, 51, 211);
+   background-color: black;
 }
 
 .navbar.scrolled {
@@ -31,8 +31,72 @@
     background-color: #212529;
     transition: height 0.3s ease-in-out;
   }
-  
-  .navbar.scrolled .nav-link {
-    color: golden;
-  }
+
+  @media (max-width: 991.98px) {
+    .navbar-toggler {
+      top: 0;
+      position: relative;
+      padding: 0;
+      width: 50px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      margin-left: 2rem;
+    }
+
+      .navbar{
+        padding-bottom: 0 ;
+      }
+      .menu-text {
+        position: absolute;
+        top: 4%;
+        left: 0;
+        margin-left: -9.6rem;
+        transform: translate(-50, -50%);
+        font-size: 14px;
+        font-weight:lighter;
+        background-color: transparent;
+        color: white;
+        text-align: left;
+      }
+
+      .navbar-toggler-icon{
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-linecap:   ;
+        stroke-miterlimit: 10;
+        margin-left: -4rem;
+        margin-top: -2rem;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .mobile-hr {
+        display: block;
+        width: 350px;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid white;
+        margin: 1rem 0;
+      }
+    }
+    
+
+    .navbar-toggler {
+      text-decoration: none;
+    }
+
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: transparent;
+    }
+
+    .vertical-line {
+      border-left: 1px solid white;
+      height: 100px;
+    }
+   
+    
   

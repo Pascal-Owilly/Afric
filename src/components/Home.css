@@ -1,4 +1,23 @@
-body{
-    background-color: rgb(86, 51, 211);
-    color: white;
+body {
+    background: #ffffff;
+    font: 400 13px/18px "Poppins",Helvetica,sans-serif;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: Poppins, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #777777;
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
