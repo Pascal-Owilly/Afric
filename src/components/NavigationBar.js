@@ -15,6 +15,24 @@ function NavigationBar() {
     setExpanded(!expanded);
   };
 
+  const [navbarBackground, setNavbarBackground] = useState('black');
+  const [navbarHeight, setNavbarHeight] = useState('8vh');
+  const [linkFontSize, setLinkFontSize] = useState('1rem');
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 100) {
+      setNavbarBackground('#000092');
+    } else {
+      setNavbarBackground('black');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
+
   const [showSearch, setShowSearch] = useState(false);
 
   const handleSearchClick = () => {
@@ -47,12 +65,12 @@ function NavigationBar() {
           }
         }`}
       </style>
-      <Navbar className='navbar' fixed='top' expand="lg" expanded={expanded}>
+      <Navbar className='navbar' fixed='top' expand="lg" expanded={expanded} style={{backgroundColor: navbarBackground}}>
         <Container>
           <Row className="align-items-center">
             <Col md={6} className="text-md-start text-center">
               <Navbar.Brand>
-                <Link to="/" style={{textDecoration:'none',color:'white', padding:'10px'}}> <span>Mwani</span>
+                <Link to="/" title='Home' style={{textDecoration:'none',color:'white', padding:'10px'}}> <span>Mwani</span>
                   <img
                     src={logo}
                     width="50px"
@@ -70,7 +88,7 @@ function NavigationBar() {
                 <span className="navbar-toggler-icon text-white"></span> 
                 <span className="menu-text">MENU</span>  
               </Navbar.Toggle>
-              <span className="search-icon" onClick={handleSearchClick}>
+              <span className="search-icon" title="Enter search term" onClick={handleSearchClick}>
                 <Search /> 
                 </span>
                 <span className='linkedin' style={{marginRight:''}}>
@@ -80,13 +98,13 @@ function NavigationBar() {
 
           </Row>
 
-          <Navbar.Collapse id="basic-navbar-nav" className='text-center bg-light text-dark' style={{ border: 'none', height: '8vh', width: '100%', flexDirection: 'row !important' }}>
-            <Nav className="justify-content-start justify-content-md-end p-1" style={{ width: "100%" }}>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          style={{ fontWeight: 'bold', color:'#666666', fontSize:'14px', fontWeight:'400',lineHeight:'26px', width:'100%' }}>Home</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     style={{ fontWeight: 'bold', color:'#666666', fontSize:'14px', fontWeight:'400',lineHeight:'26px', width:'100%' }}>About</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/team" className="nav-links"      style={{ fontWeight: 'bold', color:'#666666', fontSize:'14px', fontWeight:'400',lineHeight:'26px', width:'100%' }}>The Team</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" style={{ fontWeight: "bold", color:'#666666', fontSize:'14px', fontWeight:'400',lineHeight:'26px', width:'100%' }}>Social Enterprise</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   style={{ fontWeight: 'bold', color:'#666666', fontSize:'14px', fontWeight:'400',lineHeight:'26px', width:'100%' }}>Contact</Nav.Link>
+          <Navbar.Collapse id="basic-navbar-nav" className='text-center text-dark' style={{ border: 'none', height: '8vh', flexDirection: 'row !important' }}>
+            <Nav className="justify-content-start justify-content-md-end">
+              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
+              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
+              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/team" className="nav-links"      >The Team</Nav.Link>
+              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
+              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
             </Nav>
             
           </Navbar.Collapse>
