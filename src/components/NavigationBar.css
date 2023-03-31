@@ -21,9 +21,7 @@
   color: #666666;
 }
 
-.nav-links:visited{
-  color: white;
-}
+
 
 .navbar-collapse {
     flex-direction: row !important;
@@ -107,6 +105,11 @@
       background-color: #ffffff;
       margin-left: 1rem;
     }
+
+    .nav-links:visited{
+      color: #666666;
+    }
+
     .linkedin{
       color: #6610f2;
       cursor: pointer;
@@ -116,7 +119,6 @@
       margin-top: 0;
       border: none;
       outline: none;
-      margin-right: 1rem;
     } 
     .nav-links{
       display: flex;
@@ -169,6 +171,9 @@
         outline: none;
         margin-left: 22rem;
       } 
+      .nav-links:visited{
+        color: #ffffff;
+      }
     }
 
     @media (min-width: 989px) {
@@ -183,13 +188,13 @@
       .nav-links{
         display: flex;
         color: #ffffff;
-        font-size: 14px;
+        font-size: 16px;
         margin-left: 1rem;
         font-family: Poppins, Helvetica, sans-serif;
       }
       #basic-navbar-nav{
         width: 100%;
-        margin-left: 5rem;
+        margin-left: 12rem;
       }
       .linkedin{
         color: #6610f2;
