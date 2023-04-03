@@ -4,13 +4,15 @@ import Card from './Cards';
 import Why from './Why';
 import How from './How';
 import './Home.css';
-import Slides from './Slides';
+import SlideComponent  from './SlideComponent';
+
+
 
 function Home() {
   return (
     <>
       <Hero />
-      <Slides />
+      <SlideComponent />
       <Card />
       <Why />
       <How />   

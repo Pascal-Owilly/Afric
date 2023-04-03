@@ -1,0 +1,16 @@
+.carousel-card {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.carousel-card.active {
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-card.next {
+  transform: translateX(100%);
+}
