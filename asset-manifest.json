@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Afric/static/css/main.435bdb83.css",
-    "main.js": "/Afric/static/js/main.79a8d1b8.js",
+    "main.css": "/Afric/static/css/main.25324d4a.css",
+    "main.js": "/Afric/static/js/main.e653bb26.js",
     "static/js/787.713984b8.chunk.js": "/Afric/static/js/787.713984b8.chunk.js",
     "static/media/vid.mp4": "/Afric/static/media/vid.3bfc6b45c7b01e67f243.mp4",
     "static/media/plant2.jpeg": "/Afric/static/media/plant2.f5b39c17a8fbe63eb652.jpeg",
@@ -27,7 +27,6 @@
     "static/media/person3.jpeg": "/Afric/static/media/person3.5c1b469c1f82590dd2dc.jpeg",
     "static/media/img10.jpeg": "/Afric/static/media/img10.9c260a9c701b6872a312.jpeg",
     "static/media/img6.jpeg": "/Afric/static/media/img6.3f48cfa09e5c37ceff0f.jpeg",
-    "static/media/logo.jpg": "/Afric/static/media/logo.d5c6757636f2c51e43c8.jpg",
     "static/media/heroimg.jpeg": "/Afric/static/media/heroimg.d6f5b1bfc32a20b4c419.jpeg",
     "static/media/img5.jpeg": "/Afric/static/media/img5.fb3238b71ec44878d514.jpeg",
     "static/media/img1.jpeg": "/Afric/static/media/img1.6d6b30da36989bfe1cca.jpeg",
@@ -39,13 +38,14 @@
     "static/media/team5.png": "/Afric/static/media/team5.95452246d37b4c16a5b6.png",
     "static/media/team4.png": "/Afric/static/media/team4.dc1a68bc967bdf1aae07.png",
     "static/media/team6.png": "/Afric/static/media/team6.45ad86a5d3d9e4e14593.png",
+    "static/media/logo1.jpeg": "/Afric/static/media/logo1.7637440e4a1fce4fc993.jpeg",
     "index.html": "/Afric/index.html",
-    "main.435bdb83.css.map": "/Afric/static/css/main.435bdb83.css.map",
-    "main.79a8d1b8.js.map": "/Afric/static/js/main.79a8d1b8.js.map",
+    "main.25324d4a.css.map": "/Afric/static/css/main.25324d4a.css.map",
+    "main.e653bb26.js.map": "/Afric/static/js/main.e653bb26.js.map",
     "787.713984b8.chunk.js.map": "/Afric/static/js/787.713984b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.435bdb83.css",
-    "static/js/main.79a8d1b8.js"
+    "static/css/main.25324d4a.css",
+    "static/js/main.e653bb26.js"
   ]
 }
