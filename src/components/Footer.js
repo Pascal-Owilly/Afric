@@ -49,7 +49,7 @@ function Footer() {
               position="Software Developer"
               image="dev.png"
               linkedin="https://www.linkedin.com/in/pascal-owilly-1964aa114"
-              github="https://www.github.com/pascal-owilly"
+              github="https://pascal-owilly.github.io/My-Portfolio/portfolio.html"
             />
 
             </Col>           
