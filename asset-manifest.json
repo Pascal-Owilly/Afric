@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Afric/static/css/main.25324d4a.css",
-    "main.js": "/Afric/static/js/main.e653bb26.js",
+    "main.js": "/Afric/static/js/main.208990f6.js",
     "static/js/787.713984b8.chunk.js": "/Afric/static/js/787.713984b8.chunk.js",
     "static/media/vid.mp4": "/Afric/static/media/vid.3bfc6b45c7b01e67f243.mp4",
     "static/media/plant2.jpeg": "/Afric/static/media/plant2.f5b39c17a8fbe63eb652.jpeg",
@@ -41,11 +41,11 @@
     "static/media/logo1.jpeg": "/Afric/static/media/logo1.7637440e4a1fce4fc993.jpeg",
     "index.html": "/Afric/index.html",
     "main.25324d4a.css.map": "/Afric/static/css/main.25324d4a.css.map",
-    "main.e653bb26.js.map": "/Afric/static/js/main.e653bb26.js.map",
+    "main.208990f6.js.map": "/Afric/static/js/main.208990f6.js.map",
     "787.713984b8.chunk.js.map": "/Afric/static/js/787.713984b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25324d4a.css",
-    "static/js/main.e653bb26.js"
+    "static/js/main.208990f6.js"
   ]
 }
