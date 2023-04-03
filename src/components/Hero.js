@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './CardHero.css';
+
 
 import img5 from '../img/img5.jpeg';
 import img1 from '../img/img1.jpeg';
@@ -26,7 +26,7 @@ function CardHero() {
   ];
 
   return (
-    <Carousel className="hero-card mt-5" indicators={true} style={{backgroundColor:'rgb(86, 51, 211)', alignItems:'center', justifyContent:'center', color:'white', fontSize:'18px'}}>
+    <Carousel className="hero-card" indicators={true} style={{backgroundColor:'rgb(255, 255, 255)', alignItems:'center', justifyContent:'center', color:'#666666', fontSize:'14px'}}>
       {images.map((image, index) => (
         <Carousel.Item key={index}>
           <div className="card-container" style={{ position: "relative" }}>

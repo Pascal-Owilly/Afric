@@ -19,6 +19,10 @@
 @media only screen and (max-width: 575px) {
   .hero-card .img-fluid  {
     height: 40vh;
+    margin-top: 21vh;
+  }
+  .hero-card-text{
+    margin-top: 21vh;
   }
 }
 
@@ -26,6 +30,14 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .hero-card .img-fluid {
     height: 50vh;
+  }
+  
+}
+
+@media only screen and (max-width: 576px) and (max-width: 767px) {
+  .hero-card .img-fluid {
+    height: 46vh;
+    margin-top: 8rem;
   }
 }
 
@@ -38,7 +50,7 @@
 
 /* Large devices (large desktops) */
 @media only screen and (min-width: 992px) {
-  .hero-card .img-fluid {
+  .hero-card .img-fluid .hero-card-text {
     height: 100vh;
   }
 }
