@@ -16,30 +16,27 @@ import heroimg from '../img/heroimg.jpeg';
 import './CardHero.css';
 
 function CardHero() {
-  const images = [person1, cimg1, heroimg, cimg6];
+  const images = [person1, heroimg];
   const texts = [
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam, ducimus eos accusamus suscipit, ex molestias ut ratione minus amet quasi voluptatum adipisci vero aspernatur",
-      
+    "Sustain. Innovate. Circulate",
+    "Sustain. Innovate. Circulate",    
   ];
 
   return (
-    <Carousel className="hero-card" indicators={true} style={{backgroundColor:'rgb(255, 255, 255)', alignItems:'center', justifyContent:'center', color:'#666666', fontSize:'14px'}}>
+    <Carousel className="hero-card carousel-container-hero" indicators={false} fade={true} interval={3000} transition={'zoom'} style={{backgroundColor:'rgb(255, 255, 255)', alignItems:'center', justifyContent:'center', color:'#666666', fontSize:'14px'}}>
       {images.map((image, index) => (
         <Carousel.Item key={index}>
           <div className="card-container" style={{ position: "relative" }}>
             {index % 2 === 0 ? (
-              <Card>
+              <Card>  
                 <Card.Img
                   variant="top"
                   src={image}
-                  className="img-fluid"
+                  className="img-fluid"        
                 />
               </Card>
             ) : (
-              <p className='hero-card-text text-center   m-5' style={{display:'flex', alignItems:'center', justifyContent:'center', height:'23vh'}} >
+              <p className='img-fluid img-text' style={{display:'flex', alignItems:'center', justifyContent:'center', width:'70%'}} >
                 {texts[index]}
               </p>
             )}
@@ -50,5 +47,6 @@ function CardHero() {
     </Carousel>
   );
 }
+
 
 export default CardHero;

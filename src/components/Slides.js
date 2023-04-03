@@ -11,9 +11,9 @@ const Slides = () => {
 
   return (
     <>
-    <Container className="fixed-bottom" fluid style={{ height:'30vh', position:'relative',display:'none'}}>
+    <Container className="fixed-bottom" fluid style={{ height:'30vh', position:'relative',display:'block'}}>
     
-    
+    <p>kjhuifyia iuauigiu iuG</p>
         <Row>
         <Col>
         

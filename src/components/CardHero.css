@@ -20,10 +20,34 @@
   .hero-card .img-fluid  {
     height: 40vh;
     margin-top: 21vh;
+    font-size: 18px;
   }
+  .img-text{
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+  .carousel-item {
+    transition-duration: 0.5s;
+  }
+
   .hero-card-text{
     margin-top: 21vh;
   }
+  .img-text{
+    margin: auto;
+    font-size: 30px;  
+  }
+  .carousel-item {
+    transition-duration: 2s;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+  opacity: 1;
+}
 }
 
 /* Small devices (tablets) */
@@ -31,6 +55,17 @@
   .hero-card .img-fluid {
     height: 50vh;
   }
+
+  .carousel-item {
+    transition-duration: 2s;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+  opacity: 1;
+}
   
 }
 
@@ -39,6 +74,16 @@
     height: 46vh;
     margin-top: 8rem;
   }
+  .carousel-item {
+    transition-duration: 2s;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+  opacity: 1;
+}
 }
 
 /* Medium devices (desktops) */
@@ -46,11 +91,41 @@
   .hero-card .img-fluid {
     height: 60vh;
   }
+  .carousel-item {
+    transition-duration: 2s;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+  opacity: 1;
+}
 }
 
 /* Large devices (large desktops) */
 @media only screen and (min-width: 992px) {
-  .hero-card .img-fluid .hero-card-text {
+  .hero-card .img-fluid  {
     height: 100vh;
   }
+  .carousel-item {
+    transition-duration: 2s;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 100vh;
+    color: #666666;
+  }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    opacity: 1;
 }
+.img-text{
+  width: 100%;
+  font-size: 62px;
+  margin: auto;
+  height: auto;
+}
+}
+
+
