@@ -1,8 +1,6 @@
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 import img5 from '../img/img5.jpeg';
 import img1 from '../img/img1.jpeg';
 import person1 from '../img/person1.jpeg';
@@ -23,7 +21,22 @@ function CardHero() {
   ];
 
   return (
-    <Carousel className="hero-card carousel-container-hero bg-dark text-white" indicators={false} fade={true} interval={3000} transition={'zoom'} style={{backgroundColor:'rgb(255, 255, 255)', alignItems:'center', justifyContent:'center', color:'#666666', fontSize:'14px'}}>
+    <Carousel 
+      className="hero-card carousel-container-hero bg-dark text-white" 
+      indicators={false} 
+      fade={true} 
+      interval={3000} 
+      transition={'zoom'} 
+      style={{
+        backgroundColor:'rgb(255, 255, 255)', 
+        alignItems:'center', 
+        justifyContent:'center', 
+        color:'#666666', 
+        fontSize:'14px'
+      }}
+      prevIcon={<span className="carousel-control-prev-icon" />}
+      nextIcon={<span className="carousel-control-next-icon" />}
+    >
       {images.map((image, index) => (
         <Carousel.Item key={index}>
           <div className="card-container" style={{ position: "relative" }}>
@@ -44,9 +57,9 @@ function CardHero() {
           </div>
         </Carousel.Item>
       ))}
+     
     </Carousel>
   );
 }
-
 
 export default CardHero;

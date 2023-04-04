@@ -1,17 +1,51 @@
-/* Default styles for all devices */
-
-.card-container {
+.container-for-hero-card {
+  overflow: hidden;
   position: relative;
+  margin-top: -15vh;
+  z-index: 1;
+  height: 400px;
+
+} 
+
+/* carousel style */
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: #666666;
+  color: black;
 }
 
-.card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+
+
+
+.footer-text-card{
+  color: #777777;
+  font: 400 22px/24px "Philosopher",Helvetica,sans-serif;
+  margin: 0;
+  text-transform: capitalize; 
+  white-space: nowrap;
 }
+
+.carousel-card-for-hero-card {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  min-height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+
+.carousel-card:hover .rounded-circle {
+  transform: scale(1.1);
+}
+  
+  .carousel-card:hover .card-body {
+  transform: translateY(5%);
+  transition: transform 0.3s ease-in-out;
+  }
+
 
 /* Media queries for different device sizes */
 
@@ -25,6 +59,7 @@
     width: 100%;
     margin: auto;
     height: auto;
+    margin-top: -5rem;
   }
   .carousel-item {
     transition-duration: 0.5s;
@@ -36,11 +71,12 @@
     z-index: 1;
   }
 
- .rounded-circle {
-padding: 7%;
+ .rounded-circle-hero-card {
+    width: 100%;
+    padding: 10%;
   }
   .carousel-card {
-    width: 100%;
+    width: 80%;
     margin: auto;
   }
 
@@ -54,6 +90,9 @@ padding: 7%;
   .carousel-item-next,
   .carousel-item-prev {
   opacity: 1;
+}
+.c-only{
+  display: none;
 }
 }
 
@@ -73,7 +112,52 @@ padding: 7%;
   .carousel-item-prev {
   opacity: 1;
 }
-  
+.c-only{
+  display: none;
+}
+.p-only1{
+  display:block;
+}
+.rounded-circle-hero-card {
+  width: 300px;
+  padding: 10%;
+  margin: auto;
+}
+.container-for-hero-card{
+  width: 410px;
+}
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 370px) and (max-width: 576px) {
+  .hero-card .img-fluid {
+    height: 50vh;
+  }
+
+  .carousel-item {
+    transition-duration: 2s;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+  opacity: 1;
+}
+.c-only{
+  display: none;
+}
+.p-only1{
+  display:block;
+}
+.rounded-circle-hero-card {
+  width: 200px;
+  padding: 10%;
+  margin: auto;
+}
+.container-for-hero-card{
+  width: 300px;
+}
 }
 
 /* Small devices (tablets 820) */
@@ -103,6 +187,10 @@ padding: 7%;
     position: relative;
     z-index: 1;
   }
+  .rounded-circle-hero-card {
+    width: 100%;
+    padding: 10%;
+  } 
   
 }
 
@@ -121,6 +209,13 @@ padding: 7%;
   .carousel-item-prev {
   opacity: 1;
 }
+.c-only-1{
+  display: none;
+}
+.rounded-circle-hero-card {
+  width: 100%;
+  padding: 10%;
+}
 }
 
 /* Medium devices (desktops) */
@@ -137,6 +232,21 @@ padding: 7%;
   .carousel-item-next,
   .carousel-item-prev {
   opacity: 1;
+}
+.c-only-1{
+  display: none;
+}
+.c-only{
+  margin: auto;
+  width: 30%;
+}
+.p-only{
+  width: 200px;
+  margin: auto;
+}
+.rounded-circle-hero-card {
+  width: 100%;
+  padding: 10%;
 }
 }
 
@@ -159,7 +269,7 @@ padding: 7%;
 }
 .img-text{
   width: 100%;
-  font-size: 62px;
+  font-size: 50px;
   margin: auto;
   height: auto;
 }
@@ -168,5 +278,15 @@ padding: 7%;
     position: relative;
     z-index: 1;
   }
+
+  .carousel-card {
+    width: 25%;
+    margin: auto;
+  }
+  .rounded-circle-hero-card {
+    width: 100%;
+    padding: 10%;
+  }
+
 }
 

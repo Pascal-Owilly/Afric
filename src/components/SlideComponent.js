@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Card, Container, Row, Col, Carousel } from "react-bootstrap";
-import "./SlideComponent.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./CardHero.css";
 import img1 from '../img/heroimg5.jpeg';
 import img2 from '../img/cardimg.jpeg';
-import img3 from '../img/cardimg2.jpeg';
-import img4 from '../img/cardimg3.jpeg';
-import how7 from '../img/how7.jpeg';
+import img3 from '../img/cardimg31.jpeg';
+import img4 from '../img/img4.jpeg';
+import img9 from '../img/img9.jpeg';
+import img8 from '../img/how7.jpeg';
+import cimg1 from '../img/c-img1.jpeg';
+const images = [img1, img2, img2, img3, img4,img9, img8, cimg1];
 
-
-
-const images = [img1, img2, img2,
-  img3,
-  img4]
 const cardsData = [
-
   {
     image: img4,
     title: "Lorem Ipsum",
@@ -32,42 +30,59 @@ const cardsData = [
   },
 ];
 
-
-
 const CardsHero = () => {
-  
-
   return (
-    <Container className='container-for-hero-card'>
+    <Container className='container-for-hero-card '>
       <Row>
-      <Carousel className="mt-0 carousel-card border-0" indicators={false} controls={false} interval={2000}>
-                  {images.map((images, index) => (
-                    <Carousel.Item key={index}>
-                      <div className="card-container" style={{ position: 'relative' }}>
-                        <Card
-                          className="text-center"
-                          style={{
-                            backgroundColor: 'transparent',
-                        
-                            alignItems: 'center',
-                            color: 'white',
-                            border:'none',
-                            fontFamily:'arial ',
-                            marginBottom:'0',
-                            fontSize:'18px',
-                            padding:'0'
-                          }}
-                        >
-                          <Card variant="bottom" src={images[0]} className="img-fluid" />
-                          <p>{images}</p>
-                        </Card>
-                      </div>
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
-                </Row>
-      </Container>
-);
-};
+        <Col md={3} className='c-only'>
+        <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+                <Card.Img variant="top" src={cimg1}  className="rounded-circle rounded-circle-hero-card" />
+                <div className="card-text"></div>
+                <Card.Footer className='footer-text-card bg-light'>
+                Adipsing Connectur
+                </Card.Footer>
+              </Card>
+        </Col>
+        <Col md={3} className='p-only'>
+        <Carousel className="hero-card" indicators={true}>
+        {cardsData.map((card, index) => (
+          <Carousel.Item key={index}>
+            <div style={{ position: 'relative', zIndex: 1 }}>
+              <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+                <Card.Img variant="top" src={card.image} className="rounded-circle rounded-circle-hero-card" />
+                <div className="card-text">{card.text}</div>
+                <Card.Footer className='footer-text-card bg-light'>
+                  {card.title}
+                </Card.Footer>
+              </Card>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+        </Col>
+        <Col md={3} className='c-only '>
+        <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+                <Card.Img variant="top" src={img9}  className="rounded-circle rounded-circle-hero-card" />
+                <div className="card-text"></div>
+                <Card.Footer className='footer-text-card bg-light'>
+                 Musulo Vuloriti
+                </Card.Footer>
+              </Card>
+        </Col>
+        <Col md={3} className='c-only c-only-1'>
+        <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+                <Card.Img variant="top" src={img8}  className="rounded-circle rounded-circle-hero-card" />
+                <div className="card-text"></div>
+                <Card.Footer className='footer-text-card bg-light'>
+                 Medihol Navilu
+                </Card.Footer>
+              </Card>
+        </Col>
+     
+
+      </Row>
+    </Container>
+  );
+}
 
 export default CardsHero;

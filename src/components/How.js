@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import bground1 from '../img/bground1.webp';
 import person1 from '../img/person1.jpeg';
 import person2 from '../img/person2.jpeg';
 import person3 from '../img/person3.jpeg';
