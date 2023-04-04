@@ -23,7 +23,7 @@ function CardHero() {
   ];
 
   return (
-    <Carousel className="hero-card carousel-container-hero" indicators={false} fade={true} interval={3000} transition={'zoom'} style={{backgroundColor:'rgb(255, 255, 255)', alignItems:'center', justifyContent:'center', color:'#666666', fontSize:'14px'}}>
+    <Carousel className="hero-card carousel-container-hero bg-dark text-white" indicators={false} fade={true} interval={3000} transition={'zoom'} style={{backgroundColor:'rgb(255, 255, 255)', alignItems:'center', justifyContent:'center', color:'#666666', fontSize:'14px'}}>
       {images.map((image, index) => (
         <Carousel.Item key={index}>
           <div className="card-container" style={{ position: "relative" }}>

@@ -1,69 +1,73 @@
 import React, { useState, useEffect } from "react";
-import { Card } from "react-bootstrap";
-import { CardDeck } from 'react-bootstrap';
-
+import { Card, Container, Row, Col, Carousel } from "react-bootstrap";
 import "./SlideComponent.css";
+import img1 from '../img/heroimg5.jpeg';
+import img2 from '../img/cardimg.jpeg';
+import img3 from '../img/cardimg2.jpeg';
+import img4 from '../img/cardimg3.jpeg';
+import how7 from '../img/how7.jpeg';
 
+
+
+const images = [img1, img2, img2,
+  img3,
+  img4]
 const cardsData = [
 
   {
-    title: "Card 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/id/237/200/300",
+    image: img4,
+    title: "Lorem Ipsum",
   },
   {
-    title: "Card 2",
-    description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://picsum.photos/id/238/200/300",
+    image: img2,
+    title: "Dollar Sit Amet",
   },
   {
-    title: "Card 3",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    image: "https://picsum.photos/id/239/200/300",
+    image: img1,
+    title: "Adipsing",
   },
-  {
-    title: "Card 4",
-    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "https://picsum.photos/id/240/200/300",
+  {   
+   image: img3,
+    title: "Consetour",
   },
 ];
 
- const CardsHero = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setActiveIndex((activeIndex + 1) % cardsData.length);
-    }, 2000);
 
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [activeIndex]);
+const CardsHero = () => {
+  
 
   return (
-    <div className="container">
-      <CardDeck>
-        {cardsData.map((card, index) => (
-          <Card
-            key={index}
-            className={`carousel-card ${
-              activeIndex === index ? "active" : ""
-            } ${
-              (activeIndex + 1) % cardsData.length === index
-                ? "next"
-                : ""
-            }`}
-          >
-            <Card.Img variant="top" src={card.image} />
-            <Card.Body>
-              <Card.Title>{card.title}</Card.Title>
-              <Card.Text>{card.description}</Card.Text>
-            </Card.Body>
-          </Card>
-        ))}
-      </CardDeck>
-    </div>
-  );
-}
+    <Container className='container-for-hero-card'>
+      <Row>
+      <Carousel className="mt-0 carousel-card border-0" indicators={false} controls={false} interval={2000}>
+                  {images.map((images, index) => (
+                    <Carousel.Item key={index}>
+                      <div className="card-container" style={{ position: 'relative' }}>
+                        <Card
+                          className="text-center"
+                          style={{
+                            backgroundColor: 'transparent',
+                        
+                            alignItems: 'center',
+                            color: 'white',
+                            border:'none',
+                            fontFamily:'arial ',
+                            marginBottom:'0',
+                            fontSize:'18px',
+                            padding:'0'
+                          }}
+                        >
+                          <Card variant="bottom" src={images[0]} className="img-fluid" />
+                          <p>{images}</p>
+                        </Card>
+                      </div>
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
+                </Row>
+      </Container>
+);
+};
+
 export default CardsHero;

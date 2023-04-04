@@ -19,7 +19,6 @@
 @media only screen and (max-width: 575px) {
   .hero-card .img-fluid  {
     height: 40vh;
-    margin-top: 21vh;
     font-size: 18px;
   }
   .img-text{
@@ -31,13 +30,21 @@
     transition-duration: 0.5s;
   }
 
-  .hero-card-text{
-    margin-top: 21vh;
+  .container-for-hero-card{
+    margin-top: -15vh;
+    position: relative;
+    z-index: 1;
   }
-  .img-text{
+
+ .rounded-circle {
+padding: 7%;
+  }
+  .carousel-card {
+    width: 100%;
     margin: auto;
-    font-size: 30px;  
   }
+
+  
   .carousel-item {
     transition-duration: 2s;
     opacity: 0;
@@ -66,6 +73,36 @@
   .carousel-item-prev {
   opacity: 1;
 }
+  
+}
+
+/* Small devices (tablets 820) */
+@media only screen and (min-width: 820px) and (max-width: 990.99px) {
+  .hero-card .img-fluid {
+    height: 50vh;
+  }
+
+  .carousel-item {
+    transition-duration: 2s;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+  opacity: 1;
+}
+.img-text{
+  width: 100%;
+  font-size: 40 px;
+  margin: auto;
+  height: auto;
+}
+  .container-for-hero-card{
+    margin-top: -10vh;
+    position: relative;
+    z-index: 1;
+  }
   
 }
 
@@ -126,6 +163,10 @@
   margin: auto;
   height: auto;
 }
+  .container-for-hero-card{
+    margin-top: -10vh;
+    position: relative;
+    z-index: 1;
+  }
 }
-
 
