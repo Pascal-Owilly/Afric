@@ -22,24 +22,18 @@ const FooterCard = ({ name, position, image, linkedin, github }) => {
       onMouseLeave={handleMouseLeave}
     >
 
-<div className="card-details">
-        <span  className='text-white'>Developed by:</span>
-         <a target='_blank' style={{color:'#000092', textDecoration:'none'}} href={linkedin} className="name">{name} </a>
-        
+<div className="text-center">
+      <p className='mt-4' style={{  fontSize:'16px' }} >  Developed by:<span  className='text-white card-details'> <a target='_blank' style={{color:'#000092', textDecoration:'none', fontSize:'17px'}} href={linkedin} className="name">{name} </a>
+      </span> </p>
+           
         {/* <span className="position">{position}</span> */}
       </div>
 
       <div className="card-image">
-        <img src={dev} alt={name} style={{ width: '50px', height: '50px', borderRadius: '100%' }} />
+        {/* <img src={dev} alt={name} style={{ width: '50px', height: '50px', borderRadius: '100%' }} /> */}
         {/* {hovered && ( */}
           <div className="profile-image-container" style={{ width: '50px', height: '50px', borderRadius: '100%' }}>
             <div className="icon-container">
-              <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
-              </a>
-              <a href={github} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} className="icon github" />
-              </a>
             </div>
           </div>
         {/* )} */}

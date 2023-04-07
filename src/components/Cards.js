@@ -39,43 +39,11 @@ const CardSection = () => {
           <Row>
              
            
-          <Col md={8}  className='mt-5 fade-in'>
-          <h1 className='mt-2 animate__animated animate__bounce' style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'2rem' }}>Who We Are</h1>           
-          <p className='pt-0' style={{ color: '#fff', fontSize: '18px', fontFamily:'sanSerif' }}>
-               We are Mwani Africa, a Kenyan (East Africa) start-up providing a circular zero-waste solution of Ocean co-products, up-cycling to produce bio-stimulants and soil conditioner.
-                Mwani Africa's social enterprise leverages the Seaweed 
-                value-addition, to facilitate local small holder communities cultivate Seaweed. 
-                Empowering mostly women and youth. We brought together stakeholders, including Government,
-                Academia and private sector and resolved to form a Seaweed association;
-                Mwani Africa is formulating the constitution and framework. </p>
+          <Col md={12}  className='mt-5 text-center fade-in'>
+          <h1 className='mt-2 animate__animated animate__bounce' style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'2rem' }}>Welcome to Mwani Africa</h1>           
            
                 <div>
-                  <Carousel className="mt-0 carousel-card border-0" indicators={false} controls={false} interval={2000}>
-                  {text.map((texts, index) => (
-                    <Carousel.Item key={index}>
-                      <div className="card-container" style={{ position: 'relative' }}>
-                        <Card
-                          className="text-center"
-                          style={{
-                            backgroundColor: 'transparent',
-                        
-                            alignItems: 'center',
-                            color: 'white',
-                            border:'none',
-                            fontFamily:'arial ',
-                            marginBottom:'0',
-                            fontSize:'18px',
-                            padding:'0'
-                          }}
-                        >
-                          <Card variant="bottom" src={texts[0]} className="img-fluid" />
-                          <p style={{marginTop:'0', marginBottom:'0', height:'1.1rem'}}>{texts[1]}</p>
-                          <p>{texts[2]}</p>
-                        </Card>
-                      </div>
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
+                 
                 </div>
             </Col>   
             <Col md={4}  className=''>

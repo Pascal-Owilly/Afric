@@ -4,8 +4,11 @@
   justify-content: space-between;
   padding: 4px;
   border: none;
+ 
+
 
 }
+
 .footer-card:hover {
 transition: 0.5s ease-in-out;
 }
@@ -13,6 +16,17 @@ transition: 0.5s ease-in-out;
 .card-image {
   position: relative;
 
+
+}
+
+.footer-content{
+  background-image: url('../img/heroimg3.jpeg');
+  background-repeat: repeat center scroll top;
+  background-size: contain;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+  z-index: 999 !important;
 
 }
 
@@ -81,15 +95,19 @@ transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-.card-details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+p .card-details {
+  text-align: center;
   margin-left: 10px;
 }
 
 
-.card-details:hover{
-  transition: 1s ease-in-out;
+p .card-details:hover{
+  text-decoration: underline;
+  text-decoration-color: #81BA00;
+  text-decoration-thickness: 3px;
+  color: #666666;
+  text-underline-offset: 0.5rem;
+ 
+ 
+
 }

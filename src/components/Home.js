@@ -4,6 +4,7 @@ import Card from './Cards';
 import Why from './Why';
 import How from './How';
 import './Home.css';
+import Team from './Team';
 import SlideComponent  from './SlideComponent';
 
 
@@ -13,9 +14,9 @@ function Home() {
     <>
       <Hero />
       <SlideComponent />
-      <Card />
-      <Why />
-      <How />   
+      <Team />
+      {/* <Why /> */}
+      {/* <How />    */}
      
     </>
   );

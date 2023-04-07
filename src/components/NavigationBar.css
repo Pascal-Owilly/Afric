@@ -12,12 +12,11 @@
 
 .nav-links:hover{
     text-decoration: underline;
-    text-decoration-color: goldenrod;
+    text-decoration-color: #81BA00;
     text-decoration-thickness: 3px;
     color: #666666;
     text-underline-offset: 0.5rem;
     transition-delay: 0.5s;
- 
    
 }   
 

@@ -1,49 +1,86 @@
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import FooterCard from './FooterCard';
+import axios from 'axios';
+import { useState } from 'react';
+import { Form, Button, Card } from 'react-bootstrap';
 
 function Footer() {
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    // Replace <API_ENDPOINT> with your own subscription API endpoint
+    axios.post('<API_ENDPOINT>', { email })
+      .then((response) => {
+        console.log('Form submitted successfully:', response);
+        // Replace this with your own success message or redirect logic
+        alert('Thanks for subscribing!');
+      })
+      .catch((error) => {
+        console.error('Form submission failed:', error);
+        // Replace this with your own error message or error handling logic
+        alert('Oops! Something went wrong. Please try again later.');
+      });
+  };
   return (
     <>
    
-    <footer className="" style={{backgroundColor:'rgb(86, 51, 211)', color:'white'}}>
-    
-      <Container>
-        <Row>
-          <Col md={4}>
-            <h5 style={{color:'#ddd2d2'}}>Site Links</h5>
+    <footer className="footer-content">
+    <div className='footer-overlay'></div>
+      <Container  className='footer-container' fluid >
+        <Row >
+          <Col md={4} className='mt-4'>
+            <h4 >Site Links</h4>
             <ul className="list-unstyled text-white ">
-              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/home">Home</Link></li>
+              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic', zIndex:2}}  onClick={() => window.scrollTo(0, 0)} to="/home">Home</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/about">About Us</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/contact">Contact</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/team">Team</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/socialent">Social Enterprise</Link></li>
             </ul>
           </Col>
-          <Col md={4}>
-            <h5  style={{color:'#ddd2d2'}}>Disclaimer</h5>
+          <Col md={4} className='mt-4'>
+            <h4  style={{color:'#ddd2d2'}}>Disclaimer</h4 >
             <p className="list-unstyled text-white">Welcome to our site! Our seaweed fertilizers are perfect for your agricultural needs, but we do recommend testing on a small scale before widespread use, as each plant species is unique. Please follow all instructions and safety precautions when using our products.</p>
           </Col>
-          <Col md={4}>
-            <h5 style={{color:'#ddd2d2'}}>Location</h5>
-            <iframe
-              title="Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.364476102313!2d36.801273917180545!3d-1.268124685200886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173c0a1f9de7%3A0xad2c84df1f7f2ec8!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1637096543542!5m2!1sen!2ske"
-              style={{width:"100%", height:"130px", border:'3px solid #cceeee'}}  
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-          </Col>
-        </Row>
+          <Col md={4 } className='mt-4'>
+
+                <Card className='subscription-card'>
+                <Card.Body>
+                  <Card.Title className='subscription-title'>Sign Up For Newsletter</Card.Title>
+                  <Card.Text className='subscription-title'></Card.Text>
+                  <Form className='subscription-email' onSubmit={handleFormSubmit}>
+                    <Form.Group controlId="formBasicEmail">
+                      <Form.Label></Form.Label>
+                      <Form.Control className='sub-input' type="email" placeholder="Enter email" value={email} onChange={handleEmailChange} />
+                      <Form.Text className="text-muted">
+                       
+                      </Form.Text>
+                    </Form.Group>
+                    <Button className='sub-btn' variant="primary" type="submit">
+                      Subscribe
+                    </Button>
+                  </Form>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+
         <hr />
-        <Row  style={{backgroundColor:'rgb(87, 51, 211)'}}>
+        <Row  style={{backgroundColor:'black', padding:'1rem'}}>
         
-          <Col md={2} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
-            <p style={{ color: '#fff', fontWeight:'bold', textAlign:'center' }}>Mwani Africa &copy; 2023</p> 
+          <Col md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
+            <p className='mt-4' style={{ color: '#fff', fontWeight:'bold', textAlign:'center', fontSize:'16px' }}>Mwani Africa &copy; 2023</p> 
           </Col> 
-          <Col className='text-center' md={8} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
+          <Col className='text-center' md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
           </Col> 
-          <Col md={2} classnName="mr-5">
+          <Col md={4} classnName="">
             <FooterCard
               name="Pascal Owilly"
               position="Software Developer"
@@ -53,7 +90,7 @@ function Footer() {
             />
 
             </Col>           
-          </Row>
+          </Row>    
       </Container>
     </footer>
     </>

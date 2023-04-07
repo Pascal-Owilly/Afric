@@ -9,7 +9,12 @@ import img4 from '../img/img4.jpeg';
 import img9 from '../img/img9.jpeg';
 import img8 from '../img/how7.jpeg';
 import cimg1 from '../img/c-img1.jpeg';
-const images = [img1, img2, img2, img3, img4,img9, img8, cimg1];
+import person2 from '../img/person2.jpeg';
+import person1 from '../img/person1.jpeg';
+import img6 from '../img/img6.jpeg';
+import img5 from '../img/img5.jpeg';
+import cimg3 from '../img/cimg3.jpeg';
+const images = [img1, img2, img2, img3, img4,img9, img8, cimg1, person2, img6, person1, img5, cimg3];
 
 const cardsData = [
   {
@@ -32,10 +37,11 @@ const cardsData = [
 
 const CardsHero = () => {
   return (
-    <Container className='container-for-hero-card '>
-      <Row>
+    <Container fluid className='container-for-hero-car container-card-section' style={{}}>
+      <div className="hero-overlay" style={{marginTop: 0}}></div>
+      <Row className="hero-card-row" style={{marginTop:'-15vh'}}>
         <Col md={3} className='c-only'>
-        <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+        <Card style={{width:'100%', margin:'auto',position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
                 <Card.Img variant="top" src={cimg1}  className="rounded-circle rounded-circle-hero-card" />
                 <div className="card-text"></div>
                 <Card.Footer className='footer-text-card bg-light'>
@@ -44,7 +50,7 @@ const CardsHero = () => {
               </Card>
         </Col>
         <Col md={3} className='p-only'>
-        <Carousel className="hero-card" indicators={true}>
+        <Carousel className="hero-card" style={{top:0}} indicators={false}>
         {cardsData.map((card, index) => (
           <Carousel.Item key={index}>
             <div style={{ position: 'relative', zIndex: 1 }}>
@@ -61,7 +67,7 @@ const CardsHero = () => {
       </Carousel>
         </Col>
         <Col md={3} className='c-only '>
-        <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+        <Card style={{width:'100%', margin:'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
                 <Card.Img variant="top" src={img9}  className="rounded-circle rounded-circle-hero-card" />
                 <div className="card-text"></div>
                 <Card.Footer className='footer-text-card bg-light'>
@@ -70,7 +76,7 @@ const CardsHero = () => {
               </Card>
         </Col>
         <Col md={3} className='c-only c-only-1'>
-        <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+        <Card style={{width:'100%', margin:'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
                 <Card.Img variant="top" src={img8}  className="rounded-circle rounded-circle-hero-card" />
                 <div className="card-text"></div>
                 <Card.Footer className='footer-text-card bg-light'>
@@ -78,9 +84,27 @@ const CardsHero = () => {
                 </Card.Footer>
               </Card>
         </Col>
-     
+        <Row className='welcome-row' style={{zIndex:999, color:'#ffffff'}}>
+        <h1 className="text-center welcome-h1">Welcome to Mwani Africa</h1>
+            <p className="text-center mt-3" style={{fontSize:'16px'}}>Mwani Africa, is a social enterprise that offers Seaweed farms as-a-service to smallholder farmers, mostly women and youth, to undertake sustainable and climate resilient seaweed farming, leveraging innovation to produce biostimulant soil conditioner, and other value-added products, all year round.  </p>
+            <Col md={8} className="welcome-content">
+            <img className=" rounded" src={person1} style={{width:'100%'}} />
+            </Col>     
+          <Col md={4} className="welcome-section welcome-content" >
+          <div className="welcome-c">
+            
+          <img src={img6} className="rounded  welcome-image" style={{width:'100%',font: '600 40px/48px "Philosopher",sans-serif'}} />
+          <p className="" style={{}}>Lorem ipsum dollor sit amet consecetuour</p>
+          </div>
+          <div className="welcome-c">
+           
+          <img src={img5} className="rounded welcome-image " style={{width:'100%',font: '600 40px/48px "Philosopher",sans-serif'}} />
 
-      </Row>
+          </div>
+         </Col>
+                    
+        </Row>    
+      </Row>     
     </Container>
   );
 }

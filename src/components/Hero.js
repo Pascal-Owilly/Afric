@@ -22,7 +22,7 @@ function CardHero() {
 
   return (
     <Carousel 
-      className="hero-card carousel-container-hero bg-dark text-white" 
+      className="hero-card hero-vh-style carousel-container-hero bg-dark text-white" 
       indicators={false} 
       fade={true} 
       interval={3000} 
@@ -32,7 +32,8 @@ function CardHero() {
         alignItems:'center', 
         justifyContent:'center', 
         color:'#666666', 
-        fontSize:'14px'
+        fontSize:'14px',
+      
       }}
       prevIcon={<span className="carousel-control-prev-icon" />}
       nextIcon={<span className="carousel-control-next-icon" />}

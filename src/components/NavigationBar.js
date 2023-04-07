@@ -22,7 +22,7 @@ function NavigationBar() {
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 100) {
-      setNavbarBackground('#000092');
+      setNavbarBackground('#81BA00');
     } else {
       setNavbarBackground('black');
     }

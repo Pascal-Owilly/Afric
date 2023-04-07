@@ -1,11 +1,117 @@
 .container-for-hero-card {
   overflow: hidden;
   position: relative;
-  margin-top: -15vh;
-  z-index: 1;
-  height: 400px;
+  height: 160vh;
+  width: 100%;
+  background-image: url("../img/heroimg3.jpeg");
+  background-repeat: no-repeat center scroll top;
+  background-size: contain;
 
 } 
+
+.hero-card-row {  
+  /* z-index: 999 !important; */
+  width: 90%;
+  margin: auto;
+}
+
+.container-card-section{
+  background-image: url('../img/heroimg3.jpeg');
+  background-repeat: repeat center scroll top;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.subscription-card{
+  background: #81ba00;
+  float: left;
+  padding: 5px 5px;
+  width: 100%;
+}
+.subscription-title{
+  background: none;
+  color: #ffffff;
+  font: italic 500 25px"Philosopher",sans-serif;
+  margin-top: 0;
+  padding: 5px 0 0;
+  position: relative;
+  text-transform: capitalize;
+  text-align: center;
+}
+  .subscription-p{
+    color: #ffffff;
+    float: left;
+    font: 400 14px/24px "Poppins",Helvetica,sans-serif;
+    margin: 20px 0 10px;
+    width: 100%;
+  }
+  .subscription-email{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    padding: 0 15px;
+    height: 40px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 0 0 60px;
+  }
+    
+      .sub-input {
+        writing-mode: horizontal-tb !important;
+        font-style: ;
+        font-variant-ligatures: ;
+        font-variant-caps: ;
+        font-variant-numeric: ;
+        font-variant-east-asian: ;
+        font-weight: ;
+        font-stretch: ;
+        font-size: ;
+        font-family: ;
+        text-rendering: auto;
+        color: fieldtext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 5px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        appearance: auto;
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        background-color: transparent;
+        margin: 0px;
+        padding: 5px 2px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-image: initial;
+    }
+
+  .sub-btn{
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 28px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+    margin-top: 2em;
+  } 
+
+
+
 
 /* carousel style */
 
@@ -17,8 +123,18 @@
   color: black;
 }
 
+.footer-content .footer-container .list-unstyled, h4 {
+  position: relative;
+  z-index: 2;
+}
+.footer-content .footer-container{
+  position: relative;
+  z-index: 2;
+}
 
-
+.footer-overlay{
+  z-index: 1;
+}
 
 .footer-text-card{
   color: #777777;
@@ -51,10 +167,17 @@
 
 /* Extra small devices (phones) */
 @media only screen and (max-width: 575px) {
-  .hero-card .img-fluid  {
+  .container-for-hero-card .img-fluid  {
     height: 40vh;
     font-size: 18px;
+    position: relative;
+    z-index: 1;
   }
+
+  .hero-overlay{
+    width: 100%;
+  }
+
   .img-text{
     width: 100%;
     margin: auto;
@@ -65,16 +188,10 @@
     transition-duration: 0.5s;
   }
 
-  .container-for-hero-card{
-    margin-top: -15vh;
-    position: relative;
-    z-index: 1;
-  }
-
  .rounded-circle-hero-card {
     width: 100%;
-    padding: 10%;
   }
+
   .carousel-card {
     width: 80%;
     margin: auto;
@@ -94,6 +211,113 @@
 .c-only{
   display: none;
 }
+.welcome-row{
+  margin-top: 10vh;
+}
+.welcome-h1{
+  font-size: 22px;
+}
+.hero-overlay {
+  position: absolute;
+  margin-top: 0;
+  top: 62.445vh;
+  left: 0;
+  width: 100%;
+  height: 160vh;
+  background-color: #002600;
+  opacity: 0.8;
+  
+}
+.welcome-image{
+  margin-top: 3rem;
+}
+.subscription-card{
+  background: #81ba00;
+  float: left;
+  padding: 5px 5px;
+  width: 100%;
+}
+.subscription-title{
+  background: none;
+  color: #ffffff;
+  font: italic 500 25px"Philosopher",sans-serif;
+  margin-top: 0;
+  padding: 5px 0 0;
+  position: relative;
+  text-transform: capitalize;
+  text-align: center;
+}
+  .subscription-p{
+    color: #ffffff;
+    float: left;
+    font: 400 14px/24px "Poppins",Helvetica,sans-serif;
+    margin: 20px 0 10px;
+    width: 100%;
+  }
+  .subscription-email{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    padding: 0 15px;
+    height: 40px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 0 0 60px;
+  }
+    
+      .sub-input {
+        writing-mode: horizontal-tb !important;
+        font-style: ;
+        font-variant-ligatures: ;
+        font-variant-caps: ;
+        font-variant-numeric: ;
+        font-variant-east-asian: ;
+        font-weight: ;
+        font-stretch: ;
+        font-size: ;
+        font-family: ;
+        text-rendering: auto;
+        color: fieldtext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 5px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        appearance: auto;
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        background-color: transparent;
+        margin: 0px;
+        padding: 5px 2px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-image: initial;
+    }
+
+  .sub-btn{
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 28px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+    margin-top: 2em;
+  }
 }
 
 /* Small devices (tablets) */
@@ -126,6 +350,96 @@
 .container-for-hero-card{
   width: 410px;
 }
+.welcome-image{
+  margin-top: 3rem;
+}
+.subscription-card{
+  background: #81ba00;
+  float: left;
+  padding: 5px 5px;
+  width: 100%;
+}
+.subscription-title{
+  background: none;
+  color: #ffffff;
+  font: italic 500 25px"Philosopher",sans-serif;
+  margin-top: 0;
+  padding: 5px 0 0;
+  position: relative;
+  text-transform: capitalize;
+  text-align: center;
+}
+  .subscription-p{
+    color: #ffffff;
+    float: left;
+    font: 400 14px/24px "Poppins",Helvetica,sans-serif;
+    margin: 20px 0 10px;
+    width: 100%;
+  }
+  .subscription-email{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    padding: 0 15px;
+    height: 40px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 0 0 60px;
+  }
+    
+      .sub-input {
+        writing-mode: horizontal-tb !important;
+        font-style: ;
+        font-variant-ligatures: ;
+        font-variant-caps: ;
+        font-variant-numeric: ;
+        font-variant-east-asian: ;
+        font-weight: ;
+        font-stretch: ;
+        font-size: ;
+        font-family: ;
+        text-rendering: auto;
+        color: fieldtext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 5px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        appearance: auto;
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        background-color: transparent;
+        margin: 0px;
+        padding: 5px 2px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-image: initial;
+    }
+
+  .sub-btn{
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 28px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+    margin-top: 2em;
+  }
 }
 
 /* Small devices (tablets) */
@@ -248,13 +562,18 @@
   width: 100%;
   padding: 10%;
 }
+.welcome-section{
+  display: flex;
+}
 }
 
 /* Large devices (large desktops) */
 @media only screen and (min-width: 992px) {
   .hero-card .img-fluid  {
     height: 100vh;
+    margin-top:'10vh'
   }
+
   .carousel-item {
     transition-duration: 2s;
     opacity: 0;
@@ -287,6 +606,161 @@
     width: 100%;
     padding: 10%;
   }
+  .cards-for-hero-section{
+    margin-top: -15vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-vh-style{
+    margin:auto;
+    position: relative;
+    margin-top: 70px;
+  }
+
+  .welcome-h1{
+    margin-top: -15vh;
+    color: white;
+    float: left;
+    font: 600 40px/48px "Philosopher",sans-serif;
+    letter-spacing: 0.4px;
+    margin: 0;
+    /* padding: 40px 0 10px; */
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+  }
+  .welcome-row{
+    margin-top: -38vh;
+  }
+  .welcome-content{
+    margin-top: 10vh;
+    margin-bottom: 5%;
+    height: 160vh;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    margin-top: 0;
+    top: 109.9vh;
+    left: 0;
+    width: 100%;
+    height: 248vh;
+    background-color: #002600;
+    opacity: 0.8;
+    
+  }
+  .container-card-section{
+    height: 190vh;
+  }
+
+  .subscription-card{
+    background: #81ba00;
+    float: left;
+    padding: 5px 5px;
+    width: 100%;
+  }
+  .subscription-title{
+    background: none;
+    color: #ffffff;
+    font: italic 500 25px"Philosopher",sans-serif;
+    margin-top: 0;
+    padding: 5px 0 0;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+  }
+    .subscription-p{
+      color: #ffffff;
+      float: left;
+      font: 400 14px/24px "Poppins",Helvetica,sans-serif;
+      margin: 20px 0 10px;
+      width: 100%;
+    }
+    .subscription-email{
+      background: none;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      font-size: 14px;
+      color: #ffffff;
+      display: block;
+      padding: 0 15px;
+      height: 40px;
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin: 0 0 60px;
+    }
+      
+        .sub-input {
+          writing-mode: horizontal-tb !important;
+          font-style: ;
+          font-variant-ligatures: ;
+          font-variant-caps: ;
+          font-variant-numeric: ;
+          font-variant-east-asian: ;
+          font-weight: ;
+          font-stretch: ;
+          font-size: ;
+          font-family: ;
+          text-rendering: auto;
+          color: fieldtext;
+          letter-spacing: normal;
+          word-spacing: normal;
+          line-height: normal;
+          text-transform: none;
+          text-indent: 5px;
+          text-shadow: none;
+          display: inline-block;
+          text-align: start;
+          appearance: auto;
+          -webkit-rtl-ordering: logical;
+          cursor: text;
+          background-color: transparent;
+          margin: 0px;
+          padding: 5px 2px;
+          border-width: 2px;
+          border-style: inset;
+          border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+          border-image: initial;
+      }
+ 
+    .sub-btn{
+      background: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 25px;
+      -moz-border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -khtml-border-radius: 25px;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400;
+      height: 42px;
+      line-height: 28px;
+      padding: 6px 20px;
+      text-transform: capitalize;
+      margin-top: 2em;
+    }
+
+    .footer-content .list-unstyled, h5 {
+      position: relative;
+      z-index: 2;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .footer-overlay{
+      position: absolute;
+      top: 1;
+      left: 0;
+      width: 100%;
+      height: 45.567vh;
+      background-color: #002600;
+      opacity: 0.8;
+      z-index: 0 !important;
+    }
+
 
 }
 
