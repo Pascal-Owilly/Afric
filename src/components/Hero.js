@@ -22,16 +22,16 @@ function CardHero() {
 
   return (
     <Carousel 
-      className="hero-card hero-vh-style carousel-container-hero bg-dark text-white" 
+      className="hero-card hero-vh-style carousel-container-hero text-white" 
       indicators={false} 
       fade={true} 
       interval={3000} 
-      transition={'zoom'} 
+      // transition={'zoom'} 
       style={{
-        backgroundColor:'rgb(255, 255, 255)', 
+        backgroundColor:'#002600', 
         alignItems:'center', 
         justifyContent:'center', 
-        color:'#666666', 
+        color:'#ffffff', 
         fontSize:'14px',
       
       }}
