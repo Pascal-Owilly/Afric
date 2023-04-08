@@ -25,14 +25,14 @@ function CardHero() {
       className="hero-card hero-vh-style carousel-container-hero text-white" 
       indicators={false} 
       fade={true} 
-      interval={3000} 
-      // transition={'zoom'} 
+      interval={3000}  
       style={{
         backgroundColor:'#002600', 
         alignItems:'center', 
         justifyContent:'center', 
         color:'#ffffff', 
         fontSize:'14px',
+        transition:'0s',
       
       }}
       prevIcon={<span className="carousel-control-prev-icon" />}

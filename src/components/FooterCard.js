@@ -25,19 +25,9 @@ const FooterCard = ({ name, position, image, linkedin, github }) => {
 <div className="text-center">
       <p className='mt-4' style={{  fontSize:'16px' }} >  Developed by:<span  className='text-white card-details'> <a target='_blank' style={{color:'#000092', textDecoration:'none', fontSize:'17px', color:'#81ba00'}} href={linkedin} className="name">{name} </a>
       </span> </p>
-           
-        {/* <span className="position">{position}</span> */}
       </div>
 
-      <div className="card-image">
-        {/* <img src={dev} alt={name} style={{ width: '50px', height: '50px', borderRadius: '100%' }} /> */}
-        {/* {hovered && ( */}
-          <div className="profile-image-container" style={{ width: '50px', height: '50px', borderRadius: '100%' }}>
-            <div className="icon-container">
-            </div>
-          </div>
-        {/* )} */}
-      </div>
+
       
     </div>
   );

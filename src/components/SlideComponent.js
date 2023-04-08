@@ -50,21 +50,23 @@ const CardsHero = () => {
               </Card>
         </Col>
         <Col md={3} className='p-only'>
-        <Carousel className="hero-card" style={{top:0}} indicators={false}>
+        
+        <Carousel className="hero-card hero-card-controls" style={{top:0}} indicators={false}>
         {cardsData.map((card, index) => (
           <Carousel.Item key={index}>
             <div style={{ position: 'relative', zIndex: 1 }}>
-              <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
+            <Card style={{width:'100%', margin:'auto'}} className="carousel-card carousel-card-for-hero-card">
                 <Card.Img variant="top" src={card.image} className="rounded-circle rounded-circle-hero-card" />
                 <div className="card-text">{card.text}</div>
                 <Card.Footer className='footer-text-card bg-light'>
                   {card.title}
                 </Card.Footer>
-              </Card>
+                </Card>
             </div>
           </Carousel.Item>
         ))}
       </Carousel>
+      
         </Col>
         <Col md={3} className='c-only '>
         <Card style={{width:'100%', margin:'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
@@ -84,9 +86,9 @@ const CardsHero = () => {
                 </Card.Footer>
               </Card>
         </Col>
-        <Row className='welcome-row' style={{zIndex:999, color:'#ffffff'}}>
+        <Row className='welcome-row' style={{zIndex: 1, color:'#ffffff'}}>
         <h1 className="text-center welcome-h1">Welcome to Mwani Africa</h1>
-            <p className="text-center mt-3" style={{fontSize:'16px'}}>Mwani Africa, is a social enterprise that offers Seaweed farms as-a-service to smallholder farmers, mostly women and youth, to undertake sustainable and climate resilient seaweed farming, leveraging innovation to produce biostimulant soil conditioner, and other value-added products, all year round.  </p>
+            <p className="text-center mt-3" style={{fontSize:'16px' , lineHeight:'26px'}}>Mwani Africa, is a social enterprise that offers Seaweed farms as-a-service to smallholder farmers, mostly women and youth, to undertake sustainable and climate resilient seaweed farming, leveraging innovation to produce biostimulant soil conditioner, and other value-added products, all year round.  </p>
             <Col md={8} className="welcome-content">
             <img className=" rounded" src={person1} style={{width:'100%'}} />
             </Col>     
