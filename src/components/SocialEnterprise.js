@@ -17,11 +17,11 @@ const MySection = () => {
        <Container fluid style={{height:'100%', position:'relative'}}>
       <Row className="enterprise">
         <Col md={6} style={{height:'100%'}}>
-
-        <h1 className=' ' style={{ color: '#fff', fontSize: '1.5rem', marginLeft:'2rem' }}>Social Enterprise</h1>     
+    <hr />
+        <h1 className=' ' style={{ color: '#666666', fontSize: '1.5rem', marginLeft:'2rem' }}>Social Enterprise</h1>     
      <hr />
      <Card className="enterprise-card">  <Image className="rounded-circle" src={img14} style={{height:'100%'}} fluid /> </Card>
-     <p>Mwani Africa's social enterprise model leverages innovation to assist local coastal community smallholder farmers, mostly women and youth, in climate resilient Seaweed farming.</p>
+     <p className="pt-3">Mwani Africa's social enterprise model leverages innovation to assist local coastal community smallholder farmers, mostly women and youth, in climate resilient Seaweed farming.</p>
      <Card className="enterprise-card" style={{width:'100%', height:'50vh'}}>  <Image className="rounded" src={person1} style={{height:'100%'}} fluid /> </Card>
         </Col>
         <Col md={3}>

@@ -35,18 +35,19 @@ const ContactForm = () => {
 <div className='contact-section'>
 <div className='contact-section-content'>
 
-    <h5 className='text-center text-white' style={{margin:'auto'}}>Send us a message we'll get right back to you</h5>
 
-    <Card className='contact-card text-white mt-5'>
+    <Card className='contact-card text-white'>
+    <p style={{fontSize:'22px', fontFamily:'verdana', textAlign:'center', lineHeight:'20px'}} className='contact-p'>Send us a message and we'll get to you as soon an possible</p>
+    <hr />
     {status === 'success' && (
-            <p className="mt-3 text-white">Thank you for contacting us. We will get back to you as soon a possible!</p>
+            <p className=" text-white">Thank you for contacting us. We will get back to you as soon a possible!</p>
           )}
           {status === 'error' && (
-            <p className="mt-3 text-danger">
-              There was an error sending your message.
+            <p className=" text-danger">
+              Oops!, try again later.
             </p>
           )}
-      <Card.Body>
+      <Card.Body id='card-details'>
         <Form onSubmit={handleSubmit}>
           {/* <Form.Group controlId="formName">
             <Form.Label>Name:</Form.Label>

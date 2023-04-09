@@ -6,7 +6,6 @@
   background-image: url("../img/heroimg3.jpeg");
   background-repeat: no-repeat center scroll top;
   background-size: contain;
-
 } 
 
 .img-text{
@@ -273,6 +272,11 @@ border-radius: 25px 0 0 25px;
     margin-top: 7rem;
   }
 
+
+  .welcome-h1{
+    margin-top: 10vh;
+  }
+
   /* .container-card-section{
     position: absolute;
     height: 100vh;
@@ -348,6 +352,7 @@ border-radius: 25px 0 0 25px;
 }
 .welcome-h1{
   font-size: 22px;
+  margin-top: 15vh;
 }
 
 .welcome-image{
@@ -1096,13 +1101,12 @@ border-radius: 0 25px 25px 0;
   }
 
   .welcome-h1{
-    /* margin-top: -15vh; */
+
     color: white;
     float: left;
     font: 600 40px/48px "Philosopher",sans-serif;
     letter-spacing: 0.4px;
     margin: 0;
-    /* padding: 40px 0 10px; */
     position: relative;
     text-align: center;
     text-transform: capitalize;
