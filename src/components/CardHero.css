@@ -193,7 +193,7 @@
 }
 }  */
 
-@media only screen and (max-width: 370px) and (min-width: 486px){
+/* @media only screen and (max-width: 370px) and (min-width: 486px){
   .carousel-control-prev {
 
     position: ;
@@ -202,7 +202,6 @@
     margin-right: 4rem;
     padding: 5px;
     margin-top: -1rem;
-    /* margin: auto; */
     margin-left: 60.5%;
     z-index: 1;
     display: flex;
@@ -217,7 +216,6 @@
     background-color: purple;
     border: 0;
     opacity: 1;
-    /* transition: opacity .15s ease; */
     float: right;
   }
   
@@ -252,7 +250,7 @@
     background-color: #111;
     border: 0;
     opacity: 1;
-    /* transition: opacity .15s ease; */
+   
   }
 
 .carousel-control-prev-icon:hover {
@@ -264,15 +262,31 @@ border-radius: 25px 0 0 25px;
   box-shadow: #666666;
   border-radius: 0 25px 25px 0;
 }
-}
+} */
 /* Extra small devices (phones) */
-@media only screen and (max-width: 575px) and (max-width: 767px) {
+@media only screen and (max-width: 600px) and (max-width: 767px) {
   .hero-card .img-fluid  {
     height: 40vh;
     font-size: 18px;
     position: relative;
     z-index: 1;
     margin-top: 7rem;
+  }
+
+  /* .container-card-section{
+    position: absolute;
+    height: 100vh;
+  } */
+
+  .hero-overlay {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 370vh;
+    background-color: #002600;
+    opacity: 0.8;
+    
   }
 
   .rounded-circle-hero-card {
@@ -335,17 +349,7 @@ border-radius: 25px 0 0 25px;
 .welcome-h1{
   font-size: 22px;
 }
-.hero-overlay {
-  position: absolute;
-  margin-top: 0;
-  top: auto;
-  left: 0;
-  width: 100%;
-  height: 240vh;
-  background-color: #002600;
-  opacity: 0.8;
-  
-}
+
 .welcome-image{
   margin-top: 3rem;
 }
@@ -515,10 +519,10 @@ border-radius: 25px 0 0 25px;
 }
 .footer-overlay{
   position: absolute;
-  top: 1;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 90.567vh;
+  height: 100vh;
   background-color: #002600;
   opacity: 0.8;
   z-index: 0 !important;
@@ -554,9 +558,10 @@ border-radius: 25px 0 0 25px;
 }
 .rounded-circle-hero-card {
   width: 300px;
-  padding: 10%;
+  padding:10px;
   margin: auto;
 }
+
 .container-for-hero-card{
   width: 410px;
 }
@@ -652,10 +657,10 @@ border-radius: 25px 0 0 25px;
   }
   .footer-overlay{
     position: absolute;
-    top: 1;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 90.567vh;
+    height: 60.567vh;
     background-color: #002600;
     opacity: 0.8;
     z-index: 0 !important;
@@ -770,9 +775,10 @@ border-radius: 25px 0 0 25px;
 }
 .rounded-circle-hero-card {
   width: 200px;
-  padding: 10%;
+  padding: 0;
   margin: auto;
 }
+
 .container-for-hero-card{
   width: 300px;
 }
@@ -785,7 +791,7 @@ border-radius: 25px 0 0 25px;
   padding: 5px;
   margin-top: -1rem;
   /* margin: auto; */
-  margin-left: 75%;
+  margin-left: 68%;
   z-index: 1;
   display: flex;
   align-items:flex-start;
@@ -871,15 +877,12 @@ border-radius: 0 25px 25px 0;
   margin: auto;
   height: auto;
 }
-  /* .container-for-hero-card{
-    margin-top: -10vh;
-    position: relative;
-    z-index: 1;
-  } */
+
   .rounded-circle-hero-card {
     width: 100%;
     padding: 10%;
   } 
+
 }
 
 
@@ -919,7 +922,7 @@ border-radius: 0 25px 25px 0;
 }
 .footer-overlay{
   position: absolute;
-  top: 1;
+  top: 0;
   left: 0;
   width: 100%;
   height: 40.567vh;
@@ -927,14 +930,11 @@ border-radius: 0 25px 25px 0;
   opacity: 0.8;
   z-index: 0 !important;
 }
-.hero-overlay{
-  width: 100%;
 
-}
 .hero-overlay {
   position: absolute;
   margin-top: 0;
-  top: auto;
+  top: 0;
   left: 0;
   width: 100%;
   height: 240vh;
@@ -942,6 +942,21 @@ border-radius: 0 25px 25px 0;
   opacity: 0.8;
   
 }
+.dev-text{
+  margin-right: 2rem;
+}
+
+.welcome-section{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: row;
+}
+
+  .footer-overlay{
+    top: 0;
+    height: 30vh;
+  }
 .carousel-control-prev {
 
   position: ;
@@ -951,7 +966,7 @@ border-radius: 0 25px 25px 0;
   padding: 5px;
   margin-top: -1rem;
   /* margin: auto; */
-  margin-left: 87.5%;
+  margin-left: 84.5%;
   z-index: 1;
   display: flex;
   align-items:flex-start;
@@ -1081,7 +1096,7 @@ border-radius: 0 25px 25px 0;
   }
 
   .welcome-h1{
-    margin-top: -15vh;
+    /* margin-top: -15vh; */
     color: white;
     float: left;
     font: 600 40px/48px "Philosopher",sans-serif;
@@ -1095,27 +1110,27 @@ border-radius: 0 25px 25px 0;
   }
   .welcome-row{
     margin-top: 15vh;
+    top: 0;
   }
   .welcome-content{
     margin-top: 10vh;
-    margin-bottom: 5%;
-    height: 160vh;
+   
   }
 
   .hero-overlay {
     position: absolute;
-    top: 0;
-    /* top: 109.9vh; */
+    /* top: 0; */
+    top: 100vh; 
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 278vh;
+    height: 160vh;
     background-color: #002600;
     opacity: 0.8;
     
   }
   .container-card-section{
-    height: 190vh;
+    height: 160vh;
   }
 
   .subscription-card{
@@ -1215,13 +1230,14 @@ border-radius: 0 25px 25px 0;
 
     .footer-overlay{
       position: absolute;
-      top: 1;
+      top: 0;
       left: 0;
       width: 100%;
       height: 45.567vh;
       background-color: #002600;
       opacity: 0.8;
       z-index: 0 !important;
+      overflow: hidden;
     }
 
     .carousel-control-prev {
@@ -1233,7 +1249,7 @@ border-radius: 0 25px 25px 0;
       padding: 5px;
       margin-top: -1rem;
       /* margin: auto; */
-      margin-left: 90.5%;
+      margin-left: 88.5%;
       z-index: 1;
       display: flex;
       align-items:flex-start;

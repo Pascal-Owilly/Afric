@@ -76,7 +76,7 @@ function App() {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide === teamMembers.length - 1 ? 0 : prevSlide + 1));
 
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
   
