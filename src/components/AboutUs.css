@@ -1,7 +1,8 @@
 .welcome-h1{
   color: white;
   float: left;
-  font: 600 25px "Philosopher",sans-serif;
+
+  font: 600 40px/48px "Philosopher",sans-serif;
   letter-spacing: 0.4px;
   margin: 0;
   position: relative;
