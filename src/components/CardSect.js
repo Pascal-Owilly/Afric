@@ -4,6 +4,7 @@ import './CardSect.css';
 import cardimg2 from '../img/cardimg2.jpeg';
 import cardimg from '../img/cardimg.jpeg';
 import img4 from '../img/img4.jpeg';
+import img1 from '../img/img1.jpeg';
 import cimg1 from '../img/c-img1.jpeg';
 import img9 from '../img/img9.jpeg'
 
@@ -85,8 +86,8 @@ const CardCarousel = () => {
   return (
     <Container style={{position:'relative', zIndex: 1}}>
       <hr />
-      <h2 className="text-center mb-4" style={{color:'#666666'}}>Explore our products</h2>
-    <div className="card-carousel c-only cardsect mt-4" style={{height:'100vh'}}>
+      <h2 className="text-center mt-5 mb-4" style={{color:'#666666', fontFamily:'poppins'}}><i>Explore our products</i></h2>
+    <div className="card-carousel c-only cardsect mt-4" style={{height:'65vh'}}>
       <div className={`card-carousel-container cardsect-carousel-container ${slideDirection}`}>
         <Row>
           {cardData.slice(startIndex, startIndex + 3).map((card, index) => (
@@ -153,13 +154,17 @@ const CardCarousel = () => {
     </div>
 
     <Row>
-      <Container className='mb-5'>
+      <Container className='mb-2'>
         <Row>
-      <Col md={6}>
-<img src={img4} style={{width:'100%'}}/>
+      <Col md={8}>
+<img className="p-only" src={img4} style={{width:'100%'}}/>
+<img className="c-only" src={img1} style={{width:'100%'}}/>
       </Col>
-      <Col md={6}>
-      <p className="" style={{fontSize:'25px', marginTop:'1vh', fontFamily:'poppins'}} >hello </p>
+      <Col md={4}>
+      
+<p className="mt-2">There are 150+ fertilizer companies in Kenya, less than 20% of them organic. Regional fertilizer companies are plagued by decreasing availability of raw materials due to the war in Ukraine. </p>
+ <p>  Mwani Africa boasts of a natural fertilizer, great for all plants and soil.</p> <p> The fast rate that Seaweed grows, guarantees inexhaustible supply of raw material. Mwani Africa proposes to meet the fertilizer deficit, fertilizer growing demand due to increase in population, and offer the best competitive prices.</p>
+  
 
         </Col>
         </Row>

@@ -89,14 +89,14 @@ const CardsHero = () => {
           <h1 className="text-center welcome-h1">Welcome to Mwani Africa</h1>
           <p className="text-center mt-3" style={{ fontSize: '16px', lineHeight: '26px' }}>Mwani Africa, is a social enterprise that offers Seaweed farms as-a-service to smallholder farmers, mostly women and youth, to undertake sustainable and climate resilient seaweed farming, leveraging innovation to produce biostimulant soil conditioner, and other value-added products, all year round.  </p>
           <Col md={3} className="">
-          <img className=" mt-3 rounded p-only" src={person2} style={{ width: '100%' }} />
+          <img className=" mt-3 rounded mb-1 p-only" src={person2} style={{ width: '100%' }} />
           <img className=" mt-3 rounded c-only" src={cardimg} style={{ width: '100%' }} />
           </Col>
           <Col  md={3} >
             <img className=" mt-3 rounded c-only " src={cimg1} style={{ width: '100%' }} />
           </Col>
           <Col md={3} className="">
-            <img className="mt-3 rounded mb-4" src={teambg} style={{ width: '100%' }} />
+            <img className="mt-3 rounded c-only mb-4" src={teambg} style={{ width: '100%' }} />
           </Col>
           <Col md={3} className="">
           <img className=" mt-3 mb-2 rounded c-only" src={plant5} style={{ width: '100%', marginTop: '-23vh' }} />

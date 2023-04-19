@@ -94,7 +94,7 @@ function App() {
     <Container fluid style={{height:'100vh', width:'100%', overflow:'hidden', padding:0}} className="team-title  slideshow-container">
     <div style={{textAlign:'center'}} >
        <div className="slideshow">
-       <h3 style={{textAlign:'center', marginRight:'0',marginTop:'15vh', backgroundColor:'#002600',opacity:'0.9', color:'#ffffff', width:'100%',borderRadius:'30px', fontFamily:'serif'}}>The Team</h3>
+       <h3 style={{textAlign:'center', marginRight:'0',marginTop:'15vh', color:'#ffffff', width:'100%',borderRadius:'30px', fontFamily:'serif'}}>The Team</h3>
        <hr />
          <div ref={slideshowContainerRef} className="slideshow__wrapper">       
           {teamMembers.map((member, index) => (
