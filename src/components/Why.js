@@ -5,8 +5,7 @@ import plant4 from '../img/plant4.jpeg';
 import plant2 from '../img/plant2.jpeg';
 import plant3 from '../img/plant3.jpeg';
 import './Why.css';
-import vid from '../vid/vid.mp4';
-import ReactPlayer from "react-player";
+
 
 const images = [img6, plant4, plant2, plant3]
 

@@ -83,7 +83,7 @@ function NavigationBar() {
              
             </Col>
             <Col md={6} className="text-md-end text-center">
-            <hr className="mobile-hr" />
+            
               <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}>
                 <span className="navbar-toggler-icon text-white"></span> 
                 <span className="menu-text">MENU</span>  

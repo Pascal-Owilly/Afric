@@ -12,6 +12,20 @@
 
 }
 
+.welcome-h3{
+  color: white;
+  float: left;
+
+  font: 600 30px "Philosopher",sans-serif;
+  letter-spacing: 0.4px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+
+}
+
 
 
 

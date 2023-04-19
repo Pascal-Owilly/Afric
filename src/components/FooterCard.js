@@ -22,8 +22,8 @@ const FooterCard = ({ name, position, image, linkedin, github }) => {
       onMouseLeave={handleMouseLeave}
     >
 
-<div className="text-center">
-      <p className='mt-4 dev-text text-center' style={{  fontSize:'16px' }} >  Developed by:<span  className='text-white card-details text-center'> <a target='_blank' style={{color:'#000092', textDecoration:'none', fontSize:'17px', color:'#81ba00'}} href={linkedin} className="name">{name} </a>
+<div className="text-right">
+      <p className='mt-1 dev-text text-right' style={{  fontSize:'16px' }} >  Developed by:<span  className='text-white card-details text-center'> <a target='_blank' style={{color:'#000092', textDecoration:'none', fontSize:'17px', color:'#81ba00'}} href={linkedin} className="name">{name} </a>
       </span> </p>
       </div>
 

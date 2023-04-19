@@ -1,15 +1,7 @@
 import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import img5 from '../img/img5.jpeg';
-import img1 from '../img/img1.jpeg';
 import person1 from '../img/person1.jpeg';
-import person2 from '../img/person2.jpeg';
-import img2 from '../img/img2.jpeg';
-import img4 from '../img/img4.jpeg';
-import cimg1 from '../img/cimg1.jpeg';
-import cimg5 from '../img/cimg5.jpeg';
-import cimg6 from '../img/cimg6.jpeg';
 import heroimg from '../img/heroimg.jpeg';
 import './CardHero.css';
 
@@ -24,8 +16,8 @@ function CardHero() {
     <Carousel 
       className="hero-card hero-vh-style carousel-container-hero text-white" 
       indicators={false} 
-      //    
-      interval={3000}  
+      slide={false}
+      interval={5000}  
       style={{
         backgroundColor:'#002600', 
         alignItems:'center', 

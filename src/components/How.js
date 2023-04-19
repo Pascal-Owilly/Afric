@@ -15,9 +15,7 @@ import img15 from '../img/img15.jpeg';
 import how7 from '../img/how7.jpeg';
 import how2 from '../img/how2.jpeg';
 import how1 from '../img/how1.jpeg';
-import vid from '../vid/vid.mp4';
 import { Container, Row, Col } from 'react-bootstrap';
-import ReactPlayer from 'react-player';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Section = () => {

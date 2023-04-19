@@ -15,17 +15,14 @@ function Footer() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    // Replace <API_ENDPOINT> with your own subscription API endpoint
-    axios.post('<API_ENDPOINT>', { email })
+    axios.post('http://localhost:8000/subscriptions/', { email })
       .then((response) => {
         console.log('Form submitted successfully:', response);
-        // Replace this with your own success message or redirect logic
         alert('Thanks for subscribing!');
       })
       .catch((error) => {
         console.error('Form submission failed:', error);
-        // Replace this with your own error message or error handling logic
-        alert('Oops! Something went wrong. Please try again later.');
+        alert('Oop!, try again after sometime');
       });
   };
   return (
@@ -33,7 +30,7 @@ function Footer() {
    
     <footer className="footer-content">
     <div className='footer-overlay'></div>
-      <Container  className='footer-container' fluid >
+      <Container className='footer-container' fluid >
         <Row >
           <Col md={4} className='mt-4'>
             <h4 >Site Links</h4>
@@ -63,7 +60,7 @@ function Footer() {
                        
                       </Form.Text>
                     </Form.Group>
-                    <Button className='sub-btn' variant="primary" type="submit">
+                    <Button className='sub-btn' variant="danger" type="submit">
                       Subscribe
                     </Button>
                   </Form>
@@ -75,12 +72,12 @@ function Footer() {
         <hr />
         <Row  style={{backgroundColor:'black', padding:'1rem'}}>
         
-          <Col md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
-            <p className='mt-4' style={{ color: '#fff', fontWeight:'bold', textAlign:'center', fontSize:'16px' }}>Mwani Africa &copy; 2023</p> 
+          <Col md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'' }} >
+            <p className='mt-1' style={{ color: '#fff', fontWeight:'bold', textAlign:'left', fontSize:'16px' }}>Mwani Africa &copy; 2023</p> 
           </Col> 
-          <Col className='text-center' md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
+          <Col className='text-center' md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'right' }} >
           </Col> 
-          <Col md={4} classnName="">
+          <Col md={4} classnName="text-right">
             <FooterCard
               name="Pascal Owilly"
               position="Software Developer"

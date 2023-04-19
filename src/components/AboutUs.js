@@ -35,7 +35,7 @@ Mwani Africa's social enterprise leverages the Seaweed value-addition, to facili
             <Col>
             <Card className="what-card mt-3" style={{marginRight:'1rem'}}>  
      
-              <h3 className='welcome-h1' style={{color:'#666666', textAlign:'left'}}>Mission</h3>
+              <h3 className='welcome-h3' style={{color:'#666666', textAlign:'left'}}>Mission</h3>
               <p style={{ fontSize: '16px', lineHeight: '22px' }}>
               Responsibly enhance healthy plants and soil while protecting the planet.
               </p>
@@ -45,7 +45,7 @@ Mwani Africa's social enterprise leverages the Seaweed value-addition, to facili
           <Row >
             <Col>
             <Card className="what-card mt-2" style={{marginRight:'1rem'}}>  
-              <h3 className='welcome-h1' style={{color:'#666666', textAlign:'left'}}>Vision</h3>
+              <h3 className='welcome-h3' style={{color:'#666666', textAlign:'left'}}>Vision</h3>
               <p style={{ fontSize: '16px', lineHeight: '22px' }}>
               A Social enterprise enhancing livelihoods; providing the most efficient healthy plants and soil solution; making the planet better.
 

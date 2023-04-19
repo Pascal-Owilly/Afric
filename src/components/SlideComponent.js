@@ -22,24 +22,24 @@ import how7 from '../img/how7.jpeg';
 import teambg from '../img/teambg.jpeg';
 import person3 from '../img/person3.jpeg'
 import how2 from '../img/how2.jpeg';
-const images = [img1, img2, img2, img3, img4, img9, img8, cimg1, person2, img6, person1, img5, cimg3, img12, teambg, person3, how2, img11, cardimg];
+const images = [img1, img2, img2, img3, img4, img9, img8, cimg1, person2,person3, img6, person1, img5, cimg3, img12, teambg, person3, how2, img11, cardimg];
 
 const cardsData = [
   {
     image: img4,
-    title: "Lorem Ipsum",
+    title: "",
   },
   {
     image: img2,
-    title: "Dollar Sit Amet",
+    title: "",
   },
   {
     image: img1,
-    title: "Adipsing",
+    title: "",
   },
   {
     image: img3,
-    title: "Consetour",
+    title: "",
   },
 ];
 
@@ -47,28 +47,24 @@ const CardsHero = () => {
   return (
     <Container fluid className=' container-card-section' style={{}}>
       <div className="hero-overlay" style={{ marginTop: 0 }}></div>
-      <Row className="hero-card-row" style={{ marginTop: '-15vh' }}>
+      <Row className="hero-card-row" style={{ marginTop: '-8vh' }}>
         <Col md={3} className='c-only'>
           <Card style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
-            <Card.Img variant="top" src={cimg1} className="rounded-circle rounded-circle-hero-card" />
+            <Card.Img variant="top" src={cimg1} className="rounded-circle rounded-circle-hero-card" style={{marginTop:'-3vh', width:'70%', margin:'auto', padding:'10px'}} />
             <div className="card-text"></div>
-            <Card.Footer className='footer-text-card bg-light'>
-              Adipsing Connectur
-            </Card.Footer>
+
           </Card>
         </Col>
-        <Col md={3} className='p-only'>
+        <Col md={3} className=''>
 
-          <Carousel className="hero-card hero-card-controls" style={{ top: 0 }} fade={true} interval={3000} indicators={false}>
+          <Carousel className="hero-card hero-card-controls" style={{ top: 0, zIndex:1 }} slide={true} interval={3000} indicators={false}>
             {cardsData.map((card, index) => (
               <Carousel.Item key={index}>
                 <div style={{ position: 'relative', zIndex: 1 }}>
-                  <Card style={{ width: '100%', margin: 'auto' }} className="carousel-card carousel-card-for-hero-card">
-                    <Card.Img variant="top" src={card.image} className="rounded-circle rounded-circle-hero-card" />
+                  <Card style={{ width: '100%', margin: 'auto'}} className="carousel-card carousel-card-for-hero-card">
+                    <Card.Img style={{marginTop:'-3vh', width:'70%', margin:'auto', padding:'10px'}} variant="top" src={card.image} className="rounded-circle rounded-circle-hero-card" />
                     <div className="card-text">{card.text}</div>
-                    <Card.Footer className='footer-text-card bg-light'>
-                      {card.title}
-                    </Card.Footer>
+
                   </Card>
                 </div>
               </Carousel.Item>
@@ -78,51 +74,47 @@ const CardsHero = () => {
         </Col>
         <Col md={3} className='c-only '>
           <Card style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
-            <Card.Img variant="top" src={img9} className="rounded-circle rounded-circle-hero-card" />
+            <Card.Img style={{marginTop:'-3vh', width:'70%', margin:'auto', padding:'10px'}} variant="top" src={img9} className="rounded-circle rounded-circle-hero-card" />
             <div className="card-text"></div>
-            <Card.Footer className='footer-text-card bg-light'>
-              Musulo Vuloriti
-            </Card.Footer>
           </Card>
-        </Col>
+          </Col>
         <Col md={3} className='c-only c-only-1'>
           <Card style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
-            <Card.Img variant="top" src={img8} className="rounded-circle rounded-circle-hero-card" />
+            <Card.Img style={{marginTop:'-3vh', width:'70%', margin:'auto', padding:'10px'}} variant="top" src={img8} className="rounded-circle rounded-circle-hero-card" />
             <div className="card-text"></div>
-            <Card.Footer className='footer-text-card bg-light'>
-              Medihol Navilu
-            </Card.Footer>
+
           </Card>
         </Col>
         <Row className='welcome-row mt-5' style={{ zIndex: 1, color: '#ffffff' }}>
           <h1 className="text-center welcome-h1">Welcome to Mwani Africa</h1>
           <p className="text-center mt-3" style={{ fontSize: '16px', lineHeight: '26px' }}>Mwani Africa, is a social enterprise that offers Seaweed farms as-a-service to smallholder farmers, mostly women and youth, to undertake sustainable and climate resilient seaweed farming, leveraging innovation to produce biostimulant soil conditioner, and other value-added products, all year round.  </p>
           <Col md={3} className="">
-          <img className=" mt-3 rounded" src={cardimg} style={{ width: '100%' }} />
+          <img className=" mt-3 rounded p-only" src={person2} style={{ width: '100%' }} />
+          <img className=" mt-3 rounded c-only" src={cardimg} style={{ width: '100%' }} />
           </Col>
           <Col  md={3} >
-            <img className=" mt-3 rounded" src={cimg1} style={{ width: '100%' }} />
+            <img className=" mt-3 rounded c-only " src={cimg1} style={{ width: '100%' }} />
           </Col>
           <Col md={3} className="">
-            <img className="mt-3 rounded" src={teambg} style={{ width: '100%' }} />
+            <img className="mt-3 rounded mb-4" src={teambg} style={{ width: '100%' }} />
           </Col>
           <Col md={3} className="">
-          <img className=" mt-3 mb-2 rounded" src={plant5} style={{ width: '100%', marginTop: '-23vh' }} />
+          <img className=" mt-3 mb-2 rounded c-only" src={plant5} style={{ width: '100%', marginTop: '-23vh' }} />
           </Col>
         </Row>
         <Row className='mt-3 c-only' style={{ zIndex: 1, color: '#ffffff' }}>
 
           <Col md={3}>
-            <img className=" rounded p-only" src={how2} style={{ width: '100%' }} />
+            <img className=" rounded" src={how2} style={{ width: '100%' }} />
           </Col>
           <Col md={3} >
             <img className=" rounded" src={img12} style={{ width: '100%' }} />
           </Col>
           <Col md={3}>
-            <img className=" rounded" src={img11} style={{ width: '100%' }} />
+            <img className=" rounded " src={person3} style={{ width: '100%' }} />
           </Col>
           <Col md={3} >
-          <img className="  mb-2 rounded" src={person2} style={{ width: '100%' }} />
+          <img className="  mb-2 rounded " src={person2} style={{ width: '100%' }} />
           </Col>
         </Row>
       </Row>

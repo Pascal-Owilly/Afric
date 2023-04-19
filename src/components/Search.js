@@ -11,7 +11,7 @@ function SearchBar() {
   return (
     <div className="search-bar">
       <span className="search-icon" onClick={handleSearchClick}>
-        <FaSearch />
+        <FaSearch style={{fontFamily:'verdana', fontSize:'15px', transition:'all 1s ease'}}/>
       </span>
       {showSearch && (
         <form className="search-form">
