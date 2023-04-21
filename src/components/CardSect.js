@@ -4,7 +4,7 @@ import './CardSect.css';
 import cardimg2 from '../img/cardimg2.jpeg';
 import cardimg from '../img/cardimg.jpeg';
 import img4 from '../img/img4.jpeg';
-import img1 from '../img/img1.jpeg';
+import person2 from '../img/person2.jpeg';
 import cimg1 from '../img/c-img1.jpeg';
 import img9 from '../img/img9.jpeg'
 
@@ -84,9 +84,11 @@ const CardCarousel = () => {
   };
 
   return (
+    <>
     <Container style={{position:'relative', zIndex: 1}}>
       <hr />
-      <h2 className="text-center mt-5 mb-4" style={{color:'#666666', fontFamily:'poppins'}}><i>Explore our products</i></h2>
+              
+      <h2 className="text-center mb-4" style={{color:'#666666', fontFamily:'poppins'}}><i>The ocean covers 70% of our planet and plays a critical role in regulating our climate. Yet it remains an area of focus with the least amount of investment.</i></h2>
     <div className="card-carousel c-only cardsect mt-4" style={{height:'65vh'}}>
       <div className={`card-carousel-container cardsect-carousel-container ${slideDirection}`}>
         <Row>
@@ -126,7 +128,7 @@ const CardCarousel = () => {
 
     <div className="card-carousel cardsect p-only">
       <div className="card-carousel-container cardsect-carousel-container" >
-        <Row>
+        <Row style={{width:'100%'}}>
          
         {cards.map((card, index) => {
           const active = index === currentSlide;
@@ -138,7 +140,7 @@ const CardCarousel = () => {
               <h2>{card.title}</h2>
               </Col>
               <Col>
-              < img src={card.image} />
+              < img src={card.image} style={{width:'100%'}}/>
               </Col>
             </div>
           );
@@ -146,32 +148,116 @@ const CardCarousel = () => {
         
         </Row>
       </div>
-      <div className="slidebutton-container mb-5">
+      <div className="slidebutton-container ">
         <button className="" style={{width:'100px', borderBottom:'1px solid #002600', borderRadius:'25px' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(prevIndex)}>&#8249; &#8249;&#8249; &nbsp; Prev</button>&nbsp;&nbsp;&nbsp;
-        <button className="" style={{width:'100px', borderBottom:'1px solid #002600', borderRadius:'25px' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(nextIndex)}>Next  &nbsp; &#8250;&#8250;&#8250;</button>
-        
+        <button className="" style={{width:'100px', borderBottom:'1px solid #002600', borderRadius:'25px' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(nextIndex)}>Next  &nbsp; &#8250;&#8250;&#8250;</button>       
       </div>
     </div>
-
-    <Row>
-      <Container className='mb-2'>
+<hr className="p-only"/>
+    <Row className='cardsect-content'>
+      <Container className=''>
+              <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Seaweed forests are an integral part of improving ocean health and supporting high levels of biodiversity in marine environments by forming crucial habitats, producing oxygen, mitigating acidification, and capturing carbon. As with many ecosystems, the impacts of climate change have been detrimental to naturally occurring seaweed forests, and therefore they require protection and restoration.</p>
+              <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Cultivating seaweed on low-impact ocean farms has the ability to not only restore ecosystems, but also to increase the resilience of coastal economies and global food systems. This is because seaweed has a long list of potential uses once harvested. </p>
+              <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Ocean cultivated seaweed requires no freshwater, fertilizers, pesticides or arable land to grow. It utilizes nutrients from the sea, is renewable and fast growing. It is the definition of regenerative aquaculture and this burgeoning sector directly supports the development of Canada’s growing Blue Economy.</p>
         <Row>
-      <Col md={8}>
-<img className="p-only" src={img4} style={{width:'100%'}}/>
-<img className="c-only" src={img1} style={{width:'100%'}}/>
-      </Col>
-      <Col md={4}>
-      
-<p className="mt-2">There are 150+ fertilizer companies in Kenya, less than 20% of them organic. Regional fertilizer companies are plagued by decreasing availability of raw materials due to the war in Ukraine. </p>
- <p>  Mwani Africa boasts of a natural fertilizer, great for all plants and soil.</p> <p> The fast rate that Seaweed grows, guarantees inexhaustible supply of raw material. Mwani Africa proposes to meet the fertilizer deficit, fertilizer growing demand due to increase in population, and offer the best competitive prices.</p>
-  
+        <hr />
+      <Col md={6}>
+<img className="mb-5" src={img4} style={{width:'100%'}}/>
 
+ </Col>
+<Col md={6}>
+      
+<h2 className="text-cente" style={{color:'#666666', fontFamily:'poppins'}}><i> Mwani Africa is on a mission
+to produce climate-positive biomass in the ocean, reduce greenhouse gas emissions and build a more resilient food system by producing products for land-based farmers. </i></h2>
+<hr />
+    <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>  Mwani Africa has built a team of experts to grow, process and produce seaweed-based products for regenerative agriculture — biostimulants and agrifeeds.</p> 
+    <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}> We are cultivators (compared to wild harvesters), which means we grow local seaweeds from seed on low-impact farms in the ocean. The infrastructure includes anchors on the seafloor, floats on the surface and tensioned ropes in between.</p>
+    <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>In the fall, we collect reproductive material from the vicinity of each farm site, to protect the genetic diversity of each species. We create a spore solution from the reproductive material and grow our seaweed seedlings in our custom nursery. We plant those seedlings on the ocean farms in the winter and monitor their growth until they are ready to be harvested in the spring. The harvested biomass is then transported to a processing facility where it is washed and frozen and available for the production of our products.</p>
+
+        </Col>
+        </Row>
+        <Row className='mb-4'>
+        <Col md={12}>
+          <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>By partnering with coastal First Nations, we are cultivating seaweed in the ocean at scale to restore marine ecosystems. We then harvest that biomass to produce products that make positive impacts on the environment and build a more resilient food system.
+        We are focusing on delivering products in three key areas:</p>
+          <div>
+            <Row>
+              <Col md={4}>
+              <div>
+            <h3>FEED ADDITIVES</h3>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Seaweed-based additives are used in animal nutrition for purposes of improving the quality of feed and the animals’ health & growth.</p>
+          </div>
+              </Col>
+              <Col md={4}>
+              <div>
+            <h3>FARM BIOSTIMULANTS</h3>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Biostimulants are applied to plants to enhance nutrition efficiency, abiotic stress tolerance, and crop quality traits.</p>
+          </div>
+                </Col>
+                <Col md={4}>
+                <div>
+            <h3>ECOSYSTEM SERVICES</h3>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As seaweed grows in the ocean it provides benefits to the ecosystem that deserve to be measured and valued</p>
+          </div>
+                </Col>
+            </Row>
+            <Row>
+              <Col md={10}>
+                <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Mwani Africa recognizes that we operate on the traditional territories of the coastal First Nations of BC and we are grateful for the opportunity to do so. We currently have agreements with the &nbsp;
+                  <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://www.sitemodify.com/site/36aff82f/?nee=true&ed=true&showOriginal=true&preview=true&dm_try_mode=true&dm_checkSync=1">Tsawout</a></span>&nbsp;
+                  <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://www.uchucklesaht.ca/">Uchucklesaht</a></span> &nbsp;
+                  <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://tseshaht.com/">Tseshaht</a></span>&nbsp;
+                  <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://www.klahoose.org/">Klahoose</a></span>&nbsp;
+                  <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://www.ahousaht.ca/"> Ahousaht</a></span>&nbsp;
+                  <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="http://www.metlakatla.ca/">Metlakatla </a></span>&nbsp;
+                  <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://gitxaalanation.com/">Gitxaala</a></span>&nbsp;
+                  </p>
+              </Col>
+            </Row>
+
+
+
+          </div>
+
+
+
+          <img src={person2} style={{width:'100%'}}/>
+         
         </Col>
         </Row>
         </Container>
     </Row>
+    
 
+   
+   
     </Container>
+
+   
+    <Container fluid>
+    <Row className='certified-bg'style={{height:'80vh'}}>
+      <Col md={12}>
+        <h2 style={{display:'flex', alignItems:'center', justifyContent:'center', height:'80vh'}}>
+      As a certified B Corp and
+Benefit Company, we are legally committed to conducting business in a socially responsible and sustainable way.
+</h2>
+      </Col>
+    </Row>
+    </Container>
+    <Container>
+      <Row>
+        <Col md={7}>
+          <h2>B Corp, Benefit Company and Living Wage Employer.</h2>
+          <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As a certified B Corp, a registered Benefit Company in British Columbia, and a living-wage employer Cascadia Seaweed is held accountable by external third-party organizations to ensure their actions genuinely benefit people and the planet.</p>
+          <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>On behalf of our three primary stakeholders — Mother Earth, our First Nations Partners and our shareholders — we have an imperative to demonstrate that both profitable business growth and environmental stewardship can be achieved in harmony.</p>
+        </Col>
+        <Col md={5}>
+
+        </Col>
+      </Row>
+    </Container>
+    </>
+
   );
 };
 

@@ -87,9 +87,10 @@ const CardsHero = () => {
         </Col>
         <Row className='welcome-row mt-5' style={{ zIndex: 1, color: '#ffffff' }}>
           <h1 className="text-center welcome-h1">Welcome to Mwani Africa</h1>
-          <p className="text-center mt-3" style={{ fontSize: '16px', lineHeight: '26px' }}>Mwani Africa, is a social enterprise that offers Seaweed farms as-a-service to smallholder farmers, mostly women and youth, to undertake sustainable and climate resilient seaweed farming, leveraging innovation to produce biostimulant soil conditioner, and other value-added products, all year round.  </p>
+          <p className="text-center mt-3" style={{ fontSize: '16px', lineHeight: '26px' }}>At Mwani Africa we cultivate local species of Seaweed on low-impact 
+          ocean farms in partnership with coastal First Nations. Then we use that Seaweed to manufacture products for crop and cattle farmers addressing two global challenges:
+           &nbsp; <i><b>Food Security and Climate Change. </b></i></p>
           <Col md={3} className="">
-          <img className=" mt-3 rounded mb-1 p-only" src={person2} style={{ width: '100%' }} />
           <img className=" mt-3 rounded c-only" src={cardimg} style={{ width: '100%' }} />
           </Col>
           <Col  md={3} >
@@ -116,7 +117,10 @@ const CardsHero = () => {
           <Col md={3} >
           <img className="  mb-2 rounded " src={person2} style={{ width: '100%' }} />
           </Col>
-        </Row>
+          </Row>
+          <Row>
+          </Row>
+        
       </Row>
     </Container>
   )

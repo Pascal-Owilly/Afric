@@ -25,7 +25,7 @@ function CardHero() {
         color:'#ffffff', 
         fontSize:'14px',
       }}
-      prevIcon={<span className="carousel-control-prev-icon" />}
+      prevIcon={<span className="carousel-control-prev-icon" />} 
       nextIcon={<span className="carousel-control-next-icon" />}
     >
       {images.map((image, index) => (

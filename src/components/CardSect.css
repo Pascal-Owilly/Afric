@@ -145,6 +145,17 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .certified-bg{
+    background-image: url('../img/cardimg2.jpeg');
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  .certified-bg h2{
+    font: 'Alata' !important;
+    color: #ffffff;
+   font-size: 62px; 
+    font-weight: 700;
+  }
   
  
   

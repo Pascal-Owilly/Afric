@@ -82,11 +82,12 @@ function NavigationBar() {
               </Navbar.Brand>
              
             </Col>
+            <hr className='p-only'/>
             <Col md={6} className="text-md-end text-center">
             
               <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}>
                 <span className="navbar-toggler-icon text-white"></span> 
-                <span className="menu-text">MENU</span>  
+                <span className="menu-text" style={{}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MENU</span>  
               </Navbar.Toggle>
               <span className="search-icon" title="Enter search term" onClick={handleSearchClick}>
                 <Search /> 
@@ -111,6 +112,7 @@ function NavigationBar() {
          
         </Container>
       </Navbar>
+
     </>
   );
 }

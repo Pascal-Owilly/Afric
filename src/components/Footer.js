@@ -15,7 +15,7 @@ function Footer() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    axios.post('http://localhost:8000/subscriptions/', { email })
+    axios.post('https://www.mwani.africa/subscriptions/', { email })
       .then((response) => {
         console.log('Form submitted successfully:', response);
         alert('Thanks for subscribing!');

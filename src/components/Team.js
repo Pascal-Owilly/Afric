@@ -1,6 +1,6 @@
 import React, { useState,useRef, useEffect } from "react";
 import "./Team.css";
-import {Container} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import team1 from '../img/team1.jpeg';
 import team2 from '../img/team2.jpeg';
 import team3 from '../img/team3.jpeg';
@@ -92,9 +92,10 @@ function App() {
   return (
     <>
     <Container fluid style={{height:'100vh', width:'100%', overflow:'hidden', padding:0}} className="team-title  slideshow-container">
+
     <div style={{textAlign:'center'}} >
        <div className="slideshow">
-       <h3 style={{textAlign:'center', marginRight:'0',marginTop:'15vh', color:'#ffffff', width:'100%',borderRadius:'30px', fontFamily:'serif'}}>The Team</h3>
+       <h3 style={{textAlign:'center', marginRight:'0',marginTop:'20vh', color:'#ffffff', width:'100%',borderRadius:'30px', fontFamily:'serif'}}>The Team</h3>
        <hr />
          <div ref={slideshowContainerRef} className="slideshow__wrapper">       
           {teamMembers.map((member, index) => (
