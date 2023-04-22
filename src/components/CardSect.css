@@ -153,8 +153,27 @@
   .certified-bg h2{
     font: 'Alata' !important;
     color: #ffffff;
-   font-size: 62px; 
-    font-weight: 700;
+   font-size: 48px; 
+    font-weight: 800;
+  }
+
+  .coastal{
+    height: 40vh;
+    background-image: url('../img/img11.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .coastal p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+
   }
   
  

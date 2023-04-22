@@ -45,7 +45,7 @@ const cardsData = [
 
 const CardsHero = () => {
   return (
-    <Container fluid className=' container-card-section' style={{}}>
+    <Container fluid className=' container-card-section' >
       <div className="hero-overlay" style={{ marginTop: 0 }}></div>
       <Row className="hero-card-row" style={{ marginTop: '-8vh' }}>
         <Col md={3} className='c-only'>
@@ -86,38 +86,13 @@ const CardsHero = () => {
           </Card>
         </Col>
         <Row className='welcome-row mt-5' style={{ zIndex: 1, color: '#ffffff' }}>
-          <h1 className="text-center welcome-h1">Welcome to Mwani Africa</h1>
-          <p className="text-center mt-3" style={{ fontSize: '16px', lineHeight: '26px' }}>At Mwani Africa we cultivate local species of Seaweed on low-impact 
+          {/* <h1 className="text-center welcome-h1"></h1> */}
+          <p className="text-center mt-1" style={{ fontSize: '16px', lineHeight: '26px' }}>At Mwani Africa we cultivate local species of Seaweed on low-impact 
           ocean farms in partnership with coastal First Nations. Then we use that Seaweed to manufacture products for crop and cattle farmers addressing two global challenges:
            &nbsp; <i><b>Food Security and Climate Change. </b></i></p>
-          <Col md={3} className="">
-          <img className=" mt-3 rounded c-only" src={cardimg} style={{ width: '100%' }} />
-          </Col>
-          <Col  md={3} >
-            <img className=" mt-3 rounded c-only " src={cimg1} style={{ width: '100%' }} />
-          </Col>
-          <Col md={3} className="">
-            <img className="mt-3 rounded c-only mb-4" src={teambg} style={{ width: '100%' }} />
-          </Col>
-          <Col md={3} className="">
-          <img className=" mt-3 mb-2 rounded c-only" src={plant5} style={{ width: '100%', marginTop: '-23vh' }} />
-          </Col>
+      
         </Row>
-        <Row className='mt-3 c-only' style={{ zIndex: 1, color: '#ffffff' }}>
 
-          <Col md={3}>
-            <img className=" rounded" src={how2} style={{ width: '100%' }} />
-          </Col>
-          <Col md={3} >
-            <img className=" rounded" src={img12} style={{ width: '100%' }} />
-          </Col>
-          <Col md={3}>
-            <img className=" rounded " src={person3} style={{ width: '100%' }} />
-          </Col>
-          <Col md={3} >
-          <img className="  mb-2 rounded " src={person2} style={{ width: '100%' }} />
-          </Col>
-          </Row>
           <Row>
           </Row>
         

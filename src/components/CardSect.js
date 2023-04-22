@@ -85,7 +85,7 @@ const CardCarousel = () => {
 
   return (
     <>
-    <Container style={{position:'relative', zIndex: 1}}>
+    <Container style={{position:'relative', zIndex:1}}>
       <hr />
               
       <h2 className="text-center mb-4" style={{color:'#666666', fontFamily:'poppins'}}><i>The ocean covers 70% of our planet and plays a critical role in regulating our climate. Yet it remains an area of focus with the least amount of investment.</i></h2>
@@ -201,6 +201,37 @@ to produce climate-positive biomass in the ocean, reduce greenhouse gas emission
           </div>
                 </Col>
             </Row>
+            <Row className='coastal'>
+              <p style={{ fontSize: '28px', lineHeight: '26px' }}>Every touch point makes a positive difference. And we are doing this in partnership with coastal First Nations.</p>
+            </Row>
+            <h2 className="mt-2">#TRULYGOOD</h2>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Cascadia Seaweed, in its effort to be Truly Good, believes it is vital to consider the social, economic and environmental impact of its purchases.</p>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Each member of our team aims to support our independent local businesses first while seeking the best value for products and services. Our goal is to purchase at least 50% of our core products locally.</p>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>We also have a strong commitment to our First Nations partners to offer contract labour and employment opportunities to their members first, and our team aims to procure supplies and equipment from First Nations owned service providers wherever possible.</p>
+            <Row>
+            <img src={person2} style={{width:'100%'}}/>
+              <Col md={4} className='mt-3'>
+              <div>
+            <h3>ENVIRONMENTAL</h3>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>We grow seaweed to restore marine ecosystems and produce products that help mitigate climate change.</p>
+          </div>
+              </Col>
+              <Col md={4} className='mt-3'>
+              <div>
+            <h3>SOCIAL</h3>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>We form integrated partnerships with First Nations and local coastal communities to tackle threats to the world’s food supply.</p>
+          </div>
+                </Col>
+                <Col md={4} className='mt-3'>
+                <div>
+            <h3 >GOVERNANCE</h3>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As a certified B Corp. and a Benefit Company, we are legally committed to conduct business in a responsible and 
+
+sustainable way. </p>
+          </div>
+                </Col>
+            </Row>
+            
             <Row>
               <Col md={10}>
                 <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Mwani Africa recognizes that we operate on the traditional territories of the coastal First Nations of BC and we are grateful for the opportunity to do so. We currently have agreements with the &nbsp;
@@ -221,7 +252,7 @@ to produce climate-positive biomass in the ocean, reduce greenhouse gas emission
 
 
 
-          <img src={person2} style={{width:'100%'}}/>
+          
          
         </Col>
         </Row>
@@ -246,8 +277,8 @@ Benefit Company, we are legally committed to conducting business in a socially r
     </Container>
     <Container>
       <Row>
-        <Col md={7}>
-          <h2>B Corp, Benefit Company and Living Wage Employer.</h2>
+        <Col md={12} style={{width:'90%', margin:'auto'}}>
+          <h2 className='mt-2'>B Corp, Benefit Company and Living Wage Employer.</h2>
           <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As a certified B Corp, a registered Benefit Company in British Columbia, and a living-wage employer Cascadia Seaweed is held accountable by external third-party organizations to ensure their actions genuinely benefit people and the planet.</p>
           <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>On behalf of our three primary stakeholders — Mother Earth, our First Nations Partners and our shareholders — we have an imperative to demonstrate that both profitable business growth and environmental stewardship can be achieved in harmony.</p>
         </Col>

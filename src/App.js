@@ -6,6 +6,7 @@ import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import Team from './components/Team';
 import SocialEnterprise from './components/SocialEnterprise';
+import TeamPage from './components/TeamPage';
 import './App.css'; 
 
 function App() {  
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/socialent" element={<SocialEnterprise />}  />
         <Route path="/team" element={<Team />} />
+        <Route path="/teampage" element={<TeamPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />

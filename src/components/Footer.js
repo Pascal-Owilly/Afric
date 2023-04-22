@@ -72,21 +72,12 @@ function Footer() {
         <hr />
         <Row  style={{backgroundColor:'black', padding:'1rem'}}>
         
-          <Col md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'' }} >
-            <p className='mt-1' style={{ color: '#fff', fontWeight:'bold', textAlign:'left', fontSize:'16px' }}>Mwani Africa &copy; 2023</p> 
+          <Col md={12} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
+            <p className='mt-1' style={{ color: '#fff', fontWeight:'bold', fontSize:'18px' }}>Mwani Africa &copy; 2023</p> 
           </Col> 
           <Col className='text-center' md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'right' }} >
           </Col> 
-          <Col md={4} classnName="text-right">
-            <FooterCard
-              name="Pascal Owilly"
-              position="Software Developer"
-              image="dev.png"
-              linkedin="https://www.linkedin.com/in/pascal-owilly-1964aa114"
-              github="https://pascal-owilly.github.io/My-Portfolio/portfolio.html"
-            />
-
-            </Col>           
+           
           </Row>    
       </Container>
     </footer>

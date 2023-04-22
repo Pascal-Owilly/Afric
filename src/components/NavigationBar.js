@@ -101,11 +101,11 @@ function NavigationBar() {
 
           <Navbar.Collapse id="basic-navbar-nav" className='text-center text-dark' style={{ border: 'none', height: '8vh', flexDirection: 'row !important' }}>
             <Nav className="justify-content-start justify-content-md-end">
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/team" className="nav-links"      >The Team</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
-              <Nav.Link as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
+              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
+              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
+              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>
+              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
+              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
             </Nav>
             
           </Navbar.Collapse>
