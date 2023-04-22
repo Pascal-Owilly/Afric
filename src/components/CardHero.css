@@ -34,7 +34,7 @@
 }
 
 .subscription-card{
-  background: #81ba00;
+  background: rgb(207, 169, 71);
   float: left;
   padding: 5px 5px;
   width: 100%;
@@ -237,7 +237,7 @@
     padding: 0;
     color: #000000;
     text-align: center;
-    background-color: #111;
+    background-color: purple;
     border: 0;
     opacity: 1;
    
@@ -261,6 +261,15 @@ border-radius: 25px 0 0 25px;
     position: relative;
     z-index: 1;
     margin-top: 7rem;
+  }
+
+  .hero-h2{
+    font-size: 22px;
+    width: 90% !important;
+    text-align: center;
+    font-weight: 900;
+    font-family: verdana;
+  
   }
 
   .certified-bg h2{
@@ -315,7 +324,7 @@ border-radius: 25px 0 0 25px;
   } */
 
   .img-text{
-    width: 100%;
+    width: 90%;
     font: 400 18px "Poppins",Helvetica,sans-serif;
     font-style:italic;
     font-variant-caps: normal;
@@ -324,12 +333,12 @@ border-radius: 25px 0 0 25px;
     font-variant-east-asian: normal;
     font-weight: 400;
     font-stretch: normal;
-    font-size: 18px;
+    font-size: 16px !important;
     line-height: 18px;
     font-family: 'Poppins', Helvetica, sans-serif;
     letter-spacing: 1px;
     margin: auto;
-    top: -3.187rem;
+    text-align: left !important;
   }
   /* .carousel-item {
     transition-duration: 0.5s;
@@ -370,7 +379,7 @@ border-radius: 25px 0 0 25px;
   margin-top: 3rem;
 }
 .subscription-card{
-  background: #81ba00;
+  background: rgb(207, 169, 71);
   float: left;
   padding: 5px 5px;
   width: 100%;
@@ -448,7 +457,7 @@ border-radius: 25px 0 0 25px;
     margin-top: 2em;
   }
   .carousel-control-prev {
-    top: 43vh;
+    top: 45.8vh;
     border-radius: 25px 0 0 25px;
     margin-right: 4 rem;
     padding: 5px;
@@ -490,7 +499,7 @@ border-radius: 25px 0 0 25px;
     margin-top: -3px;
   }
   .carousel-control-next{
-    top: 43vh;
+    top: 45.8vh;
     bottom: 0;
     padding: 10px;
     margin-right: 2rem;
@@ -507,7 +516,7 @@ border-radius: 25px 0 0 25px;
     padding: 0;
     color: #000000;
     text-align: center;
-    background-color: #111;
+    background-color: purple;
     border: 0;
     opacity: 1;
     /* transition: opacity .15s ease; */
@@ -574,7 +583,7 @@ border-radius: 25px 0 0 25px;
   margin-top: 3rem;
 }
 .subscription-card{
-  background: #81ba00;
+  background: rgb(207, 169, 71);
   float: left;
   padding: 5px 5px;
   width: 100%;
@@ -724,7 +733,7 @@ border-radius: 25px 0 0 25px;
     padding: 0;
     color: #000000;
     text-align: center;
-    background-color: #111;
+    background-color: purple;
     border: 0;
     opacity: 1;
     /* transition: opacity .15s ease; */
@@ -827,7 +836,7 @@ border-radius: 25px 0 0 25px;
   padding: 0;
   color: #000000;
   text-align: center;
-  background-color: #111;
+  background-color: purple;
   border: 0;
   opacity: 1;
   /* transition: opacity .15s ease; */
@@ -1007,7 +1016,7 @@ border-radius: 0 25px 25px 0;
   padding: 0;
   color: #000000;
   text-align: center;
-  background-color: #111;
+  background-color: purple;
   border: 0;
   opacity: 1;
   /* transition: opacity .15s ease; */
@@ -1031,7 +1040,14 @@ border-radius: 0 25px 25px 0;
     top: 0;
   }
 
+.hero-h2{
+  font-size: 58px;
+  width: 50% !important;
+  text-align: center;
+  font-weight: 900;
+  font-family: verdana;
 
+}
 
   /* .carousel-item {
     transition-duration: 2s;
@@ -1051,25 +1067,29 @@ border-radius: 0 25px 25px 0;
 }
 
 
-.img-text{
-  width: 100%;
 
-  margin: auto;
-  height: auto;
+.img-text-climate{
+ text-align: center;
+ margin-top: 20px;
 
-  font: 400 30px "Poppins",Helvetica,sans-serif;
-  font-variant-caps: normal;
-  font-variant-ligatures: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: 400;
-  font-stretch: normal;
-  line-height: 26px;
-  /* font-family: Poppins, Helvetica, sans-serif; */
-  font-family: verdana;
-  letter-spacing: 'poppins';
-  color: white;
 }
+
+.img-text{
+  display: flex;
+  justify-content: center;
+ width: 60%;
+ font-family: Arial;
+ color: rgb(255, 255, 255); 
+ font-style: normal; 
+ text-decoration: none;
+ font-weight: normal; 
+ font-size: 26px;
+ text-align: center;
+ line-height: 32px;
+ font-style: none;
+}
+
+
   .container-for-hero-card{
     margin-top: -10vh;
     position: relative;
@@ -1134,7 +1154,7 @@ border-radius: 0 25px 25px 0;
   }
 
   .subscription-card{
-    background: #81ba00;
+    background: rgb(207, 169, 71);
     float: left;
     padding: 5px 5px;
     width: 100%;
@@ -1283,7 +1303,7 @@ border-radius: 0 25px 25px 0;
       padding: 0;
       color: #000000;
       text-align: center;
-      background-color: #111;
+      background-color: purple;
       border: 0;
       opacity: 1;
       /* transition: opacity .15s ease; */

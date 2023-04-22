@@ -115,10 +115,10 @@ const CardCarousel = () => {
         </Row>
       </div>
       <div className="card-carousel-buttons mt-3 text-center" >
-        <button style={{width:'100px', borderBottom:'1px solid #002600', borderRadius:'25px'}} className='cardsect-carousel-buttons' onClick={handlePrevClick} disabled={startIndex === 0}>
+        <button style={{width:'120px', border:'none', borderRadius:'25px'}} className='cardsect-carousel-buttons' onClick={handlePrevClick} disabled={startIndex === 0}>
         &#8249; &#8249;&#8249; &nbsp; Prev
         </button>&nbsp;
-        <button style={{width:'100px', borderBottom:'1px solid #002600', borderRadius:'25px'}} className='cardsect-carousel-buttons' onClick={handleNextClick} disabled={startIndex >= cardData.length - 3}>
+        <button style={{width:'120px', border:'none', borderRadius:'25px'}} className='cardsect-carousel-buttons' onClick={handleNextClick} disabled={startIndex >= cardData.length - 3}>
           Next  &nbsp; &#8250;&#8250;&#8250;
         </button>
       </div>
@@ -149,8 +149,8 @@ const CardCarousel = () => {
         </Row>
       </div>
       <div className="slidebutton-container ">
-        <button className="" style={{width:'100px', borderBottom:'1px solid #002600', borderRadius:'25px' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(prevIndex)}>&#8249; &#8249;&#8249; &nbsp; Prev</button>&nbsp;&nbsp;&nbsp;
-        <button className="" style={{width:'100px', borderBottom:'1px solid #002600', borderRadius:'25px' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(nextIndex)}>Next  &nbsp; &#8250;&#8250;&#8250;</button>       
+        <button className="" style={{width:'120px', border:'none', borderRadius:'25px', backgroundColor: 'rgb(207, 169, 71)', color:'white' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(prevIndex)}>&#8249; &#8249;&#8249; &nbsp; Prev</button>&nbsp;&nbsp;&nbsp;
+        <button className="" style={{width:'120px', border:'none', borderRadius:'25px', backgroundColor: 'rgb(207, 169, 71)', color:'white' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(nextIndex)}>Next  &nbsp; &#8250;&#8250;&#8250;</button>       
       </div>
     </div>
 <hr className="p-only"/>

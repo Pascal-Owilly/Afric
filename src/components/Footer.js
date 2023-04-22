@@ -4,6 +4,7 @@ import FooterCard from './FooterCard';
 import axios from 'axios';
 import { useState } from 'react';
 import { Form, Button, Card } from 'react-bootstrap';
+import img4 from '../img/img4.jpeg';
 
 function Footer() {
   const [email, setEmail] = useState('');
@@ -28,8 +29,14 @@ function Footer() {
   return (
     <>
    
-    <footer className="footer-content">
-    <div className='footer-overlay'></div>
+    <footer className="footer-content"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,38,0,0.7), rgba(0,38,0,0.7)), url(${img4})`,
+          backgroundAttachment: "fixed",
+          backgroundSize: "contain",
+          color: "white",
+        }}>
+    <div className='footer-overla'></div>
       <Container className='footer-container' fluid >
         <Row >
           <Col md={4} className='mt-4'>
@@ -60,7 +67,7 @@ function Footer() {
                        
                       </Form.Text>
                     </Form.Group>
-                    <Button className='sub-btn' variant="danger" type="submit">
+                    <Button className='sub-btn' style={{backgroundColor:'purple', color:'white', border:'none', fontWeight:'bold', letterSpacing:'2px'}} variant="danger" type="submit">
                       Subscribe
                     </Button>
                   </Form>
@@ -70,7 +77,7 @@ function Footer() {
           </Row>
 
         <hr />
-        <Row  style={{backgroundColor:'black', padding:'1rem'}}>
+        <Row  style={{backgroundColor:'purple', padding:'1rem'}}>
         
           <Col md={12} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
             <p className='mt-1' style={{ color: '#fff', fontWeight:'bold', fontSize:'18px' }}>Mwani Africa &copy; 2023</p> 

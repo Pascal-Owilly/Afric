@@ -45,8 +45,17 @@ const cardsData = [
 
 const CardsHero = () => {
   return (
-    <Container fluid className=' container-card-section' >
-      <div className="hero-overlay" style={{ marginTop: 0 }}></div>
+    <>
+
+    <Container fluid className=' container-card-section' 
+    style={{
+      backgroundImage: `linear-gradient(rgba(0,38,0,0.7), rgba(0,38,0,0.7)), url(${cardimg})`,
+      backgroundAttachment: "fixed",
+      backgroundSize: "contain",
+      color: "white",
+    }}
+    >
+      <div className="hero-overla" style={{ marginTop: 0 }}></div>
       <Row className="hero-card-row" style={{ marginTop: '-8vh' }}>
         <Col md={3} className='c-only'>
           <Card style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
@@ -57,7 +66,7 @@ const CardsHero = () => {
         </Col>
         <Col md={3} className=''>
 
-          <Carousel className="hero-card hero-card-controls" style={{ top: 0, zIndex:1 }} slide={true} interval={3000} indicators={false}>
+          <Carousel className="hero-card hero-card-controls" style={{ top: 0, zIndex:1,  }} slide={true} interval={3000} indicators={false}>
             {cardsData.map((card, index) => (
               <Carousel.Item key={index}>
                 <div style={{ position: 'relative', zIndex: 1 }}>
@@ -98,6 +107,7 @@ const CardsHero = () => {
         
       </Row>
     </Container>
+    </>
   )
 }
 

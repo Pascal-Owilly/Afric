@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import person1 from '../img/person1.jpeg';
+import cimg4 from '../img/cimg4.jpeg';
 import person2 from '../img/person2.jpeg';
 import './CardHero.css';
 import './Hero.css';
@@ -20,9 +21,7 @@ function CardHero() {
       slide={false}
       interval={90000}  
       style={{
-        backgroundColor:'#002600', 
-        alignItems:'center', 
-        justifyContent:'center', 
+        backgroundColor:'purple', 
         color:'#ffffff', 
         fontSize:'14px',
       }}
@@ -34,12 +33,40 @@ function CardHero() {
           <div className="card-container" style={{ position: "relative" }}>
             {index % 2 === 0 ? 
             (
-              <div className='hero-img-bg' style={{height:'auto'}}>
-              <h1 className='img-text m-2' style={{display:'flex', alignItems:'center', justifyContent:'center', height:'20vh'}}>Climate change is the most important issue of our time.</h1>
-              <p className='img-fluid img-text' style={{display:'flex', width:'80%', margin:'auto'}} >
-              Climate change is the most important issue of our time and it is negatively impacting how much food we can produce for a continuously growing population. Luckily solutions are within reach.
+              <div className='hero-img-bg'         
+              style={{
+                backgroundImage: `linear-gradient(rgb(128, 0, 128, .6), rgb(128, 0, 128, .6)), url(${cimg4})`,
+                backgroundAttachment: "fixed",
+                backgroundRepeat:'noRepeat',
+                backgroundSize: "contain",
+                color: "white",
+
+                
+              }}>
+                <h2 style={{
+                    position: 'absolute',
+                    top: '22%',
+                    left: '50%',
+                    width:'90%',
+                    margin:'auto',
+                    transform: 'translate(-50%, -50%)',
+                }} className='hero-h2'>
+                  Climate change is the most important issue of our time</h2>
+
+              <p className='img-fluid img-text'  
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                // width:'80%',
+                textAlign:'center',
+              }}>
+                
+              It is negatively impacting how much food we can produce for a continuously growing population. Luckily solutions are within reach.
                 {/* {texts[index]} */}
-              </p>    
+          
+              </p>  
+              
               </div>
             )
             : 
@@ -53,7 +80,7 @@ function CardHero() {
               </Card>
             ) 
             }
-            <div className="card-overlay"></div>
+            <div className="card-overla"></div>
           </div>
         </Carousel.Item>
       ))}

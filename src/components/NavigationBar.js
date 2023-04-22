@@ -15,16 +15,16 @@ function NavigationBar() {
     setExpanded(!expanded);
   };
 
-  const [navbarBackground, setNavbarBackground] = useState('black');
+  const [navbarBackground, setNavbarBackground] = useState('purple');
   const [navbarHeight, setNavbarHeight] = useState('8vh');
   const [linkFontSize, setLinkFontSize] = useState('1rem');
 
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 100) {
-      setNavbarBackground('#002600');
+      setNavbarBackground('rgb(207, 169, 71)');
     } else {
-      setNavbarBackground('black');
+      setNavbarBackground('purple');
     }
   };
 

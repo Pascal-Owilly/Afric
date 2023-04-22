@@ -84,7 +84,7 @@ const ContactForm = () => {
                     required
                     />
                     </Form.Group>
-                    <Button variant="primary mt-3" type="submit"> Submit </Button>
+                    <Button variant=" mt-3" style={{backgroundColor:'purple', color:'white', width:'100%'}} type="submit"> Submit </Button>
           </Form>
         </Card.Body>
       </Card>
