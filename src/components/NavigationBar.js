@@ -77,12 +77,12 @@ function NavigationBar() {
                     height=""
                     className="d-inline-block p-1 rounded-circle"
                     alt="Mwani Africa Logo"
-                  /> <span style={{marginLeft:'-3px'}}>Africa</span>
+                  /> <span style={{marginLeft:'-5px'}}>Africa</span>
                 </Link>
               </Navbar.Brand>
              
             </Col>
-            <hr className='p-only'/>
+            <hr style={{color:'white'}} className='p-only'/>
             <Col md={6} className="text-md-end text-center">
             
               <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}>
