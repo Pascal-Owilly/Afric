@@ -185,7 +185,7 @@ to produce climate-positive biomass in the ocean, reduce greenhouse gas emission
               <Col md={4}>
               <div>
             <h3>FEED ADDITIVES</h3>
-            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Seaweed-based additives are used in animal nutrition for purposes of improving the quality of feed and the animals’ health & growth.</p>
+            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Seaweed-based additives are used in insect protein for purposes of improving the quality of feed and the animals’ health & growth.</p>
           </div>
               </Col>
               <Col md={4}>

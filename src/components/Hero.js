@@ -19,7 +19,7 @@ function CardHero() {
       className="hero-card hero-vh-style carousel-container-hero text-white" 
       indicators={false} 
       slide={false}
-      interval={90000}  
+      interval={20000}  
       style={{
         backgroundColor:'purple', 
         color:'#ffffff', 
@@ -29,7 +29,7 @@ function CardHero() {
       nextIcon={<span className="carousel-control-next-icon" />}
     >
       {images.map((image, index) => (
-        <Carousel.Item key={index}>
+        <Carousel.Item key={index} >
           <div className="card-container" style={{ position: "relative" }}>
             {index % 2 === 0 ? 
             (
@@ -40,6 +40,7 @@ function CardHero() {
                 backgroundRepeat:'noRepeat',
                 backgroundSize: "contain",
                 color: "white",
+                
 
                 
               }}>
@@ -53,7 +54,7 @@ function CardHero() {
                 }} className='hero-h2'>
                   Climate change is the most important issue of our time</h2>
 
-              <p className='img-fluid img-text'  
+              <p className='img-fluid img-text  '  
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -71,7 +72,7 @@ function CardHero() {
             )
             : 
             (
-              <Card>  
+              <Card style={{backgroundColor:'purple'}}>  
                 <Card.Img
                   variant="top"
                   src={image}

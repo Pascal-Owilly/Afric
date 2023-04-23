@@ -8,6 +8,7 @@ import team4 from '../img/team4.png';
 import team5 from '../img/team5.png';
 import team6 from '../img/team6.png';
 import { Link } from 'react-router-dom';
+import './TeamPage.css';
 
 
 const team = [team1,
@@ -83,7 +84,7 @@ const Cards = () => {
               <Card.Subtitle className="mb-2 text-muted">{mwani.position}</Card.Subtitle>
               <Card.Text>{mwani.contribution}</Card.Text>
               <Card.Text>{mwani.more}</Card.Text>
-              <Button style={{backgroundColor:'transparent', color:'#000', width:'100%', borderRadius:'30px', width:'120px', fontStyle:'italic', fontFamily:'Verdana', border:'1px solid black'}} target="_blank" href={mwani.link}>Show Bio</Button>
+              <Button className='bio-btn' style={{backgroundColor:'transparent', color:'#000', width:'100%', borderRadius:'30px', width:'120px', fontStyle:'italic', fontFamily:'Verdana', border:'1px solid black'}} target="_blank" href={mwani.link}>Show Bio</Button>
             </Card.Body>
           </Card>
             ))}
@@ -104,7 +105,7 @@ const Cards = () => {
               <Card.Subtitle className="mb-2 text-muted">{card.position}</Card.Subtitle>
               <Card.Text>{card.contribution}</Card.Text>
               <Card.Text>{card.more}</Card.Text>
-              <Button style={{backgroundColor:'transparent', color:'#000', width:'100%', borderRadius:'30px', width:'120px', fontStyle:'italic', fontFamily:'Verdana', border:'1px solid black'}} target="_blank" href={card.link}>Show Bio</Button>
+              <Button className='bio-btn' style={{backgroundColor:'transparent', color:'#000', width:'100%', borderRadius:'30px', width:'120px', fontStyle:'italic', fontFamily:'Verdana', border:'1px solid black'}} target="_blank" href={card.link}>Show Bio</Button>
             </Card.Body>
           </Card>
         </div>

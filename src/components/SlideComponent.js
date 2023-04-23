@@ -96,7 +96,7 @@ const CardsHero = () => {
         </Col>
         <Row className='welcome-row mt-5' style={{ zIndex: 1, color: '#ffffff' }}>
           {/* <h1 className="text-center welcome-h1"></h1> */}
-          <p className="text-center mt-1" style={{ fontSize: '16px', lineHeight: '26px' }}>At Mwani Africa we cultivate local species of Seaweed on low-impact 
+          <p className="text-center mt-1" style={{ fontSize: '16px', lineHeight: '26px', display:'block !important' }}>At Mwani Africa we cultivate local species of Seaweed on low-impact 
           ocean farms in partnership with coastal First Nations. Then we use that Seaweed to manufacture products for crop and cattle farmers addressing two global challenges:
            &nbsp; <i><b>Food Security and Climate Change. </b></i></p>
       

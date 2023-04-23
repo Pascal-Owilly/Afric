@@ -99,7 +99,7 @@ function NavigationBar() {
 
           </Row>
 
-          <Navbar.Collapse id="basic-navbar-nav" className='text-center text-dark' style={{ border: 'none', height: '8vh', flexDirection: 'row !important' }}>
+          <Navbar.Collapse id="basic-navbar-nav" className='text-center text-dark' style={{ border: 'none', height: '8vh'}}>
             <Nav className="justify-content-start justify-content-md-end">
               <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
               <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>

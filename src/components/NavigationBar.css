@@ -46,7 +46,7 @@
   }
 
   @media (max-width: 991.98px) {
-    .navbar-toggler {
+    /* .navbar-toggler {
       top: 0;
       position: relative;
       padding: 0;
@@ -90,7 +90,7 @@
         font-size: 20px;
         margin-top: -3px;
         transition: 1s ease-in-out;
-      }   
+      }    */
     }
 
     @media (max-width: 991.98px) {
@@ -112,7 +112,7 @@
       color: #666666;
     }
 
-    .linkedin{
+    /* .linkedin{
       color: #6610f2;
       cursor: pointer;
       float: right;
@@ -121,7 +121,7 @@
       margin-top: 0;
       border: none;
       outline: none;
-    } 
+    }  */
     .nav-links{
       display: flex;
       color: #666666;

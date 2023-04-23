@@ -141,8 +141,6 @@
 
 .carousel-card-for-hero-card {
   position: relative;
-
-  height: 200px;
   width: 250px;
   margin: auto;
 }
@@ -262,6 +260,58 @@ border-radius: 25px 0 0 25px;
     z-index: 1;
     margin-top: 7rem;
   }
+
+  .navbar-toggler {
+    top: 0;
+    position: relative;
+    padding: 0;
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    margin-left: 2rem;
+  }
+
+    .navbar{
+      padding-bottom: 0 ;
+    }
+    .menu-text {
+      position: absolute;
+      top: 4%;
+      left: 0;
+      margin-left: -9.6rem;
+      transform: translate(-50, -50%);
+      font-size: 14px;
+      font-weight:lighter;
+      background-color: transparent;
+      color: white;
+      text-align: left;
+    }
+
+    .navbar-toggler-icon{
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      margin-left: -4rem;
+      margin-top: -2rem;
+    }
+    .search-icon {    
+      color: #fff;
+      cursor: pointer;
+      float: left;
+      font-weight: 200;
+      margin-left: 47%;
+      font-size: 20px;
+      margin-top: -3px;
+      transition: 1s ease-in-out;
+    }
+
+    .linkedin{
+      font-size: 20px;
+      float: right;
+      margin-top: 0;
+    }
 
   .hero-h2{
     font-size: 22px;
@@ -457,7 +507,7 @@ border-radius: 25px 0 0 25px;
     margin-top: 2em;
   }
   .carousel-control-prev {
-    top: 45.8vh;
+    top: 44.8vh;
     border-radius: 25px 0 0 25px;
     margin-right: 4 rem;
     padding: 5px;
@@ -499,7 +549,7 @@ border-radius: 25px 0 0 25px;
     margin-top: -3px;
   }
   .carousel-control-next{
-    top: 45.8vh;
+    top: 44.8vh;
     bottom: 0;
     padding: 10px;
     margin-right: 2rem;
@@ -546,19 +596,61 @@ border-radius: 25px 0 0 25px;
 /* Small devices (tablets) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .hero-card .img-fluid {
-    height: 50vh;
+    height: 70vh;
+   
+  }
+  .linkedin{
+    font-size: 20px;
+    float: right;
+    margin-top: 0;
   }
 
-  /* .hero-overlay{
-    width: 100%;
-    height: 100vh;
-  } */
-/* 
-  .carousel-item {
-    transition-duration: 2s;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  } */
+  .navbar-toggler {
+    top: 0;
+    position: relative;
+    padding: 0;
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    margin-left: 2rem;
+  }
+
+    .navbar{
+      padding-bottom: 0 ;
+    }
+    .menu-text {
+      position: absolute;
+      top: 4%;
+      left: 0;
+      margin-left: -9.6rem;
+      transform: translate(-50, -50%);
+      font-size: 14px;
+      font-weight:lighter;
+      background-color: transparent;
+      color: white;
+      text-align: left;
+    }
+
+    .navbar-toggler-icon{
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      margin-left: -4rem;
+      margin-top: -2rem;
+    }
+    .search-icon {    
+      color: #fff;
+      cursor: pointer;
+      float: left;
+      font-weight: 200;
+      margin-left: 47%;
+      font-size: 20px;
+      margin-top: -3px;
+      transition: 1s ease-in-out;
+    }
+
   .carousel-item.active,
   .carousel-item-next,
   .carousel-item-prev {
@@ -570,14 +662,20 @@ border-radius: 25px 0 0 25px;
 .p-only1{
   display:block;
 }
+
+
 .rounded-circle-hero-card {
-  width: 300px;
+  width: 100px;
   padding:10px;
   margin: auto;
 }
 
+.carousel-card-for-hero-card{
+  width: 300px !important;
+}
+
 .container-for-hero-card{
-  width: 410px;
+  width: 300px;
 }
 .welcome-image{
   margin-top: 3rem;
@@ -753,6 +851,64 @@ border-radius: 25px 0 0 25px;
 }
 }
 
+@media only screen and (min-width: 577px) and (max-width: 768px){
+  .hero-card .img-fluid {
+    height: 100vh;
+  }
+  .hero-h2{
+    position: absolute !important;
+    top: 40%  !important;
+
+  }
+  .carousel-control-prev {
+    top: 60vh;
+    border-radius: 25px 0 0 25px;
+    margin-right: 4rem;
+    padding: 5px;
+    margin-top: -1rem;
+    /* margin: auto; */
+    margin-left: 78%;
+    z-index: 1;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 3rem;
+    
+    height: 2rem;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    background-color: purple;
+    border: 0;
+    opacity: 1;
+    /* transition: opacity .15s ease; */
+    float: right;
+  }
+  .carousel-control-next{
+    top: 60vh;
+    bottom: 0;
+    padding: 10px;
+    margin-right: 2rem;
+    margin-top: -1rem;
+    border-radius: 0 25px 25px 0;
+   
+    z-index: 1;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 3rem;
+    
+    height: 2rem;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    background-color: purple;
+    border: 0;
+    opacity: 1;
+    /* transition: opacity .15s ease; */
+  }
+}
+
 /* Small devices (tablets) */
 @media only screen and (min-width: 370px) and (max-width: 576px) {
   .hero-card .img-fluid {
@@ -783,9 +939,10 @@ border-radius: 25px 0 0 25px;
 
 .container-for-hero-card{
   width: 300px;
+  margin-top: -30vh !important;
 }
 .carousel-control-prev {
-  top: 45vh;
+  top: 50vh;
   border-radius: 25px 0 0 25px;
   margin-right: 4rem;
   padding: 5px;
@@ -819,7 +976,7 @@ border-radius: 25px 0 0 25px;
   background-size: 50% 50%;
 }
 .carousel-control-next{
-  top: 45vh;
+  top: 50vh;
   bottom: 0;
   padding: 10px;
   margin-right: 2rem;
@@ -890,8 +1047,84 @@ border-radius: 0 25px 25px 0;
 /* Medium devices (desktops) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-card .img-fluid {
-    height: 60vh;
+    height: 80vh;
   }
+  .navbar-toggler {
+    top: 0;
+    /* position: relative; */
+    padding: 0;
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    margin-left: 30vh;
+  }
+
+    .navbar{
+      padding-bottom: 0 ;
+    }
+    .menu-text {
+      /* position: absolute; */
+      top: 0;
+      
+      margin-left: -9.6rem;
+      transform: translate(-50, -50%);
+      font-size: 14px;
+      font-weight:lighter;
+      background-color: transparent;
+      color: white;
+      text-align: left;
+    }
+
+    .navbar-toggler-icon{
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      margin-left: 6rem;
+      margin-top: 0;
+    }
+    .search-icon {    
+      color: #fff;
+      cursor: pointer;
+      float: left;
+      font-weight: 200;
+      margin-left: 5vh;
+      font-size: 20px;
+      margin-top: -20px;
+      transition: 1s ease-in-out;
+    }
+
+    .linkedin{
+      position: absolute;
+      color: #fff;
+      cursor: pointer;
+      float: left;
+      font-weight: 200;
+      margin-left: -35vh;
+      font-size: 20px;
+      margin-top: -33px;
+      transition: 1s ease-in-out;
+    } 
+
+
+  .img-text{
+    
+    font-size: 22px;
+    width: 80% !important;  
+    line-height: 30px;
+
+  }
+
+  .hero-h2 {
+    position: absolute;
+    top: 32% !important;
+    font-size: 38px;
+    width: 70% !important;
+    text-align: center;
+    font-weight: 700;
+    font-family: verdana;
+}
 
   .carousel-item.active,
   .carousel-item-next,
@@ -899,7 +1132,7 @@ border-radius: 0 25px 25px 0;
   opacity: 1;
 }
 .c-only-1{
-  display: none;
+  display: block;
 }
 .c-only-2{
   margin: auto;
@@ -965,13 +1198,13 @@ border-radius: 0 25px 25px 0;
     height: 26vh;
   }
 .carousel-control-prev {
-  top: 40vh;
+  top: 55vh;
   border-radius: 25px 0 0 25px;
   margin-right: 4rem;
   padding: 5px;
   margin-top: -1rem;
   /* margin: auto; */
-  margin-left: 84.5%;
+  margin-left: 84.7%;
   z-index: 1;
   display: flex;
   align-items:flex-start;
@@ -999,7 +1232,7 @@ border-radius: 0 25px 25px 0;
   background-size: 50% 50%;
 }
 .carousel-control-next{
-  top: 40vh;
+  top: 55vh;
   bottom: 0;
   padding: 10px;
   margin-right: 2rem;
@@ -1035,8 +1268,16 @@ border-radius: 0 25px 25px 0;
 
 /* Large devices (large desktops) */
 @media only screen and (min-width: 992px) {
-  .hero-card .img-fluid  {
+  .hero-card  {
     height: 90vh;
+    top: 0;
+    
+  }
+
+  .img-fluid {
+    height: 90vh;
+    width: 80%;
+    margin: auto;
     top: 0;
   }
 
@@ -1129,8 +1370,12 @@ border-radius: 0 25px 25px 0;
     width: 100%;
   }
   .welcome-row{
-    margin-top: 15vh;
-    top: 0;
+    position: absolute;
+    width: 80%;
+    z-index: 999 !important;
+    top: 125vh;
+    font-size: 22px !important;
+    margin-left: 3rem;
   }
   .welcome-content{
     margin-top: 10vh;
