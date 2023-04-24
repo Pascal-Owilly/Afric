@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Afric/static/css/main.54ee1532.css",
-    "main.js": "/Afric/static/js/main.f6307c48.js",
+    "main.css": "/Afric/static/css/main.0ab38b04.css",
+    "main.js": "/Afric/static/js/main.a69dbdcf.js",
     "static/js/787.713984b8.chunk.js": "/Afric/static/js/787.713984b8.chunk.js",
     "static/media/how7.jpeg": "/Afric/static/media/how7.5c1388a39d83bf2e8c4c.jpeg",
     "static/media/dev.png": "/Afric/static/media/dev.565673eab033e64de0a5.png",
@@ -19,13 +19,12 @@
     "static/media/heroimg3.jpeg": "/Afric/static/media/heroimg3.70ae205c07ba764884f3.jpeg",
     "static/media/cardimg2.jpeg": "/Afric/static/media/cardimg2.063da61e47337d249bf1.jpeg",
     "static/media/img4.jpeg": "/Afric/static/media/img4.876d009fe6da7b4aed39.jpeg",
-    "static/media/heroimg.jpeg": "/Afric/static/media/heroimg.d6f5b1bfc32a20b4c419.jpeg",
     "static/media/img11.jpeg": "/Afric/static/media/img11.36e63713ac528530e789.jpeg",
     "static/media/img112.jpeg": "/Afric/static/media/img112.36e63713ac528530e789.jpeg",
     "static/media/c-img1.jpeg": "/Afric/static/media/c-img1.8470887bd55eef8d55be.jpeg",
     "static/media/img5.jpeg": "/Afric/static/media/img5.fb3238b71ec44878d514.jpeg",
+    "static/media/cimg4.jpeg": "/Afric/static/media/cimg4.9319971cf1252dde8e2a.jpeg",
     "static/media/cardimg.jpeg": "/Afric/static/media/cardimg.091c61bec0375f733150.jpeg",
-    "static/media/img1.jpeg": "/Afric/static/media/img1.6d6b30da36989bfe1cca.jpeg",
     "static/media/cimg3.jpeg": "/Afric/static/media/cimg3.55ebe3d4febaa82ccbf8.jpeg",
     "static/media/how2.jpeg": "/Afric/static/media/how2.c41154a27a30b19ff353.jpeg",
     "static/media/team3.jpeg": "/Afric/static/media/team3.a60ae5ac9db88a07cb7b.jpeg",
@@ -34,12 +33,12 @@
     "static/media/team6.png": "/Afric/static/media/team6.45ad86a5d3d9e4e14593.png",
     "static/media/logo1.jpeg": "/Afric/static/media/logo1.7637440e4a1fce4fc993.jpeg",
     "index.html": "/Afric/index.html",
-    "main.54ee1532.css.map": "/Afric/static/css/main.54ee1532.css.map",
-    "main.f6307c48.js.map": "/Afric/static/js/main.f6307c48.js.map",
+    "main.0ab38b04.css.map": "/Afric/static/css/main.0ab38b04.css.map",
+    "main.a69dbdcf.js.map": "/Afric/static/js/main.a69dbdcf.js.map",
     "787.713984b8.chunk.js.map": "/Afric/static/js/787.713984b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54ee1532.css",
-    "static/js/main.f6307c48.js"
+    "static/css/main.0ab38b04.css",
+    "static/js/main.a69dbdcf.js"
   ]
 }
