@@ -81,7 +81,7 @@ const CardsHero = () => {
           </Carousel>
 
         </Col>
-        <Col md={3} className='c-only '>
+        <Col md={3} className='c-only'>
           <Card style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 1 }} className="carousel-card carousel-card-for-hero-card">
             <Card.Img style={{marginTop:'-3vh', width:'70%', margin:'auto', padding:'10px'}} variant="top" src={img9} className="rounded-circle rounded-circle-hero-card" />
             <div className="card-text"></div>
@@ -98,8 +98,7 @@ const CardsHero = () => {
           {/* <h1 className="text-center welcome-h1"></h1> */}
           <p className="text-center mt-1" style={{ fontSize: '16px', lineHeight: '26px', display:'block !important' }}>At Mwani Africa we cultivate local species of Seaweed on low-impact 
           ocean farms in partnership with coastal First Nations. Then we use that Seaweed to manufacture products for crop and cattle farmers addressing two global challenges:
-           &nbsp; <i><b>Food Security and Climate Change. </b></i></p>
-      
+           &nbsp; <i><b>Food Security and Climate Change. </b></i></p>   
         </Row>
 
           <Row>

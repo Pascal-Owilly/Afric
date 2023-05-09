@@ -6,6 +6,7 @@ import cardimg from '../img/cardimg.jpeg';
 import img4 from '../img/img4.jpeg';
 import person2 from '../img/person2.jpeg';
 import cimg1 from '../img/c-img1.jpeg';
+import cimg3 from '../img/cimg3.jpeg';
 import img9 from '../img/img9.jpeg'
 
 
@@ -86,6 +87,21 @@ const CardCarousel = () => {
   return (
     <>
     <Container style={{position:'relative', zIndex:1}}>
+
+    <h2 className=" mt-1" style={{color:'#666666', fontFamily:'poppins'}}><i>This startup is converting calamity into a range of sustainable products. Here is how it's doing that...</i></h2>
+<h4 className="mt-3">Deforestation is on the rise</h4>
+<ul>
+  <li style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Agricultural practices are using a lot of pesticides and fertilizers.</li>
+  <li style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>We are dumping our wastewater into the oceans.</li>
+  <li style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>All of this has put an overload of nutrients in the oceans.</li>
+</ul>
+<h4>Nutrients like nitrogen and phosphorus</h4>
+<p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>This has given rise to a seaweed called Sargassum. It feeds on these nutrients and has grown enormously. It extends to West and East Africa, including Kenya. It creates something called Algae mats which kill coral reefs and animal populations. Also, it has a rotting egg stench, which impacts tourism. Fisheries are frustrated as it ends up in their nets. </p>
+<img src={cimg3} style={{width:'100%'}}/>
+<p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Mwani Africa is on a mission to solve this by converting Sargassum into useful materials. We produce a natural biostimulant and soil conditioner, applied to to plants and soils to enhance nutritional efficiency and resilience. </p>
+<p>We produce a natural protein feed additive.
+We produce a natural clothing material.
+ We have developed the world's first Seaweed-based grow medium for vertical gardens</p>
       <hr />
               
       <h2 className="text-center mb-4" style={{color:'#666666', fontFamily:'poppins'}}><i>The ocean covers 70% of our planet and plays a critical role in regulating our climate. Yet it remains an area of focus with the least amount of investment.</i></h2>

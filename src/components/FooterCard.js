@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './FooterCard.css';
-import dev from '../img/dev.png';
 
 const FooterCard = ({ name, position, image, linkedin, github }) => {
   const [hovered, setHovered] = React.useState(false);

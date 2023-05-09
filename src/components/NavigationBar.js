@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
-import logo from '../img/logo1.jpeg';
+import logo6 from '../img/logo5.png';
 import { Link } from 'react-router-dom';
 import { FaLinkedin } from 'react-icons/fa';
 import './NavigationBar.css';
@@ -70,14 +70,15 @@ function NavigationBar() {
           <Row className="align-items-center">
             <Col md={6} className="text-md-start text-center">
               <Navbar.Brand>
-                <Link to="/" title='Home' style={{textDecoration:'none',color:'white', padding:'10px'}}> <span>Mwani</span>
+                <Link to="/" title='Home'> 
                   <img
-                    src={logo}
-                    width="50px"
+                    src={logo6}
+                    width="50%"
                     height=""
-                    className="d-inline-block p-1 rounded-circle"
+                    className="d-inline-block align-center p-1 rounded"
                     alt="Mwani Africa Logo"
-                  /> <span style={{marginLeft:'-5px'}}>Africa</span>
+                    style={{marginLeft:'0'}}
+                  />
                 </Link>
               </Navbar.Brand>
              
@@ -89,10 +90,8 @@ function NavigationBar() {
                 <span className="navbar-toggler-icon text-white"></span> 
                 <span className="menu-text" style={{}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MENU</span>  
               </Navbar.Toggle>
-              <span className="search-icon" title="Enter search term" onClick={handleSearchClick}>
-                <Search /> 
-                </span>
-                <span className='linkedin' style={{marginRight:''}}>
+
+                <span className='linkedin' style={{marginLeft:'-2rem'}}>
                <Link style={{color:'white', textDecoration:'none'}} target={'_blank'} to='https://www.linkedin.com/in/mesteroscar/'><FaLinkedin /></Link> 
                 </span>
             </Col>
@@ -101,6 +100,9 @@ function NavigationBar() {
 
           <Navbar.Collapse id="basic-navbar-nav" className='text-center text-dark' style={{ border: 'none', height: '8vh'}}>
             <Nav className="justify-content-start justify-content-md-end">
+            <span className="search-icon" title="Enter search term" onClick={handleSearchClick} style={{float:'left'}}>
+                <Search /> 
+                </span> <hr /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
               <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
               <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>

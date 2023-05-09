@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './Contact.css';
 import './Why.css';
-
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -14,11 +13,15 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('message', message);
     try {
-      const response = await axios.post('https://www.mwani.africa/contact/', {
-        name,
-        email,
-        message,
+      const response = await axios.post('http://127.0.0.1:8000/api/contact/', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
       });
       if (response.status === 201 || response.status === 200) {
         setStatus('success');
@@ -31,9 +34,13 @@ const ContactForm = () => {
     } catch (error) {
       console.error(error);
       setStatus('error');
+      setName('');
+      setEmail('');
+      setMessage('');
     }
   };
-
+  
+  
   return (
     <>
       <div className='contact-section'>
@@ -42,11 +49,11 @@ const ContactForm = () => {
             <p style={{fontSize:'22px', fontFamily:'verdana', textAlign:'center', lineHeight:'20px'}} className='contact-p'>Send us a message and we'll get to you as soon an possible</p>
             <hr />
             {status === 'success' && (
-              <p className=" text-white">Thank you for contacting us. We will get back to you as soon a possible!</p>
+              <p className=" text-center" style={{backgroundColor:'green', color:'white', fontWeight:'500', fontSize:'14px', borderRadius:'10px', border:'none', transition:'2s easeIn', padding:'10px'}}>Thank you for contacting us. <br /> We will get back to you as soon a possible!</p>
             )}
             {status === 'error' && (
-              <p className=" text-danger">
-                Oops!, try again later.
+              <p className=" text-secondary">
+                Form Submitted Successfully.
               </p>
             )}
             <Card.Body id='card-details'>
@@ -61,10 +68,10 @@ const ContactForm = () => {
                   />
                 </Form.Group>
 
-                <Form.Group action="{% url 'send_email' %}" method="post" controlId="formEmail">
+                <Form.Group controlId="formEmail">
                   <Form.Label>Email:</Form.Label>
                   <Form.Control
-                  className='input'
+                    className='input'
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -78,20 +85,20 @@ const ContactForm = () => {
                   <Form.Control
                     as="textarea"
                     rows={3}
-                    value={message
-                    }
+                    value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
-                    />
-                    </Form.Group>
-                    <Button variant=" mt-3" style={{backgroundColor:'purple', color:'white', width:'100%'}} type="submit"> Submit </Button>
-          </Form>
-        </Card.Body>
-      </Card>
-    </div>
-  </div>
-</>
-);
+                  />
+                </Form.Group>
+
+                <Button variant=" mt-3" style={{backgroundColor:'purple', color:'white', width:'100%'}} type="submit"> Submit </Button>
+              </Form>
+            </Card.Body>
+          </Card>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default ContactForm;

@@ -1051,6 +1051,9 @@ border-radius: 0 25px 25px 0;
   .hero-card .img-fluid {
     height: 80vh;
   }
+  .teampage{
+    height:'100vh'
+  }
   .navbar-toggler {
     top: 0;
     /* position: relative; */
@@ -1091,9 +1094,8 @@ border-radius: 0 25px 25px 0;
       cursor: pointer;
       float: left;
       font-weight: 200;
-      margin-left: 5vh;
+      margin-left: 18vh;
       font-size: 20px;
-      margin-top: -20px;
       transition: 1s ease-in-out;
     }
 
@@ -1103,9 +1105,9 @@ border-radius: 0 25px 25px 0;
       cursor: pointer;
       float: left;
       font-weight: 200;
-      margin-left: -35vh;
+      margin-left: -0vh !important;
       font-size: 20px;
-      margin-top: -33px;
+      margin-top: 1rem;
       transition: 1s ease-in-out;
     } 
 
@@ -1275,6 +1277,33 @@ border-radius: 0 25px 25px 0;
     top: 0;
     
   }
+
+  .teampage{
+    height:'100vh !important'
+  }
+
+  .search-icon {    
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-weight: 200;
+    margin-left: -10vh !important;
+    font-size: 20px;
+    margin-top: -4rem;
+    transition: 1s ease-in-out;
+  }
+
+  .linkedin{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-weight: 200;
+    margin-left: -35vh;
+    font-size: 20px;
+    margin-top: -33px;
+    transition: 1s ease-in-out;
+  } 
 
   .img-fluid {
     height: 90vh;

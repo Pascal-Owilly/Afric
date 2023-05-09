@@ -11,15 +11,21 @@ const AboutUs = () => {
           <Card
           
              style={{
-              backgroundImage: `linear-gradient(rgba(0, 38,0,0.8), rgba(0, 38,0,0.8)), url(${cardimg2})`,
-              backgroundSize: "cover",
-              color: "white",
+              // backgroundImage: `linear-gradient(rgba(0, 38,0,0.8), rgba(0, 38,0,0.8)), url(${cardimg2})`,
+              // backgroundSize: "cover",
+              color: "#666666",
 
              
             }}
           >
             <Card.Body style={{ height: "100vh"}}>
-              <Card.Title className="text-center mb-4 welcome-h1" style={{marginTop:'20vh', position:'relative'}}>Welcome to Mwani Africa</Card.Title>
+              <Card.Title className="text-center mb-4 welcome-h1"             
+              style={{
+              backgroundImage: `linear-gradient(rgba(0, 38,0,0.8), rgba(0, 38,0,0.8)), url(${cardimg2})`,
+              backgroundSize: "cover",
+              color: "#fff",
+              marginTop:'15vh',
+            }}>Welcome to Mwani Africa</Card.Title>
               <Card.Text >
                 
                <p style={{ fontSize: '16px', lineHeight: '20px' }}>Mwani Africa is a Kenyan (East Africa) start-up providing a circular zero-waste solution of Ocean co-products, up-cycling to produce bio-stimulants and soil conditioner.

@@ -8,6 +8,7 @@ import img4 from '../img/img4.jpeg';
 
 function Footer() {
   const [email, setEmail] = useState('');
+  const [subscriptionStatus, setSubscriptionStatus] = useState(null);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -15,20 +16,36 @@ function Footer() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-
-    axios.post('https://www.mwani.africa/subscriptions/', { email })
+  
+    axios.get(`http://contact-mail.mwani.africa/check-email/${email}`)
       .then((response) => {
-        console.log('Form submitted successfully:', response);
-        alert('Thanks for subscribing!');
+        if (response.data.exists) {
+          setSubscriptionStatus('already-subscribed');
+        } else {
+          axios.post('http://contact-mail.mwani.africa/subscribe/', { email })
+            .then((response) => {
+              console.log('Form submitted successfully:', response);
+              setSubscriptionStatus('success');
+              setEmail('');
+            })
+            .catch((error) => {
+              console.error('Form submission failed:', error);
+              setSubscriptionStatus('error');
+              setEmail('');
+            });
+        }
       })
       .catch((error) => {
-        console.error('Form submission failed:', error);
-        alert('Oop!, try again after sometime');
+        console.error('Error checking email:', error);
+        setSubscriptionStatus('error');
+        setEmail('');
       });
   };
+  
+
   return (
     <>
-   
+
     <footer className="footer-content"
         style={{
           backgroundImage: `linear-gradient(rgba(0,38,0,0.7), rgba(0,38,0,0.7)), url(${img4})`,
@@ -54,15 +71,31 @@ function Footer() {
             <p className="list-unstyled text-white">Welcome to our site! Our seaweed fertilizers are perfect for your agricultural needs, but we do recommend testing on a small scale before widespread use, as each plant species is unique. Please follow all instructions and safety precautions when using our products.</p>
           </Col>
           <Col md={4 } className='mt-4'>
-
+  
                 <Card className='subscription-card'>
+                {subscriptionStatus === 'success' && (
+        <div style={{backgroundColor:'green', color:'white', fontWeight:'500', fontSize:'18px', borderRadius:'10px', border:'none', transition:'2s easeIn'}} className="alert alert-success text-center" role="alert">
+          Subscription successful, thank you!
+        </div>
+      )}
+      {subscriptionStatus === 'error' && (
+        <div style={{backgroundColor:'transparent', color:'red', fontWeight:'500', fontSize:'18px', border:'none', transition:'2s easeIn'}} className="alert alert-danger text-center" role="alert">
+          Oops!, that didn't work, try again
+        </div>
+)}
+        {subscriptionStatus === 'already-subscribed' && (
+          <div style={{backgroundColor:'green', color:'greenyellow', fontWeight:'500', fontSize:'18px', borderRadius:'10px', border:'none', transition:'2s easeIn'}} className="alert alert-warning text-center" role="alert">
+            You are already subscribed with this email address!
+          </div>
+        
+      )}  
                 <Card.Body>
                   <Card.Title className='subscription-title'>Sign Up For Newsletter</Card.Title>
                   <Card.Text className='subscription-title'></Card.Text>
                   <Form className='subscription-email' onSubmit={handleFormSubmit}>
                     <Form.Group controlId="formBasicEmail">
                       <Form.Label></Form.Label>
-                      <Form.Control className='sub-input' type="email" placeholder="Enter email" value={email} onChange={handleEmailChange} />
+                      <Form.Control className='sub-input' type="email" placeholder="Enter email" value={email} onChange={handleEmailChange} required />
                       <Form.Text className="text-muted">
                        
                       </Form.Text>
