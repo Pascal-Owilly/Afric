@@ -21,7 +21,7 @@ function CardHero() {
       slide={false}
       interval={20000}  
       style={{
-        backgroundColor:'purple', 
+        backgroundColor:'#a066cc', 
         color:'#ffffff', 
         fontSize:'14px',
       }}
@@ -35,7 +35,7 @@ function CardHero() {
             (
               <div className='hero-img-bg'         
               style={{
-                backgroundImage: `linear-gradient(rgb(128, 0, 128, .6), rgb(128, 0, 128, .6)), url(${cimg4})`,
+                backgroundImage: `linear-gradient(rgb(160, 102, 204, 0.6), rgb(160, 102, 204, 0.6)), url(${cimg4})`,
                 backgroundAttachment: "fixed",
                 backgroundRepeat:'noRepeat',
                 backgroundSize: "contain",
@@ -72,7 +72,7 @@ function CardHero() {
             )
             : 
             (
-              <Card style={{backgroundColor:'purple'}}>  
+              <Card style={{backgroundColor:'#a066cc'}}>  
                 <Card.Img
                   variant="top"
                   src={image}

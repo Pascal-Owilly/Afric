@@ -145,19 +145,19 @@
         display: flex;
         color: #ffffff;
         font-size: 16px;
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
         font-family: Poppins, Helvetica, sans-serif;
       }
       #basic-navbar-nav{
         width: 100%;
-        margin-left: 16rem;
+        /* margin-left: 16rem; */
       }
       .search-icon {    
         color: #ffffff;
         cursor: pointer;
-        float: right;
+        /* float: right; */
         
-        margin-left: 2rem;
+        margin-left: -5rem !important;
         font-size: 16px;
         margin-top: -3px;
         transition: 1s ease-in-out;
@@ -196,7 +196,9 @@
       }
       #basic-navbar-nav{
         width: 100%;
-        margin-left: 12rem;
+        margin: auto;
+        margin-left: 22rem;
+        margin-top: -2.5rem;
       }
       .linkedin{
         color: #6610f2;
@@ -207,6 +209,7 @@
         margin-top: 0;
         border: none;
         outline: none;
+        margin-left: -30rem;
       } 
       .search-icon:hover{
         transition:1s ease-in-out;

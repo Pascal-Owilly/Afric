@@ -253,6 +253,36 @@ border-radius: 25px 0 0 25px;
 } */
 /* Extra small devices (phones) */
 @media only screen and (max-width: 576px) and (max-width: 767px) {
+
+    .ReactModal__Overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 1);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .ReactModal__Overlay--after-open {
+      background-color: rgba(128, 0, 128, .9);
+    }
+  
+    .ReactModal__Content {
+      position: relative;
+      outline: none;
+      background-color: white;
+      overflow: auto;
+      max-height: 90vh;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  
+  
   .hero-card .img-fluid  {
     height: 40vh;
     font-size: 18px;
@@ -566,7 +596,7 @@ border-radius: 25px 0 0 25px;
     padding: 0;
     color: #000000;
     text-align: center;
-    background-color: purple;
+    background-color: #a066cc;
     border: 0;
     opacity: 1;
     /* transition: opacity .15s ease; */
@@ -831,7 +861,7 @@ border-radius: 25px 0 0 25px;
     padding: 0;
     color: #000000;
     text-align: center;
-    background-color: purple;
+    background-color: #a066cc;
     border: 0;
     opacity: 1;
     /* transition: opacity .15s ease; */
@@ -995,7 +1025,7 @@ border-radius: 25px 0 0 25px;
   padding: 0;
   color: #000000;
   text-align: center;
-  background-color: purple;
+  background-color: #a066cc;
   border: 0;
   opacity: 1;
   /* transition: opacity .15s ease; */
@@ -1253,7 +1283,7 @@ border-radius: 0 25px 25px 0;
   padding: 0;
   color: #000000;
   text-align: center;
-  background-color: purple;
+  background-color: #a066cc;
   border: 0;
   opacity: 1;
   /* transition: opacity .15s ease; */
@@ -1276,6 +1306,10 @@ border-radius: 0 25px 25px 0;
     height: 90vh;
     top: 0;
     
+  }
+
+  .mwani-logo{
+    width: 100% !important;
   }
 
   .teampage{
@@ -1534,7 +1568,7 @@ border-radius: 0 25px 25px 0;
       padding: 5px;
       margin-top: -1rem;
       /* margin: auto; */
-      margin-left: 88.5%;
+      margin-left: 90.5%;
       z-index: 1;
       display: flex;
       align-items:flex-start;
@@ -1579,7 +1613,7 @@ border-radius: 0 25px 25px 0;
       padding: 0;
       color: #000000;
       text-align: center;
-      background-color: purple;
+      background-color: #a066cc;
       border: 0;
       opacity: 1;
       /* transition: opacity .15s ease; */

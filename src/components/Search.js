@@ -3,6 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 import axios from 'axios';
 import './Search.css';
 import Modal from 'react-modal';
+import img11 from '../img/img11.jpeg';
 
 
 function SearchForm() {
@@ -11,9 +12,24 @@ function SearchForm() {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
+  
+  const handleClose = () => {
+    setExpanded(false);
+  };
+  
+  // ...
+  
+  <button className="cancel-btn" onClick={handleClose}>X</button>
+  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await axios.get(`http://127.0.0.1:8000/api/search/?q=${query}`);
+    const response = await axios.get(`https://contact-mail.mwani.africa/api/search/?q=${query}`);
     if (response.data.results.length === 0) {
       setError(true);
       setSuccess(false);
@@ -53,21 +69,28 @@ function SearchForm() {
       </form>
       
       {error && (
-        <Modal isOpen={error} onRequestClose={() => setError(false)}>
-          <h2>No results found</h2>
-          <p>We couldn't find any results for "{query}". Please try a different search term.</p>
-        </Modal>
-      )}
-      {success && (
-        <Modal isOpen={success} onRequestClose={() => setSuccess(false)}>
-          <h2>Search Results for "{query}"</h2>
-          <ul>
-            {results.map((result, index) => (
-              <li key={index} dangerouslySetInnerHTML={{__html: `${highlight(result.name, query)} ${highlight(result.message, query)}`}}></li>
-            ))}
-          </ul>
-        </Modal>
-      )}
+  <Modal isOpen={error} onRequestClose={() => setError(false)} style={{content: {height: '30vh', marginTop:'20vh', zIndex:9999}}}>
+    <h2>
+      No results found for '{query}'
+      <button className="cancel-btn" onClick={() => setSuccess(false)}>X</button>
+    </h2>
+    <p>We couldn't find any results for "{query}". Please try a different search term.</p>
+  </Modal>
+)}
+{success && (
+  <Modal isOpen={success} onRequestClose={() => setSuccess(false)} style={{content: {height: '30vh', marginTop:'20vh', zIndex:9999}}}>
+    <h2>
+      Search Results for "{query}"
+      <button className="cancel-btn" onClick={() => setSuccess(false)}>X</button>
+    </h2>
+    <ul>
+      {results.map((result, index) => (
+        <li key={index} dangerouslySetInnerHTML={{__html: `${highlight(result.name, query)} ${highlight(result.message, query)}`}}></li>
+      ))}
+    </ul>
+  </Modal>
+)}
+
     </div>
   );
 }

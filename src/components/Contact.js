@@ -18,11 +18,9 @@ const ContactForm = () => {
     formData.append('email', email);
     formData.append('message', message);
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/contact/', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      const response = await axios.post('https://contact-mail.mwani.africa/api/contact/', formData);
+
+  
       if (response.status === 201 || response.status === 200) {
         setStatus('success');
         setName('');
@@ -49,11 +47,12 @@ const ContactForm = () => {
             <p style={{fontSize:'22px', fontFamily:'verdana', textAlign:'center', lineHeight:'20px'}} className='contact-p'>Send us a message and we'll get to you as soon an possible</p>
             <hr />
             {status === 'success' && (
-              <p className=" text-center" style={{backgroundColor:'green', color:'white', fontWeight:'500', fontSize:'14px', borderRadius:'10px', border:'none', transition:'2s easeIn', padding:'10px'}}>Thank you for contacting us. <br /> We will get back to you as soon a possible!</p>
+              <p className=" text-center" style={{backgroundColor:'green', color:'white', fontWeight:'500', fontSize:'14px', borderRadius:'10px', border:'none', transition:'2s easeIn', padding:'10px'}}>Form Submitted Successfully.</p>
             )}
             {status === 'error' && (
-              <p className=" text-secondary">
-                Form Submitted Successfully.
+              <p style={{backgroundColor:'green', color:'white', fontWeight:'500', fontSize:'14px', borderRadius:'10px', border:'none', transition:'2s easeIn', padding:'10px'}}>
+                
+                Thank you for contacting us. <br /> We will get back to you as soon a possible!
               </p>
             )}
             <Card.Body id='card-details'>

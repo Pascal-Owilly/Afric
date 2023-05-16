@@ -1,0 +1,15 @@
+.admin-redirect{
+
+    color: goldenrod;
+    height: 80vh;
+    background-color: rgb(191, 191, 92);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+.admin-redirect-btn{
+    background-color: purple;
+}

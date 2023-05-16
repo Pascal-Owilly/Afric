@@ -20,7 +20,7 @@ transition: 0.5s ease-in-out;
 }
 
 .footer-content{
-  background-image: url('../img/heroimg3.jpeg');
+  /* background-image: url('../img/heroimg3.jpeg'); */
   background-repeat: repeat center scroll top;
   background-size: contain;
   background-attachment: fixed;

@@ -15,16 +15,16 @@ function NavigationBar() {
     setExpanded(!expanded);
   };
 
-  const [navbarBackground, setNavbarBackground] = useState('purple');
+  const [navbarBackground, setNavbarBackground] = useState('#a066cc');
   const [navbarHeight, setNavbarHeight] = useState('8vh');
   const [linkFontSize, setLinkFontSize] = useState('1rem');
 
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 100) {
-      setNavbarBackground('rgb(207, 169, 71)');
+      setNavbarBackground('#a066cc');
     } else {
-      setNavbarBackground('purple');
+      setNavbarBackground('#a066cc');
     }
   };
 
@@ -66,16 +66,16 @@ function NavigationBar() {
         }`}
       </style>
       <Navbar className='navbar' fixed='top' expand="lg" expanded={expanded} style={{backgroundColor: navbarBackground}}>
-        <Container>
+        <Container fluid>
           <Row className="align-items-center">
-            <Col md={6} className="text-md-start text-center">
+            <Col md={2}>
               <Navbar.Brand>
                 <Link to="/" title='Home'> 
                   <img
                     src={logo6}
                     width="50%"
                     height=""
-                    className="d-inline-block align-center p-1 rounded"
+                    className="d-inline-block align-center p-1 rounded mwani-logo"
                     alt="Mwani Africa Logo"
                     style={{marginLeft:'0'}}
                   />
@@ -84,36 +84,42 @@ function NavigationBar() {
              
             </Col>
             <hr style={{color:'white'}} className='p-only'/>
-            <Col md={6} className="text-md-end text-center">
+            <Col md={10} className="text-md-end">
             
               <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}>
                 <span className="navbar-toggler-icon text-white"></span> 
-                <span className="menu-text" style={{}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MENU</span>  
+                <span className="menu-text" style={{}}> MENU</span>  
               </Navbar.Toggle>
 
-                <span className='linkedin' style={{marginLeft:'-2rem'}}>
+                <span className='linkedin p-only' style={{marginLeft:'-2rem'}}>
                <Link style={{color:'white', textDecoration:'none'}} target={'_blank'} to='https://www.linkedin.com/in/mesteroscar/'><FaLinkedin /></Link> 
                 </span>
             </Col>
 
-          </Row>
-
           <Navbar.Collapse id="basic-navbar-nav" className='text-center text-dark' style={{ border: 'none', height: '8vh'}}>
-            <Nav className="justify-content-start justify-content-md-end">
-            <span className="search-icon" title="Enter search term" onClick={handleSearchClick} style={{float:'left'}}>
+            <Nav >
+            <span className="search-icon p-only" title="Enter search term" >
                 <Search /> 
                 </span> <hr /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
-              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
-              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>
-              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
-              <Nav.Link style={{}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
+              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
+              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
+              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>
+              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
+              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
             </Nav>
-            
           </Navbar.Collapse>
-         
+
+         </Row>
         </Container>
+
+        <span className='linkedin c-only' style={{}}></span>
+        <span className="search-icon c-only" title="Enter search term" onClick={handleSearchClick} style={{}}>
+                <Search /> 
+                </span> 
+
+      
       </Navbar>
+      
 
     </>
   );

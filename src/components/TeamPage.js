@@ -102,7 +102,8 @@ const Cards = () => {
     <>
     <Container fluid className='teampage'
                   style={{
-                    backgroundImage: `linear-gradient(rgb(128, 0, 128, .6), rgb(128, 0, 128, .6)), url(${t40})`,
+                    // backgroundImage: `linear-gradient(rgb(128, 0, 128, .6), rgb(128, 0, 128, .6)), url(${t40})`,
+                    backgroundColor:'white',
                     backgroundAttachment: "fixed",
                     backgroundRepeat:'noRepeat',
                     backgroundSize: "contain",
