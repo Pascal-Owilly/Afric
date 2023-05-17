@@ -88,10 +88,10 @@ const CardCarousel = () => {
     <>
     <Container style={{position:'relative', zIndex:1}}>
 
-    <h4 className=" mt-1" style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>This startup is converting calamity into a range of sustainable products.<br /> Here is how it's doing that...<hr /></h4>
+    <h4 className=" mt-1" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>This startup is converting calamity into a range of sustainable products.<br /> Here is how it's doing that...<hr /></h4>
    <Row>
     <Col md={4}>
-    <h5 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>Deforestation is on the rise</h5>
+    <h5 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>Deforestation is on the rise</h5>
 <ul>
   <li style={{ fontSize: '14px', color:'#666666' }}>Agricultural practices are using a lot of pesticides and fertilizers.</li>
   <li style={{ fontSize: '14px', color:'#666666' }}>We are dumping our wastewater into the oceans.</li>
@@ -99,7 +99,7 @@ const CardCarousel = () => {
 </ul>
     </Col>
     <Col md={4}>
-    <h5 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>Nutrients like nitrogen and phosphorus</h5>
+    <h5 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>Nutrients like nitrogen and phosphorus</h5>
 <p style={{ fontSize: '14px', color:'#666666' }}>This has given rise to a seaweed called Sargassum. It feeds on these nutrients and has grown enormously. It extends to West and East Africa, including Kenya. It creates something called Algae mats which kill coral reefs and animal populations. Also, it has a rotting egg stench, which impacts tourism. Fisheries are frustrated as it ends up in their nets. </p>
 <p style={{ fontSize: '14px', color:'#666666' }}>Mwani Africa is on a mission to solve this by converting Sargassum into useful materials. We produce a natural biostimulant and soil conditioner, applied to to plants and soils to enhance nutritional efficiency and resilience. 
 We produce a natural protein feed additive.
@@ -111,7 +111,7 @@ We produce a natural clothing material.
      
     </Col>
     </Row>          
-      <h4 className=" mb-4" style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>The ocean covers 70% of our planet and plays a critical role in regulating our climate. Yet it remains an area of focus with the least amount of investment.</h4>
+      <h4 className=" mb-4" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>The ocean covers 70% of our planet and plays a critical role in regulating our climate. Yet it remains an area of focus with the least amount of investment.</h4>
     <div className="card-carousel c-only cardsect mt-4" style={{height:'65vh'}}>
       <div className={`card-carousel-container cardsect-carousel-container ${slideDirection}`}>
         <Row>
@@ -202,7 +202,7 @@ We produce a natural clothing material.
  </Col>
 <Col md={6}>
       
-<h4 className="text-cente" style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}><i> Mwani Africa is on a mission
+<h4 className="text-cente" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}><i> Mwani Africa is on a mission
 to produce climate-positive biomass in the ocean, reduce greenhouse gas emissions and build a more resilient food system by producing products for land-based farmers. </i></h4>
 <hr />
     <p style={{ fontSize: '14px', color:'#666666' }}>  Mwani Africa has built a team of experts to grow, process and produce seaweed-based products for regenerative agriculture — biostimulants and agrifeeds.</p> 
@@ -219,19 +219,19 @@ to produce climate-positive biomass in the ocean, reduce greenhouse gas emission
             <Row>
               <Col md={4}>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>FEED ADDITIVES</h4>
+            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>FEED ADDITIVES</h4>
             <p style={{ fontSize: '14px', color:'#666666' }}>Seaweed-based additives are used in insect protein for purposes of improving the quality of feed and the animals’ health & growth.</p>
           </div>
               </Col>
               <Col md={4}>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>FARM BIOSTIMULANTS</h4>
+            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>FARM BIOSTIMULANTS</h4>
             <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Biostimulants are applied to plants to enhance nutrition efficiency, abiotic stress tolerance, and crop quality traits.</p>
           </div>
                 </Col>
                 <Col md={4}>
                 <div>
-            <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>ECOSYSTEM SERVICES</h4>
+            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>ECOSYSTEM SERVICES</h4>
             <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As seaweed grows in the ocean it provides benefits to the ecosystem that deserve to be measured and valued</p>
           </div>
                 </Col>
@@ -239,7 +239,7 @@ to produce climate-positive biomass in the ocean, reduce greenhouse gas emission
             <Row className='coastal'>
               <p style={{ fontSize: '28px', lineHeight: '26px' }}>Every touch point makes a positive difference. And we are doing this in partnership with coastal First Nations.</p>
             </Row>
-            <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}} className="mt-2">#TRULYGOOD</h4>
+            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}} className="mt-2">#TRULYGOOD</h4>
             <p style={{ fontSize: '14px', color:'#666666' }}>Mwani Africa, in its effort to be Truly Good, believes it is vital to consider the social, economic and environmental impact of its purchases.</p>
             <p style={{ fontSize: '14px', color:'#666666' }}>Each member of our team aims to support our independent local businesses first while seeking the best value for products and services. Our goal is to purchase at least 50% of our core products locally.</p>
             <p style={{ fontSize: '14px', color:'#666666' }}>We also have a strong commitment to our First Nations partners to offer contract labour and employment opportunities to their members first, and our team aims to procure supplies and equipment from First Nations owned service providers wherever possible.</p>
@@ -247,19 +247,19 @@ to produce climate-positive biomass in the ocean, reduce greenhouse gas emission
             <img src={person2} style={{width:'100%'}}/>
               <Col md={4} className='mt-3'>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>ENVIRONMENTAL</h4>
+            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>ENVIRONMENTAL</h4>
             <p style={{ fontSize: '14px', color:'#666666' }}>We grow seaweed to restore marine ecosystems and produce products that help mitigate climate change.</p>
           </div>
               </Col>
               <Col md={4} className='mt-3'>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>SOCIAL</h4>
+            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>SOCIAL</h4>
             <p style={{ fontSize: '14px', color:'#666666' }}>We form integrated partnerships with First Nations and local coastal communities to tackle threats to the world’s food supply.</p>
           </div>
                 </Col>
                 <Col md={4} className='mt-3'>
                 <div>
-            <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}}>GOVERNANCE</h4>
+            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>GOVERNANCE</h4>
             <p style={{ fontSize: '14px', color:'#666666' }}>As a certified B Corp. and a Benefit Company, we are legally committed to conduct business in a responsible and 
 
 sustainable way. </p>
@@ -313,7 +313,7 @@ Benefit Company, we are legally committed to conducting business in a socially r
     <Container>
       <Row>
         <Col md={12} style={{width:'90%', margin:'auto'}}>
-          <h4 style={{color:'#666666', fontFamily:'poppins', fontWeight:'bold'}} className='mt-2'>B Corp, Benefit Company and Living Wage Employer.</h4>
+          <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}} className='mt-2'>B Corp, Benefit Company and Living Wage Employer.</h4>
           <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As a certified B Corp, a registered Benefit Company in British Columbia, and a living-wage employer Mwani Africa is held accountable by external third-party organizations to ensure their actions genuinely benefit people and the planet.</p>
           <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>On behalf of our three primary stakeholders — Mother Earth, our First Nations Partners and our shareholders — we have an imperative to demonstrate that both profitable business growth and environmental stewardship can be achieved in harmony.</p>
         </Col>

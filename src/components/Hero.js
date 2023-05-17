@@ -35,10 +35,10 @@ function CardHero() {
             (
               <div className='hero-img-bg'         
               style={{
-                backgroundImage: `linear-gradient(rgb(160, 102, 204, 0.6), rgb(160, 102, 204, 0.6)), url(${cimg4})`,
+                backgroundImage: `linear-gradient(rgb(160, 102, 204, 0.3), rgb(160, 102, 204, 0.3)), url(${cimg4})`,
                 backgroundAttachment: "fixed",
                 backgroundRepeat:'noRepeat',
-                backgroundSize: "contain",
+                backgroundSize: "cover",
                 color: "white",
                 
 

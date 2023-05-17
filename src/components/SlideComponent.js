@@ -47,7 +47,7 @@ const CardsHero = () => {
   return (
     <>
 
-    <Container fluid className=' container-card-section' 
+    <Container className=' container-card-section' 
     style={{
       backgroundImage: `linear-gradient(rgba(0,38,0,0.7), rgba(0,38,0,0.7)), url(${cardimg})`,
       backgroundAttachment: "fixed",

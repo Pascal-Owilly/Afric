@@ -9,6 +9,7 @@ import Team from './components/Team';
 import SocialEnterprise from './components/SocialEnterprise';
 import TeamPage from './components/TeamPage';
 import Search from './components/Search';
+import Admin from './components/Admin';
 import './App.css'; 
 
 function App() {  
@@ -30,7 +31,10 @@ function App() {
         <Route path="/socialent" element={<SocialEnterprise filterValue={filterValue} />}  />
         <Route path="/team" element={<Team filterValue={filterValue} />} />
         <Route path="/teampage" element={<TeamPage filterValue={filterValue} />} />
+        <Route path="/admin" element={<Admin filterValue={filterValue} /> } />
         <Route path="*" element={<Navigate to="/" />} />
+        
+      
       </Routes>
       <Footer />
     </Router>

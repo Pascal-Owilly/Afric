@@ -55,7 +55,7 @@ const teamMembers = [
     position: "Senior Professor Pwani university",
     contribution: "PhD, Plant Pathology",
     more: "Biologist with rich history in plant protection",
-    link: "https://www.linkedin.com/in/joseph-mwafaida-a88b49b7/",
+    link:  "",   
     image: team5,
   },
   {

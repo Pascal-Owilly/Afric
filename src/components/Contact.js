@@ -90,7 +90,7 @@ const ContactForm = () => {
                   />
                 </Form.Group>
 
-                <Button variant=" mt-3" style={{backgroundColor:'purple', color:'white', width:'100%'}} type="submit"> Submit </Button>
+                <Button variant=" mt-3" style={{backgroundColor:'#a066cc', color:'white', width:'100%'}} type="submit"> Submit </Button>
               </Form>
             </Card.Body>
           </Card>

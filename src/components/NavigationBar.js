@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import logo6 from '../img/logo5.png';
 import { Link } from 'react-router-dom';
 import { FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import './NavigationBar.css';
 import Search from './Search';
 
@@ -22,7 +23,7 @@ function NavigationBar() {
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 100) {
-      setNavbarBackground('#a066cc');
+      setNavbarBackground('#febd59');
     } else {
       setNavbarBackground('#a066cc');
     }
@@ -68,16 +69,16 @@ function NavigationBar() {
       <Navbar className='navbar' fixed='top' expand="lg" expanded={expanded} style={{backgroundColor: navbarBackground}}>
         <Container fluid>
           <Row className="align-items-center">
-            <Col md={2}>
-              <Navbar.Brand>
+            <Col md={2} className='align-center' >
+              <Navbar.Brand style={{marginLeft:'4rem'}}>
                 <Link to="/" title='Home'> 
                   <img
                     src={logo6}
                     width="50%"
                     height=""
-                    className="d-inline-block align-center p-1 rounded mwani-logo"
+                    className="d-inline-block align-right p-1 rounded mwani-logo"
                     alt="Mwani Africa Logo"
-                    style={{marginLeft:'0'}}
+                    
                   />
                 </Link>
               </Navbar.Brand>
@@ -85,13 +86,20 @@ function NavigationBar() {
             </Col>
             <hr style={{color:'white'}} className='p-only'/>
             <Col md={10} className="text-md-end">
-            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleExpanded}>
+                
                 <span className="navbar-toggler-icon text-white"></span> 
                 <span className="menu-text" style={{}}> MENU</span>  
               </Navbar.Toggle>
 
-                <span className='linkedin p-only' style={{marginLeft:'-2rem'}}>
+                <Link style={{color:'yellow', fontSize:'20px', marginTop:'-15px'}} to="https://api.whatsapp.com/send?phone=+254712154175">
+              <span className='whatsapp p-only'>
+            <FaWhatsapp /> 
+            </span>
+            </Link>
+
+                <span className='linkedin p-only' style={{marginRight:'2rem'}}>
                <Link style={{color:'white', textDecoration:'none'}} target={'_blank'} to='https://www.linkedin.com/in/mesteroscar/'><FaLinkedin /></Link> 
                 </span>
             </Col>
@@ -106,6 +114,15 @@ function NavigationBar() {
               <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>
               <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
               <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
+
+            <span className=' c-only' style={{marginLeft:'-2rem'}}>
+               <Link style={{color:'white', textDecoration:'none', fontSize:'20px', marginLeft:'8rem'}} target={'_blank'} to='https://www.linkedin.com/in/mesteroscar/'><FaLinkedin /></Link> 
+                </span>
+                <Link style={{color:'yellow', fontSize:'20px', marginLeft:'2rem', fontWeight:'bolder'}} to="https://api.whatsapp.com/send?phone=+254712154175">
+              <span className='c-only'>
+            <FaWhatsapp />
+            </span>
+            </Link>
             </Nav>
           </Navbar.Collapse>
 
@@ -114,8 +131,9 @@ function NavigationBar() {
 
         <span className='linkedin c-only' style={{}}></span>
         <span className="search-icon c-only" title="Enter search term" onClick={handleSearchClick} style={{}}>
-                <Search /> 
+                <Search /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </span> 
+                
 
       
       </Navbar>

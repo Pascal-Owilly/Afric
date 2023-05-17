@@ -8,7 +8,6 @@ import team4 from '../img/team4.png';
 import team5 from '../img/team5.png';
 import team6 from '../img/team6.png';
 import team7 from '../img/team7.jpeg';
-import t40 from '../img/purpletexture.jpeg';
 import { Link } from 'react-router-dom';
 import './TeamPage.css';
 import './CardHero.css'
@@ -43,7 +42,7 @@ const teamMembers = [
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "30yrs Experience",
-        // link: "https://www.linkedin.com/in/flower-msuya-4a95822/",
+        external_link: "https://www.linkedin.com/in/flower-msuya-4a95822/",
         link: "Head of Nation Asso",
         image: team2,
       },
@@ -55,7 +54,7 @@ const teamMembers = [
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "Circular Economy",
-        // link: "https://www.linkedin.com/in/flower-msuya-4a95822/",
+        external_link: "https://www.linkedin.com/in/mesteroscar/",
         link: "Public Private Partner",
         image: team4,
       },
@@ -67,7 +66,7 @@ const teamMembers = [
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "",
-        // link: "https://www.linkedin.com/in/flower-msuya-4a95822/",
+        external_link: "https://www.usp.ac.fj/discipline-of-marine-studies/staff-profiles/dr-jack-dyers-phd/",
         link: "Vast Experience",
         image: team6,
       },
@@ -79,7 +78,7 @@ const teamMembers = [
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "30yrs Experience",
-        // link: "https://www.linkedin.com/in/flower-msuya-4a95822/",
+        external_link: "https://www.linkedin.com/in/joseph-mwafaida-a88b49b7/",
         link: "Pwani University",
         image: team5,
       },
@@ -91,7 +90,7 @@ const teamMembers = [
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "30yrs Experience",
-        // link: "https://www.linkedin.com/in/flower-msuya-4a95822/",
+        external_link: "",
         link: "JOOUST University",
         image: team7,
       },
@@ -100,7 +99,7 @@ const teamMembers = [
 const Cards = () => {
   return (
     <>
-    <Container fluid className='teampage'
+    <Container className='teampage'
                   style={{
                     // backgroundImage: `linear-gradient(rgb(128, 0, 128, .6), rgb(128, 0, 128, .6)), url(${t40})`,
                     backgroundColor:'white',
@@ -132,18 +131,18 @@ const Cards = () => {
        </div>
         </Col> */}
         
-       <div className="row mt-3">
-        <h2 className="text-left text-dark mt-5">The Team</h2>
+       <div className="row mt-3" style={{color:'#666666', fontFamily:'cursive'}}>
+        <h2 style={{color:'#666666', fontFamily:'cursive'}} className="text-left mt-5">The Team</h2>
         {teamMembers.map((card, index) => (
         <div className="col-md-2 m-auto" style={{marginTop:''}} key={index}>
           <Card className='mt-5' style={{border:'none', width:'100%', margin:'auto', backgroundColor:'transparent'}}>
-            <Card.Img className="rounded-circle" style={{width:'80%'}} variant="top" src={card.image} />
+           <Link target="_blank" to={card.external_link}> <Card.Img className="rounded-circle" style={{width:'80%'}} variant="top" src={card.image} /></Link>
             <Card.Body>
-              <Card.Title style={{fontFamily: 'didot-w01,arial', fontStyle:'none', fontWeight:'700', color:'#666666'}}>{card.name}</Card.Title>
-              <Card.Subtitle className='text-center mt-2' style={{backgroundColor:'#ffffff', color:'black', textDecoration:'uppercase', fontWeight:'bold', borderRadius:'5px'}}>{card.contribution} </Card.Subtitle>
-              <Card.Text style={{fontFamily: 'didot-w01,arial', fontSize:'18px', fontWeight:'700', color:'#666666'}} className="mt-2 text-muted">{card.position}</Card.Text>
-              <Card.Text style={{fontFamily: 'didot-w01,arial', fontSize:'18px', fontWeight:'700', color:'#666666'}}>{card.more}</Card.Text>
-              <p className='bio-btn' style={{fontFamily: 'didot-w01,arial', fontSize:'18px', fontWeight:'700', color:'#666666'}} target="_blank" >{card.link}</p>
+            <Link target="_blank" style={{textDecoration:'none'}} to={card.external_link}> <Card.Title style={{ fontStyle:'none', fontWeight:'700', color:'#666666',fontSize:'14px'}}>{card.name}</Card.Title></Link>
+              <Card.Subtitle className='text-left mt-2' style={{backgroundColor:'#ffffff', color:'black', textDecoration:'uppercase', fontWeight:'bold', borderRadius:'5px', fontSize:'13px', textTransform:'uppercase'}}>{card.contribution} </Card.Subtitle>
+              <Card.Text style={{ fontSize:'14px', color:'#666666'}} className="mt-2 text-muted">{card.position}</Card.Text>
+              <Card.Text style={{ fontSize:'14px', color:'#666666'}}>{card.more}</Card.Text>
+              <p className='bio-btn' style={{ fontSize:'14px', fontWeight:'500', color:'#666666'}} target="_blank" >{card.link}</p>
             </Card.Body>
           </Card>
         </div>

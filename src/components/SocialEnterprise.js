@@ -14,7 +14,7 @@ const MySection = () => {
   return (
     <>
     <hr />
-       <Container fluid style={{height:'100%', position:'relative'}}>
+       <Container style={{height:'100%', position:'relative'}}>
       <Row className="enterprise">
         <Col md={6} style={{height:'100%'}}>
     <hr />
