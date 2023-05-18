@@ -93,10 +93,12 @@ function NavigationBar() {
                 <span className="menu-text" style={{}}> MENU</span>  
               </Navbar.Toggle>
 
-                <Link style={{color:'yellow', fontSize:'20px', marginTop:'-15px'}} to="https://api.whatsapp.com/send?phone=+254712154175">
+                <Link style={{color:'yellow', fontSize:'20px', marginTop:'-15px'}} to="https://api.whatsapp.com/send?phone=254723754597&text=Hello%20there!">
               <span className='whatsapp p-only'>
             <FaWhatsapp /> 
+          
             </span>
+            
             </Link>
 
                 <span className='linkedin p-only' style={{marginRight:'2rem'}}>
@@ -109,16 +111,16 @@ function NavigationBar() {
             <span className="search-icon p-only" title="Enter search term" >
                 <Search /> 
                 </span> <hr /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
-              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
-              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>
-              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
-              <Nav.Link style={{fontWeight:'bold'}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
+              <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/" className="nav-links"          >Home</Nav.Link>
+              <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
+              <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>
+              <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
+              <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
 
             <span className=' c-only' style={{marginLeft:'-2rem'}}>
                <Link style={{color:'white', textDecoration:'none', fontSize:'20px', marginLeft:'8rem'}} target={'_blank'} to='https://www.linkedin.com/in/mesteroscar/'><FaLinkedin /></Link> 
                 </span>
-                <Link style={{color:'yellow', fontSize:'20px', marginLeft:'2rem', fontWeight:'bolder'}} to="https://api.whatsapp.com/send?phone=+254712154175">
+                <Link style={{color:'yellow', fontSize:'20px', marginLeft:'2rem', fontWeight:'bolder'}} to="https://api.whatsapp.com/send?phone=254723754597">
               <span className='c-only'>
             <FaWhatsapp />
             </span>

@@ -88,7 +88,7 @@ const CardCarousel = () => {
     <>
     <Container style={{position:'relative', zIndex:1}}>
 
-    <h4 className=" mt-1" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>This startup is converting calamity into a range of sustainable products.<br /> Here is how it's doing that...<hr /></h4>
+    <h5 className=" mt-1" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>This startup is converting calamity into a range of sustainable products.<br /> Here is how it's doing that...<hr /></h5>
    <Row>
     <Col md={4}>
     <h5 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>Deforestation is on the rise</h5>
@@ -128,9 +128,7 @@ We produce a natural clothing material.
                 <p className="card-description cardsect-description" style={{textAlign:'right'}} >{card.description}</p>
                 </Col>
                 </Row>
-                <Card.Img src={card.img} />
-                 
-               
+                <Card.Img src={card.img} />                
               </div>
               </Card>
             </Col>
@@ -280,15 +278,7 @@ sustainable way. </p>
                   </p>
               </Col>
             </Row>
-
-
-
-          </div>
-
-
-
-          
-         
+          </div>        
         </Col>
         </Row>
         </Container>

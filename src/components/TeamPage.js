@@ -90,7 +90,7 @@ const teamMembers = [
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "30yrs Experience",
-        external_link: "",
+        external_link: "https://www.linkedin.com/in/dr-richard-odongo-magwanga-ph-d-3158b643/?originalSubdomain=ke",
         link: "JOOUST University",
         image: team7,
       },
