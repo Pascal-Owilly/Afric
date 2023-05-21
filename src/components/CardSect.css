@@ -4,6 +4,10 @@
     
    
   } 
+
+  p{
+    font-size: 15px;
+  }
   
   .cardsect-carousel-container.left {
     transform: translateX(-100%);

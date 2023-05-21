@@ -5,6 +5,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './Contact.css';
 import './Why.css';
+import {Link} from 'react-router-dom';
+import { FaLinkedin } from 'react-icons/fa';
+
+
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -43,8 +47,9 @@ const ContactForm = () => {
     <>
       <div className='contact-section'>
         <div className='contact-section-content'>
+
           <Card className='contact-card text-white'>
-            <p style={{fontSize:'22px', fontFamily:'verdana', textAlign:'center', lineHeight:'20px'}} className='contact-p'>Send us a message and we'll get to you as soon an possible</p>
+            <p style={{fontSize:'22px', fontFamily:'verdana', textAlign:'center', lineHeight:'20px'}} className='contact-p'>Send us a message and we'll get to you as soon as possible</p>
             <hr />
             {status === 'success' && (
               <p className=" text-center" style={{backgroundColor:'green', color:'white', fontWeight:'500', fontSize:'14px', borderRadius:'10px', border:'none', transition:'2s easeIn', padding:'10px'}}>Form Submitted Successfully.</p>
@@ -94,6 +99,9 @@ const ContactForm = () => {
               </Form>
             </Card.Body>
           </Card>
+          <span className='linkedin p-only' style={{marginRight:'2rem'}}>
+               <Link style={{color:'white', textDecoration:'none'}} target={'_blank'} to='https://www.linkedin.com/company/mwaniafrica/'><FaLinkedin /></Link> 
+                </span>
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ import team4 from '../img/team4.png';
 import team5 from '../img/team5.png';
 import team6 from '../img/team6.png';
 import team7 from '../img/team7.jpeg';
+import team8 from '../img/team8.jpeg';
 import { Link } from 'react-router-dom';
 import './TeamPage.css';
 import './CardHero.css'
@@ -36,43 +37,43 @@ const team = [team1,
 const teamMembers = [
 
     {
-        name: "Dr Flower Msuya",
-        contribution: "SEAWEED EXPERT",
+        name: "Dr Msuya",
+        contribution: "Highly acclaimed Seaweed consultant",
         position: "PhD, Phycologist",
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "30yrs Experience",
         external_link: "https://www.linkedin.com/in/flower-msuya-4a95822/",
-        link: "Head of Nation Asso",
+        // link: "Head of Nation Asso",
         image: team2,
       },
 
       {
-        name: "Oscar Ikinya",
+        name: "Mr Oscar",
         contribution: "CEO",
-        position: "Seaweed MTA",
+        // position: "Seaweed MTA",
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
-        more: "Circular Economy",
+        // more: "Circular Economy",
         external_link: "https://www.linkedin.com/in/mesteroscar/",
-        link: "Public Private Partner",
+        // link: "Public Private Partner",
         image: team4,
       },
 
       {
-        name: "Dr Jack Dyer",
-        contribution: "Blue Economy",
+        name: "Dr Jack",
+        contribution: "Blue Economy Consultant",
         position: "PhD, Maritime & Logistics Mgnt-Blue Economy and Climate Change",
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
         // more: "Senior Researcher & Consultant",
         more: "",
         external_link: "https://www.usp.ac.fj/discipline-of-marine-studies/staff-profiles/dr-jack-dyers-phd/",
-        link: "Vast Experience",
+        // link: "Vast Experience",
         image: team6,
       },
 
       {
-        name: "Prof J Mwafaida",
+        name: "Prof Mwafaida",
         contribution: "R&D - Biostimulant",
         position: "PhD, Plant Pathology",
         // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
@@ -83,17 +84,17 @@ const teamMembers = [
         image: team5,
       },
 
-      // {
-      //   name: "Dr R Magwanga",
-      //   contribution: "R&D - Protein & Fabric",
-      //   position: "PhD, Breeding",
-      //   // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
-      //   // more: "Senior Researcher & Consultant",
-      //   more: "30yrs Experience",
-      //   external_link: "https://www.linkedin.com/in/dr-richard-odongo-magwanga-ph-d-3158b643/?originalSubdomain=ke",
-      //   link: "JOOUST University",
-      //   image: team7,
-      // },
+      {
+        name: "Dr Kinyuru",
+        contribution: "Insect Hunter",
+        // position: "PhD, Breeding",
+        // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
+        // more: "Senior Researcher & Consultant",
+        // more: "30yrs Experience",
+        external_link: "http://discover.jkuat.ac.ke/personality-of-the-year-the-insect-hunter-dr-john-kinyuru/",
+        link: "JKUAT University",
+        image: team8,
+      },
 
 ];
 const Cards = () => {

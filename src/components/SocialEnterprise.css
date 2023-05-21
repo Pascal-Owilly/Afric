@@ -18,10 +18,6 @@
  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.enterprise{
-  margin-top: 12vh;
-}
-
 @media(max-width: 990px){
     .what-card{
       margin: 20px;

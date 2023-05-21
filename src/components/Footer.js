@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { Form, Button, Card } from 'react-bootstrap';
 // import img4 from '../img/img4.jpeg';
+import './Footer.css';
 
 function Footer() {
   const [email, setEmail] = useState('');
@@ -47,7 +48,6 @@ function Footer() {
     <>
     <footer className="footer-content"
         style={{
-          backgroundColor:'#a066cc',
           color: "white",
         }}>
     <div className='footer-overla'></div>
@@ -57,7 +57,7 @@ function Footer() {
             <h4 style={{color:'#ddd2d2'}} className='text-center' >Site Links</h4>
             <ul className="list-unstyled text-white text-center ">
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic', zIndex:2}}  onClick={() => window.scrollTo(0, 0)} to="/home">Home</Link></li>
-              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/about">About Us</Link></li>
+              {/* <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/about">About Us</Link></li> */}
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/contact">Contact</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/teampage">Team</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/research">Research</Link></li>
@@ -107,7 +107,7 @@ function Footer() {
         <hr />
         </Container>
         <Container fluid>
-        <Row  style={{backgroundColor:'#a066cc', padding:'1rem'}}>      
+        <Row  style={{padding:'1rem'}}>      
           <Col md={12} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
             <p className='mt-1' style={{ color: '#fff', fontWeight:'bold', fontSize:'18px' }}>Mwani Africa &copy; 2023</p> 
           </Col> 
