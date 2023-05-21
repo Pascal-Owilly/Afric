@@ -45,7 +45,6 @@ function Footer() {
 
   return (
     <>
-
     <footer className="footer-content"
         style={{
           backgroundColor:'#a066cc',
@@ -61,6 +60,7 @@ function Footer() {
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/about">About Us</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/contact">Contact</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/teampage">Team</Link></li>
+              <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/research">Research</Link></li>
               <li><Link className="list-unstyled text-white" style={{textDecoration:'none', fontStyle:'italic'}}  onClick={() => window.scrollTo(0, 0)} to="/socialent">Social Enterprise</Link></li>
             </ul>
           </Col>
@@ -69,7 +69,6 @@ function Footer() {
             <p className="list-unstyled text-white text-left">Welcome to our site! Our seaweed fertilizers are perfect for your agricultural needs, but we do recommend testing on a small scale before widespread use, as each plant species is unique. Please follow all instructions and safety precautions when using our products.</p>
           </Col>
           <Col md={4 } className='mt-4'>
-  
                 <Card className='subscription-card'>
                 {subscriptionStatus === 'success' && (
         <div style={{backgroundColor:'transparent', color:'white', fontWeight:'500', fontSize:'18px', borderRadius:'10px', border:'none', transition:'2s easeIn'}} className="alert alert-success text-center" role="alert">
@@ -94,8 +93,7 @@ function Footer() {
                     <Form.Group controlId="formBasicEmail">
                       <Form.Label></Form.Label>
                       <Form.Control className='sub-input' type="email" placeholder="Enter email" value={email} onChange={handleEmailChange} required />
-                      <Form.Text className="text-muted">
-                       
+                      <Form.Text className="text-muted">      
                       </Form.Text>
                     </Form.Group>
                     <Button className='sub-btn' style={{backgroundColor:'#a066cc', color:'white', border:'none', fontWeight:'bold', letterSpacing:'2px'}} variant="danger" type="submit">
@@ -106,21 +104,17 @@ function Footer() {
               </Card>
             </Col>
           </Row>
-
         <hr />
         </Container>
         <Container fluid>
-        <Row  style={{backgroundColor:'#a066cc', padding:'1rem'}}>
-        
+        <Row  style={{backgroundColor:'#a066cc', padding:'1rem'}}>      
           <Col md={12} style={{ color: 'white', fontWeight:'bold', textAlign:'center' }} >
             <p className='mt-1' style={{ color: '#fff', fontWeight:'bold', fontSize:'18px' }}>Mwani Africa &copy; 2023</p> 
           </Col> 
           <Col className='text-center' md={4} style={{ color: 'white', fontWeight:'bold', textAlign:'right' }} >
-          </Col> 
-           
+          </Col>         
           </Row>    
-      </Container>
-     
+      </Container>  
     </footer>
     </>
   );

@@ -83,17 +83,17 @@ const teamMembers = [
         image: team5,
       },
 
-      {
-        name: "Dr R Magwanga",
-        contribution: "R&D - Protein & Fabric",
-        position: "PhD, Breeding",
-        // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
-        // more: "Senior Researcher & Consultant",
-        more: "30yrs Experience",
-        external_link: "https://www.linkedin.com/in/dr-richard-odongo-magwanga-ph-d-3158b643/?originalSubdomain=ke",
-        link: "JOOUST University",
-        image: team7,
-      },
+      // {
+      //   name: "Dr R Magwanga",
+      //   contribution: "R&D - Protein & Fabric",
+      //   position: "PhD, Breeding",
+      //   // contribution: "Chairlady ZaSCI - Zanzibar Seaweed Cluster Initiative",
+      //   // more: "Senior Researcher & Consultant",
+      //   more: "30yrs Experience",
+      //   external_link: "https://www.linkedin.com/in/dr-richard-odongo-magwanga-ph-d-3158b643/?originalSubdomain=ke",
+      //   link: "JOOUST University",
+      //   image: team7,
+      // },
 
 ];
 const Cards = () => {
@@ -131,8 +131,8 @@ const Cards = () => {
        </div>
         </Col> */}
         
-       <div className="row mt-3" style={{color:'#666666', fontFamily:'cursive'}}>
-        <h2 style={{color:'#666666', fontFamily:'cursive'}} className="text-left mt-5">The Team</h2>
+       <div className="row" style={{color:'#666666', fontFamily:'cursive', marginTop:'22vh'}}>
+        <h2 style={{color:'#666666', fontFamily:'cursive'}} className="text-left">The Team</h2>
         {teamMembers.map((card, index) => (
         <div className="col-md-2 m-auto" style={{marginTop:''}} key={index}>
           <Card className='mt-5' style={{border:'none', width:'100%', margin:'auto', backgroundColor:'transparent'}}>

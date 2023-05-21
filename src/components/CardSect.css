@@ -18,11 +18,20 @@
     
     margin: 0 20px 0 0;
     padding: 0 0 5px 0px;
-    background-color: rgb(207, 169, 71);
-    color: white;
+    background-color: transparent;
+    color: #666666;
 
 
     
+  }
+
+  @media only screen and (max-width: 576px) and (max-width: 991px) {
+    .certified-bg h2{
+      font: 'Alata' !important;
+      color: #ffffff;
+     font-size: 48px; 
+      font-weight: 800;
+    }
   }
 
   /* .cool-card{
@@ -99,8 +108,7 @@
   
   .slidecard {
 
-    height: 300px;
-    width: 270px;
+    width: 90%;
     margin: auto;
     align-items: center;
     background: #d8caca;
@@ -112,6 +120,7 @@
     -webkit-border-radius: 22px;
     -khtml-border-radius: 22px;
     padding: 4px;
+    background-image: url('../img/img112.jpeg');
     transition: all 400ms ease-in-out 0s;
     -webkit-transition: all 400ms ease-in-out 0s;
     -moz-transition: all 400ms ease-in-out 0s;
@@ -147,11 +156,11 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  .certified-bg{
+  /* .certified-bg{
     background-image: url('../img/cardimg2.jpeg');
     background-size: contain;
     background-attachment: fixed;
-  }
+  } */
   .certified-bg h2{
     font: 'Alata' !important;
     color: #ffffff;

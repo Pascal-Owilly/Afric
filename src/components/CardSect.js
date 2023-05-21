@@ -8,7 +8,8 @@ import person2 from '../img/person2.jpeg';
 import cimg1 from '../img/c-img1.jpeg';
 import cimg3 from '../img/cimg3.jpeg';
 import img9 from '../img/img9.jpeg'
-
+import lobster from '../fonts/Lobster/Lobster-Regular.ttf'
+import './fonts.css';
 
 const cardData = [
   {
@@ -16,11 +17,11 @@ const cardData = [
     description: " ",
     img: cardimg2,
   },
-  {
-    title: "Seaweed",
-    description: "",
-    img:  img4,
-  },
+  // {
+  //   title: "Seaweed",
+  //   description: "",
+  //   img:  img4,
+  // },
   {
     title: "Seaweed",
     description: "",
@@ -51,7 +52,7 @@ const CardCarousel = () => {
     { id: 2, title: 'Seaweed', image: cardimg },
     { id: 3, title: 'Seaweed', image: cimg1 },
     { id: 4, title: 'Seaweed', image: cardimg2},
-    { id: 5, title: 'Seaweed', image: img4 },
+    // { id: 5, title: 'Seaweed', image: img4 },
   ];
 
     // Calculate the next index
@@ -84,34 +85,40 @@ const CardCarousel = () => {
     }, 300);
   };
 
+
+  const lobster = {
+    fontFamily: 'lobster',
+    fontWeight:'300',
+    fontSize:'16px',
+  };
+
   return (
     <>
     <Container style={{position:'relative', zIndex:1}}>
-
-    <h5 className=" mt-1" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>This startup is converting calamity into a range of sustainable products.<br /> Here is how it's doing that...<hr /></h5>
+    <hr />
+    <p className=" mt-1" style={{}}>We are converting calamity into a range of sustainable products.<br /> Here is how it's doing that...</p>
    <Row>
     <Col md={4}>
-    <h5 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>Deforestation is on the rise</h5>
+    <h5 style={lobster}>Deforestation is on the rise</h5>
 <ul>
-  <li style={{ fontSize: '14px', color:'#666666' }}>Agricultural practices are using a lot of pesticides and fertilizers.</li>
-  <li style={{ fontSize: '14px', color:'#666666' }}>We are dumping our wastewater into the oceans.</li>
-  <li style={{ fontSize: '14px', color:'#666666' }}>All of this has put an overload of nutrients in the oceans.</li>
+  <li style={{}}>Agricultural practices are using a lot of pesticides and fertilizers.</li>
+  <li style={{}}>We are dumping our wastewater into the oceans.</li>
+  <li style={{}}>All of this has put an overload of nutrients in the oceans.</li>
 </ul>
     </Col>
     <Col md={4}>
-    <h5 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>Nutrients like nitrogen and phosphorus</h5>
-<p style={{ fontSize: '14px', color:'#666666' }}>This has given rise to a seaweed called Sargassum. It feeds on these nutrients and has grown enormously. It extends to West and East Africa, including Kenya. It creates something called Algae mats which kill coral reefs and animal populations. Also, it has a rotting egg stench, which impacts tourism. Fisheries are frustrated as it ends up in their nets. </p>
-<p style={{ fontSize: '14px', color:'#666666' }}>Mwani Africa is on a mission to solve this by converting Sargassum into useful materials. We produce a natural biostimulant and soil conditioner, applied to to plants and soils to enhance nutritional efficiency and resilience. 
-We produce a natural protein feed additive.
-We produce a natural clothing material.
+    <h5 style={lobster}>Nutrients like nitrogen and phosphorus</h5>
+<p style={{}}>This has given rise to a seaweed called Sargassum. It feeds on these nutrients and has grown enormously. It extends to West and East Africa, including Kenya. It creates something called Algae mats which kill coral reefs and animal populations. Also, it has a rotting egg stench, which impacts tourism. Fisheries are frustrated as it ends up in their nets. </p>
+<p style={{}}>Mwani Africa is on a mission to mitigate this challenge, upcycling the blooms, by incorporating sea plants and processing to produce biostimulants and soil conditioner.
+A great fertilizer enhancer applied to plants.
  We have developed the world's first Seaweed-based grow medium for vertical gardens</p>
     </Col>
     <Col md={4}>
     <img src={cimg3} style={{width:'100%'}}/>
-     
+    <p className=" mb-4" style={{}}>The ocean covers 70% of our planet and plays a critical role in regulating our climate. Yet it remains an area of focus with the least amount of investment.</p>
     </Col>
     </Row>          
-      <h4 className=" mb-4" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>The ocean covers 70% of our planet and plays a critical role in regulating our climate. Yet it remains an area of focus with the least amount of investment.</h4>
+     
     <div className="card-carousel c-only cardsect mt-4" style={{height:'65vh'}}>
       <div className={`card-carousel-container cardsect-carousel-container ${slideDirection}`}>
         <Row>
@@ -122,7 +129,7 @@ We produce a natural clothing material.
               <div className=" " style={{height:'300px'}}>
                 <Row>
                   <Col>
-                <h4 className="card-title cardsect-title" style={{textAlign:'left'}} >{card.title}</h4>
+                <p className="card-title cardsect-title" style={{textAlign:'left'}} >{card.title}</p>
                 </Col>
                 <Col>
                 <p className="card-description cardsect-description" style={{textAlign:'right'}} >{card.description}</p>
@@ -137,10 +144,10 @@ We produce a natural clothing material.
       </div>
       <div className="card-carousel-buttons mt-3 text-center" >
         <button style={{width:'120px', border:'none', borderRadius:'25px'}} className='cardsect-carousel-buttons' onClick={handlePrevClick} disabled={startIndex === 0}>
-        &#8249; &#8249;&#8249; &nbsp; Prev
+        &#8249; &#8249;&#8249; &nbsp; 
         </button>&nbsp;
         <button style={{width:'120px', border:'none', borderRadius:'25px'}} className='cardsect-carousel-buttons' onClick={handleNextClick} disabled={startIndex >= cardData.length - 3}>
-          Next  &nbsp; &#8250;&#8250;&#8250;
+            &nbsp; &#8250;&#8250;&#8250;
         </button>
       </div>
     </div>
@@ -148,9 +155,8 @@ We produce a natural clothing material.
     {/* mobile slide */}
 
     <div className="card-carousel cardsect p-only">
-      <div className="card-carousel-container cardsect-carousel-container" >
+      <div className="card-carousel-containe cardsect-carousel-containe" >
         <Row style={{width:'100%'}}>
-         
         {cards.map((card, index) => {
           const active = index === currentSlide;
           const classNames = ['slidecard'];
@@ -158,7 +164,7 @@ We produce a natural clothing material.
           return (
             <div className={classNames.join(' ')} key={card.id}>
               <Col>
-              <h2>{card.title}</h2>
+              <p className='text-white'>{card.title}</p>
               </Col>
               <Col>
               < img src={card.image} style={{width:'100%'}}/>
@@ -170,8 +176,8 @@ We produce a natural clothing material.
         </Row>
       </div>
       <div className="slidebutton-container ">
-        <button className="" style={{width:'120px', border:'none', borderRadius:'25px', backgroundColor: 'rgb(207, 169, 71)', color:'white' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(prevIndex)}>&#8249; &#8249;&#8249; &nbsp; Prev</button>&nbsp;&nbsp;&nbsp;
-        <button className="" style={{width:'120px', border:'none', borderRadius:'25px', backgroundColor: 'rgb(207, 169, 71)', color:'white' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(nextIndex)}>Next  &nbsp; &#8250;&#8250;&#8250;</button>       
+        <button className="" style={{width:'120px', border:'none', borderRadius:'25px', backgroundColor: 'transparent', color:'#666666' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(prevIndex)}>&#8249; &#8249;&#8249; &nbsp;</button>&nbsp;&nbsp;&nbsp;
+        <button className="" style={{width:'120px', border:'none', borderRadius:'25px', backgroundColor: 'transparent', color:'#666666' }}  onClick={handlePrevClick} onClick={() => setCurrentSlide(nextIndex)}>  &nbsp; &#8250;&#8250;&#8250;</button>       
       </div>
     </div>
 <hr className="p-only"/>
@@ -181,13 +187,13 @@ We produce a natural clothing material.
           <Container >
             <Row>
               <Col md={4}>
-              <p style={{ fontSize: '14px', color:'#666666' }}>Seaweed forests are an integral part of improving ocean health and supporting high levels of biodiversity in marine environments by forming crucial habitats, producing oxygen, mitigating acidification, and capturing carbon. As with many ecosystems, the impacts of climate change have been detrimental to naturally occurring seaweed forests, and therefore they require protection and restoration.</p>
+              <p style={{}}>Seaweed forests are an integral part of improving ocean health and supporting high levels of biodiversity in marine environments by forming crucial habitats, producing oxygen, mitigating acidification, and capturing carbon. As with many ecosystems, the impacts of climate change have been detrimental to naturally occurring seaweed forests, and therefore they require protection and restoration.</p>
               </Col>
               <Col md={4}>
-              <p style={{ fontSize: '14px', color:'#666666' }}>Cultivating seaweed on low-impact ocean farms has the ability to not only restore ecosystems, but also to increase the resilience of coastal economies and global food systems. This is because seaweed has a long list of potential uses once harvested. </p>
+              <p style={{}}>Cultivating seaweed on low-impact ocean farms has the ability to not only restore ecosystems, but also to increase the resilience of coastal economies and global food systems. This is because seaweed has a long list of potential uses once harvested. </p>
                 </Col>
                 <Col md={4}>
-                <p style={{ fontSize: '14px', color:'#666666' }}>Ocean cultivated seaweed requires no freshwater, fertilizers, pesticides or arable land to grow. It utilizes nutrients from the sea, is renewable and fast growing. It is the definition of regenerative aquaculture and this burgeoning sector directly supports the development of Canada’s growing Blue Economy.</p>
+                <p style={{}}>Ocean cultivated seaweed requires no freshwater, fertilizers, pesticides or arable land to grow. It utilizes nutrients from the sea, is renewable and fast growing. It is the definition of regenerative aquaculture and this burgeoning sector directly supports the development of Canada’s growing Blue Economy.</p>
                 </Col>
             </Row>
           </Container>        
@@ -195,70 +201,73 @@ We produce a natural clothing material.
         <Row>
         <hr />
       <Col md={6}>
-<img className="mb-5" src={img4} style={{width:'100%'}}/>
+<img className="mb-1" src={img4} style={{width:'100%'}}/>
 
  </Col>
 <Col md={6}>
       
-<h4 className="text-cente" style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}><i> Mwani Africa is on a mission
-to produce climate-positive biomass in the ocean, reduce greenhouse gas emissions and build a more resilient food system by producing products for land-based farmers. </i></h4>
+<p className="text-cente" style={{}}>Mwani Africa is on a mission
+to produce climate-positive biomass in the ocean, reduce greenhouse gas emissions and build a more resilient food system by producing products for land-based farmers.</p>
 <hr />
-    <p style={{ fontSize: '14px', color:'#666666' }}>  Mwani Africa has built a team of experts to grow, process and produce seaweed-based products for regenerative agriculture — biostimulants and agrifeeds.</p> 
-    <p style={{ fontSize: '14px', color:'#666666' }}> We are cultivators (compared to wild harvesters), which means we grow local seaweeds from seed on low-impact farms in the ocean. The infrastructure includes anchors on the seafloor, floats on the surface and tensioned ropes in between.</p>
-    <p style={{ fontSize: '14px', color:'#666666' }}>In the fall, we collect reproductive material from the vicinity of each farm site, to protect the genetic diversity of each species. We create a spore solution from the reproductive material and grow our seaweed seedlings in our custom nursery. We plant those seedlings on the ocean farms in the winter and monitor their growth until they are ready to be harvested in the spring. The harvested biomass is then transported to a processing facility where it is washed and frozen and available for the production of our products.</p>
-
+    <p style={{}}>  Mwani Africa has built a team of experts to grow, process and produce seaweed-based products for regenerative agriculture — biostimulants and agrifeeds.</p> 
+    <p style={{}}> We are cultivators (compared to wild harvesters), which means we grow local seaweeds from seed on low-impact farms in the ocean. The infrastructure includes anchors on the seafloor, floats on the surface and tensioned ropes in between.</p>
+    <p style={{}}>In the fall, we collect reproductive material from the vicinity of each farm site, to protect the genetic diversity of each species. We create a spore solution from the reproductive material and grow our seaweed seedlings in our custom nursery. We plant those seedlings on the ocean farms in the winter and monitor their growth until they are ready to be harvested in the spring. The harvested biomass is then transported to a processing facility where it is washed and frozen and available for the production of our products.</p>
+    <p style={{}}>By partnering with coastal First Nations, we are cultivating seaweed in the ocean at scale to restore marine ecosystems. We then harvest that biomass to produce products that make positive impacts on the environment and build a more resilient food system.
+        We are focusing on delivering products in three key areas:</p>
         </Col>
         </Row>
         <Row className='mb-4'>
         <Col md={12}>
-          <p style={{ fontSize: '14px', color:'#666666' }}>By partnering with coastal First Nations, we are cultivating seaweed in the ocean at scale to restore marine ecosystems. We then harvest that biomass to produce products that make positive impacts on the environment and build a more resilient food system.
-        We are focusing on delivering products in three key areas:</p>
+          
           <div>
+            <hr />
             <Row>
               <Col md={4}>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>FEED ADDITIVES</h4>
-            <p style={{ fontSize: '14px', color:'#666666' }}>Seaweed-based additives are used in insect protein for purposes of improving the quality of feed and the animals’ health & growth.</p>
+            <p style={lobster}>Feed Additives</p>
+            <p style={{}}>Seaweed-based additives are used in insect protein for purposes of improving the quality of feed and the animals’ health & growth.</p>
           </div>
               </Col>
               <Col md={4}>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>FARM BIOSTIMULANTS</h4>
-            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Biostimulants are applied to plants to enhance nutrition efficiency, abiotic stress tolerance, and crop quality traits.</p>
+            <p style={lobster}>Farm Biostimulants</p>
+            <p style={{}}>Biostimulants are applied to plants to enhance nutrition efficiency, abiotic stress tolerance, and crop quality traits.</p>
           </div>
                 </Col>
                 <Col md={4}>
                 <div>
-            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>ECOSYSTEM SERVICES</h4>
-            <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As seaweed grows in the ocean it provides benefits to the ecosystem that deserve to be measured and valued</p>
+            <p style={lobster}>Ecosystem Services</p>
+            <p style={{}}>As seaweed grows in the ocean it provides benefits to the ecosystem that deserve to be measured and valued</p>
           </div>
                 </Col>
             </Row>
-            <Row className='coastal'>
-              <p style={{ fontSize: '28px', lineHeight: '26px' }}>Every touch point makes a positive difference. And we are doing this in partnership with coastal First Nations.</p>
-            </Row>
-            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}} className="mt-2">#TRULYGOOD</h4>
-            <p style={{ fontSize: '14px', color:'#666666' }}>Mwani Africa, in its effort to be Truly Good, believes it is vital to consider the social, economic and environmental impact of its purchases.</p>
-            <p style={{ fontSize: '14px', color:'#666666' }}>Each member of our team aims to support our independent local businesses first while seeking the best value for products and services. Our goal is to purchase at least 50% of our core products locally.</p>
-            <p style={{ fontSize: '14px', color:'#666666' }}>We also have a strong commitment to our First Nations partners to offer contract labour and employment opportunities to their members first, and our team aims to procure supplies and equipment from First Nations owned service providers wherever possible.</p>
+            {/* <Row className='coastal'>
+              <p className='coastal' style={lobster}>Every touch point makes a positive difference. And we are doing this in partnership with coastal First Nations.</p>
+            
+            </Row> */}
+            {/* <h4 style={{}} className="mt-2">#TRULYGOOD</h4> */}
+          
+            <p style={{}}>Mwani Africa believes it is vital to consider the social, economic and environmental impact of its purchases.
+            Each member of our team aims to support our independent local businesses first while seeking the best value for products and services. Our goal is to purchase at least 50% of our core products locally.
+            We also have a strong commitment to partners to offer contract labour and employment opportunities to their members first, and our team aims to procure supplies and equipment from First Nations owned service providers wherever possible.</p>
             <Row>
             <img src={person2} style={{width:'100%'}}/>
               <Col md={4} className='mt-3'>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>ENVIRONMENTAL</h4>
-            <p style={{ fontSize: '14px', color:'#666666' }}>We grow seaweed to restore marine ecosystems and produce products that help mitigate climate change.</p>
+            <p style={lobster}>Environmental</p>
+            <p style={{}}>We grow seaweed to restore marine ecosystems and produce products that help mitigate climate change.</p>
           </div>
               </Col>
               <Col md={4} className='mt-3'>
               <div>
-            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>SOCIAL</h4>
-            <p style={{ fontSize: '14px', color:'#666666' }}>We form integrated partnerships with First Nations and local coastal communities to tackle threats to the world’s food supply.</p>
+            <h4 style={lobster}>Social</h4>
+            <p style={{}}>We form integrated partnerships with First Nations and local coastal communities to tackle threats to the world’s food supply.</p>
           </div>
                 </Col>
                 <Col md={4} className='mt-3'>
                 <div>
-            <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}}>GOVERNANCE</h4>
-            <p style={{ fontSize: '14px', color:'#666666' }}>As a certified B Corp. and a Benefit Company, we are legally committed to conduct business in a responsible and 
+            <h4 style={lobster}>Governance</h4>
+            <p style={{}}>As a certified B Corp. and a Benefit Company, we are legally committed to conduct business in a responsible and 
 
 sustainable way. </p>
           </div>
@@ -267,7 +276,7 @@ sustainable way. </p>
             
             <Row>
               <Col md={10}>
-                <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Mwani Africa recognizes that we operate on the traditional territories of the coastal First Nations of BC and we are grateful for the opportunity to do so. We currently have agreements with the &nbsp;
+                {/* <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>Mwani Africa recognizes that we operate on the traditional territories of the coastal First Nations of BC and we are grateful for the opportunity to do so. We currently have agreements with the &nbsp;
                   <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://www.sitemodify.com/site/36aff82f/?nee=true&ed=true&showOriginal=true&preview=true&dm_try_mode=true&dm_checkSync=1">Tsawout</a></span>&nbsp;
                   <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://www.uchucklesaht.ca/">Uchucklesaht</a></span> &nbsp;
                   <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://tseshaht.com/">Tseshaht</a></span>&nbsp;
@@ -275,7 +284,7 @@ sustainable way. </p>
                   <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://www.ahousaht.ca/"> Ahousaht</a></span>&nbsp;
                   <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="http://www.metlakatla.ca/">Metlakatla </a></span>&nbsp;
                   <span ><a target="_blank" style={{ fontSize: '18px', lineHeight: '26px', color:'#666666' }} href="https://gitxaalanation.com/">Gitxaala</a></span>&nbsp;
-                  </p>
+                  </p> */}
               </Col>
             </Row>
           </div>        
@@ -283,19 +292,22 @@ sustainable way. </p>
         </Row>
         </Container>
     </Row>
-    
-
-   
-   
-    </Container>
-
-   
+    </Container>  
     <Container >
-    <Row className='certified-bg'style={{height:'40vh'}}>
+    <Row className='certified-bg'
+    style={{
+                          backgroundImage: `linear-gradient(rgb(128, 0, 128, .6), rgb(128, 0, 128, .6)), url(${img9})`,
+                          backgroundColor:'white',
+                          backgroundAttachment: "fixed",
+                          backgroundRepeat:'noRepeat',
+                          backgroundSize: "contain",
+                          color: "white",
+                          height:'40vh',
+                          
+    }}>
       <Col md={12}>
-        <h2 style={{display:'flex', alignItems:'center', justifyContent:'center', height:'40vh'}}>
-      As a certified B Corp and
-Benefit Company, we are legally committed to conducting business in a socially responsible and sustainable way.
+        <h2 className="d-flex justify-center" style={lobster}>
+ We are legally committed to conducting business in a socially responsible and sustainable way.
 </h2>
       </Col>
     </Row>
@@ -303,9 +315,9 @@ Benefit Company, we are legally committed to conducting business in a socially r
     <Container>
       <Row>
         <Col md={12} style={{width:'90%', margin:'auto'}}>
-          <h4 style={{color:'#666666', fontFamily:'cursive', fontWeight:'bold'}} className='mt-2'>B Corp, Benefit Company and Living Wage Employer.</h4>
-          <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>As a certified B Corp, a registered Benefit Company in British Columbia, and a living-wage employer Mwani Africa is held accountable by external third-party organizations to ensure their actions genuinely benefit people and the planet.</p>
-          <p style={{ fontSize: '16px', lineHeight: '26px', color:'#666666' }}>On behalf of our three primary stakeholders — Mother Earth, our First Nations Partners and our shareholders — we have an imperative to demonstrate that both profitable business growth and environmental stewardship can be achieved in harmony.</p>
+          <h5 style={{}} className='mt-2'>Benefit Company and Living Wage Employer.</h5>
+          <p style={{}}>As a certified and registered Benefit Company, and a living-wage employer Mwani Africa is held accountable by external third-party organizations to ensure their actions genuinely benefit people and the planet.</p>
+          <p style={{}}>On behalf of our three primary stakeholders — Mother Earth, our First Nations Partners and our shareholders — we have an imperative to demonstrate that both profitable business growth and environmental stewardship can be achieved in harmony.</p>
         </Col>
         <Col md={5}>
 

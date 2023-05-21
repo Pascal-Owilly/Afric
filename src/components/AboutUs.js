@@ -7,7 +7,7 @@ import './AboutUs.css';
 const AboutUs = () => {
   return (
     <div>
-      <Container style={{marginTop:'18vh'}}>
+      <Container style={{marginTop:'20vh'}}>
         <h1 className="text-center .welcome-h1">Welcome to Mwani Africa</h1><hr />
       <Row style={{backgroundColor:'#ffffff'}}>
         <Col md={5}>                      
@@ -26,7 +26,7 @@ Mwani Africa's social enterprise leverages the Seaweed value-addition, to facili
         <Col md={3}>
           <Row style={{marginTop:''}}>
             <Col>
-            <Card className="what-card " style={{marginRight:'1rem'}}>  
+            <Card className="what-card" style={{marginRight:'1rem'}}>  
      
               <h3 className='welcome-h3' style={{color:'#666666', textAlign:'left'}}>Mission</h3>
               <p style={{ fontSize: '14px', }}>

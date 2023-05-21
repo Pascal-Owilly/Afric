@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
-import logo6 from '../img/logo5.png';
+import logo6 from '../img/logo1.png';
 import { Link } from 'react-router-dom';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -23,7 +23,7 @@ function NavigationBar() {
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 100) {
-      setNavbarBackground('#febd59');
+      setNavbarBackground('#a066cc');
     } else {
       setNavbarBackground('#a066cc');
     }
@@ -70,11 +70,11 @@ function NavigationBar() {
         <Container fluid>
           <Row className="align-items-center">
             <Col md={2} className='align-center' >
-              <Navbar.Brand style={{marginLeft:'4rem'}}>
+              <Navbar.Brand style={{marginLeft:''}}>
                 <Link to="/" title='Home'> 
                   <img
                     src={logo6}
-                    width="50%"
+                    width="60%"
                     height=""
                     className="d-inline-block align-right p-1 rounded mwani-logo"
                     alt="Mwani Africa Logo"
@@ -115,10 +115,10 @@ function NavigationBar() {
               <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/about" className="nav-links"     >About</Nav.Link>
               <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/teampage" className="nav-links"      >Team</Nav.Link>
               <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/socialent" className="nav-links" >Social Enterprise</Nav.Link>
+              <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/research" className="nav-links"   >Research</Nav.Link>
               <Nav.Link style={{fontWeight:''}} as={Link} onClick={() => { setExpanded(false); window.scrollTo(0, 0); }} to="/contact" className="nav-links"   >Contact</Nav.Link>
-
             <span className=' c-only' style={{marginLeft:'-2rem'}}>
-               <Link style={{color:'white', textDecoration:'none', fontSize:'20px', marginLeft:'8rem'}} target={'_blank'} to='https://www.linkedin.com/in/mesteroscar/'><FaLinkedin /></Link> 
+               <Link style={{color:'white', textDecoration:'none', fontSize:'20px', marginLeft:'5rem', marginTop:'1rem'}} target={'_blank'} to='https://www.linkedin.com/in/mesteroscar/'><FaLinkedin /></Link> 
                 </span>
                 <Link style={{color:'yellow', fontSize:'20px', marginLeft:'2rem', fontWeight:'bolder'}} to="https://api.whatsapp.com/send?phone=254723754597">
               <span className='c-only'>

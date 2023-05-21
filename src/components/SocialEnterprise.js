@@ -14,11 +14,11 @@ const MySection = () => {
   return (
     <>
     <hr />
-       <Container style={{height:'100%', position:'relative'}}>
-      <Row className="enterprise">
+       <Container style={{height:'100%', position:'relative', marginTop:'15vh'}}>
+      <Row className="enterprise mt-4">
         <Col md={6} style={{height:'100%'}}>
     <hr />
-        <h1 className=' ' style={{ color: '#666666', fontSize: '1.5rem', marginLeft:'2rem' }}>Social Enterprise</h1>     
+        <h1 className='' style={{ color: '#666666', fontSize: '1.5rem', marginLeft:'2rem' }}>Social Enterprise</h1>     
      <hr />
      <Card className="enterprise-card">  <Image className="rounded-circle" src={img14} style={{height:'100%'}} fluid /> </Card>
      <p className="pt-3">Mwani Africa's social enterprise model leverages innovation to assist local coastal community smallholder farmers, mostly women and youth, in climate resilient Seaweed farming.</p>
