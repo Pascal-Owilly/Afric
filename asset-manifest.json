@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/Afric/static/css/main.cd38e962.css",
-    "main.js": "/Afric/static/js/main.374c1f87.js",
+    "main.css": "/Afric/static/css/main.30977ea3.css",
+    "main.js": "/Afric/static/js/main.e7c2698e.js",
     "static/js/787.713984b8.chunk.js": "/Afric/static/js/787.713984b8.chunk.js",
     "static/media/Lobster-Regular.ttf": "/Afric/static/media/Lobster-Regular.5078a2ac8066a58ac131.ttf",
+    "static/media/img7.jpeg": "/Afric/static/media/img7.3e4faa50b927240049fc.jpeg",
     "static/media/how7.jpeg": "/Afric/static/media/how7.5c1388a39d83bf2e8c4c.jpeg",
     "static/media/img9.jpeg": "/Afric/static/media/img9.52b939cb094a8ea9d3ac.jpeg",
+    "static/media/blom.jpeg": "/Afric/static/media/blom.1dc90e7191b02d1e9a1f.jpeg",
     "static/media/person1.jpeg": "/Afric/static/media/person1.3c2c9db31c1dc3a85394.jpeg",
     "static/media/LobsterTwo-Regular.ttf": "/Afric/static/media/LobsterTwo-Regular.345e6eebbc9133fead8d.ttf",
     "static/media/person2.jpeg": "/Afric/static/media/person2.ae4e8afebe46dcf53ffc.jpeg",
     "static/media/heroimg5.jpeg": "/Afric/static/media/heroimg5.757c7cb9ddaaf7374ea2.jpeg",
     "static/media/teambg.jpeg": "/Afric/static/media/teambg.757c7cb9ddaaf7374ea2.jpeg",
+    "static/media/sargassum.jpeg": "/Afric/static/media/sargassum.815f73993c73c3202bf7.jpeg",
     "static/media/cardimg31.jpeg": "/Afric/static/media/cardimg31.d1d97fdd31ec5294e5da.jpeg",
+    "static/media/img2.jpeg": "/Afric/static/media/img2.c3457342cfa4c945794c.jpeg",
     "static/media/plant5.jpeg": "/Afric/static/media/plant5.a54275073a008f2a9110.jpeg",
     "static/media/img14.jpeg": "/Afric/static/media/img14.7b9d7f19a71e64650107.jpeg",
+    "static/media/cimg6.jpeg": "/Afric/static/media/cimg6.ed622174e2341106cdae.jpeg",
     "static/media/img12.jpeg": "/Afric/static/media/img12.f68a8289449773c9aa51.jpeg",
+    "static/media/dremch1.jpeg": "/Afric/static/media/dremch1.93fe5c6f84f5a8b1fb78.jpeg",
     "static/media/person3.jpeg": "/Afric/static/media/person3.5c1b469c1f82590dd2dc.jpeg",
+    "static/media/cimg2.jpeg": "/Afric/static/media/cimg2.2e872c9854c07161d137.jpeg",
     "static/media/img6.jpeg": "/Afric/static/media/img6.3f48cfa09e5c37ceff0f.jpeg",
     "static/media/heroimg3.jpeg": "/Afric/static/media/heroimg3.70ae205c07ba764884f3.jpeg",
     "static/media/cardimg2.jpeg": "/Afric/static/media/cardimg2.063da61e47337d249bf1.jpeg",
@@ -27,6 +34,8 @@
     "static/media/cimg4.jpeg": "/Afric/static/media/cimg4.9319971cf1252dde8e2a.jpeg",
     "static/media/cardimg.jpeg": "/Afric/static/media/cardimg.091c61bec0375f733150.jpeg",
     "static/media/cimg3.jpeg": "/Afric/static/media/cimg3.55ebe3d4febaa82ccbf8.jpeg",
+    "static/media/how1.jpeg": "/Afric/static/media/how1.213b9cd79c33519b845d.jpeg",
+    "static/media/img3.jpeg": "/Afric/static/media/img3.f205008c40f1886fa262.jpeg",
     "static/media/how2.jpeg": "/Afric/static/media/how2.c41154a27a30b19ff353.jpeg",
     "static/media/team3.jpeg": "/Afric/static/media/team3.a60ae5ac9db88a07cb7b.jpeg",
     "static/media/team5.png": "/Afric/static/media/team5.95452246d37b4c16a5b6.png",
@@ -34,12 +43,12 @@
     "static/media/team6.png": "/Afric/static/media/team6.45ad86a5d3d9e4e14593.png",
     "static/media/logo1.png": "/Afric/static/media/logo1.7915bb80251a60dc2288.png",
     "index.html": "/Afric/index.html",
-    "main.cd38e962.css.map": "/Afric/static/css/main.cd38e962.css.map",
-    "main.374c1f87.js.map": "/Afric/static/js/main.374c1f87.js.map",
+    "main.30977ea3.css.map": "/Afric/static/css/main.30977ea3.css.map",
+    "main.e7c2698e.js.map": "/Afric/static/js/main.e7c2698e.js.map",
     "787.713984b8.chunk.js.map": "/Afric/static/js/787.713984b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd38e962.css",
-    "static/js/main.374c1f87.js"
+    "static/css/main.30977ea3.css",
+    "static/js/main.e7c2698e.js"
   ]
 }
